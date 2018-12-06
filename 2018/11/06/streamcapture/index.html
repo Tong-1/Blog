@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-fill-left.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next2.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/favicon-16x16-next.png?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="随手笔记," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="前段时间做一个windows的桌面应用，vue + electron，涉及到录屏和摄像功能，网上相关的文档蛮少的给需要的人一些参考 如果文章描写有误或者还有更好的方法，请留言告诉我，笔芯 (´▽`ʃ♡ƪ) 背景介绍 涉及技术：vue、electron、ffmpeg、node  关于录屏和摄像对比了两种方法  使用HTML5的api实现 摄像：mediaDevices（获取设备）+ getUserM">
+<meta name="keywords" content="随手笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端使用html5、ffmpeg实现录屏摄像等功能">
+<meta property="og:url" content="http://yoursite.com/2018/11/06/streamcapture/index.html">
+<meta property="og:site_name" content="没事儿">
+<meta property="og:description" content="前段时间做一个windows的桌面应用，vue + electron，涉及到录屏和摄像功能，网上相关的文档蛮少的给需要的人一些参考 如果文章描写有误或者还有更好的方法，请留言告诉我，笔芯 (´▽`ʃ♡ƪ) 背景介绍 涉及技术：vue、electron、ffmpeg、node  关于录屏和摄像对比了两种方法  使用HTML5的api实现 摄像：mediaDevices（获取设备）+ getUserM">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-16T08:12:30.264Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端使用html5、ffmpeg实现录屏摄像等功能">
+<meta name="twitter:description" content="前段时间做一个windows的桌面应用，vue + electron，涉及到录屏和摄像功能，网上相关的文档蛮少的给需要的人一些参考 如果文章描写有误或者还有更好的方法，请留言告诉我，笔芯 (´▽`ʃ♡ƪ) 背景介绍 涉及技术：vue、electron、ffmpeg、node  关于录屏和摄像对比了两种方法  使用HTML5的api实现 摄像：mediaDevices（获取设备）+ getUserM">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/11/06/streamcapture/"/>
+
+
+
+
+
+  <title>前端使用html5、ffmpeg实现录屏摄像等功能 | 没事儿</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d0e674bed1e36732e9bb5c61c02011d9";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">没事儿</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">welcome</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            Commonweal 404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/06/streamcapture/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tong-H">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="没事儿">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">前端使用html5、ffmpeg实现录屏摄像等功能</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-06T17:05:15+08:00">
+                2018-11-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/大前端/" itemprop="url" rel="index">
+                    <span itemprop="name">大前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1.1k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  4 minute
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>前段时间做一个windows的桌面应用，vue + electron，涉及到录屏和摄像功能，网上相关的文档蛮少的给需要的人一些参考</p>
+<p>如果文章描写有误或者还有更好的方法，请留言告诉我，笔芯 (´▽`ʃ♡ƪ)</p>
+<h1 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h1><p><strong> 涉及技术：vue、electron、ffmpeg、node </strong></p>
+<p>关于录屏和摄像对比了两种方法</p>
+<ul>
+<li><p>使用HTML5的api实现</p>
+<p>摄像：mediaDevices（获取设备）+ getUserMedia（获取流） + MediaRecorder（存储）</p>
+<p>录屏：getDisplayMedia（获取流） + MediaRecorder（存储）</p>
+</li>
+<li><p>ffmpeg + node：FFmpeg是一套非常强大的音视频处理的开源工具，不多介绍，而Electron基于node和chromium，它允许使用node的API以及几乎所有的node模块，这意味这着我们可以调用cmd命令来操作ffmpeg实现录屏和摄像录制，当然ffmpeg功能绝不止这点</p>
+</li>
+</ul>
+<h1 id="HTML5实现"><a href="#HTML5实现" class="headerlink" title="HTML5实现"></a>HTML5实现</h1><h2 id="mediaDevices"><a href="#mediaDevices" class="headerlink" title="mediaDevices"></a>mediaDevices</h2><ul>
+<li><p>用于收集系统上可用的多媒体输入和输出设备的信息</p>
+</li>
+<li><p>该方法调用成功返回设备列表，并传入带有devceID的MediaStreamConstraints对象可以指定设备获取流媒体来源</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">navigator.mediaDevices.enumerateDevices().then(<span class="function"><span class="params">devicelist</span> =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// audiooutput 扬声器</span></span><br><span class="line">  <span class="comment">// audioinput  麦克风</span></span><br><span class="line">  <span class="comment">// audiooutput 摄像</span></span><br><span class="line">  <span class="built_in">console</span>.log(devicelist)</span><br><span class="line">&#125;).catch(<span class="function"><span class="params">err</span> =&gt;</span> <span class="built_in">console</span>.log(err))</span><br></pre></td></tr></table></figure>
+<h2 id="getUserMedia"><a href="#getUserMedia" class="headerlink" title="getUserMedia"></a>getUserMedia</h2></li>
+<li><p>用户提供访问硬件设备媒体（摄像头、视频、音频、地理位置等）的接口，基于该接口，开发者可以在不依赖任何浏览器插件的条件下访问硬件媒体设备。</p>
+</li>
+<li><p>该方法返回视频流，将获取到的流赋给video标签可实现边录边看</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">navigator.mediaDevices.getUserMedia(MediaStreamConstraints).then(<span class="function"><span class="params">stream</span> =&gt;</span> &#123;</span><br><span class="line">    videoElement.srcObject = stream; <span class="comment">// </span></span><br><span class="line">  &#125;, error =&gt; <span class="built_in">console</span>.log(error));</span><br></pre></td></tr></table></figure>
+<h2 id="getDisplayMedia"><a href="#getDisplayMedia" class="headerlink" title="getDisplayMedia"></a>getDisplayMedia</h2></li>
+<li><p>将用户的显示或其部分用作媒体流的来源，它允许以视频流的形式获取用户的显示器或其一部分</p>
+</li>
+<li><p>录屏主要依靠该方法，和getUserMedia一样返回一个promise对象，调用成功返回流，将这个流赋给video 元素实现边录边看</p>
+</li>
+<li><p><strong> 需要注意的是</strong> 如果你做的是网页端在谷歌上使用这个元素，需要在chrome://flags/开启Experimental Web Platform features功能</p>
+<p>&emsp;&emsp;&emsp;&emsp;而Electron基于node + chromium构建，在electron需要引入desktopCapturer模块，并在基于该模块使用这个方法</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">navigator.mediaDevices.getDisplayMedia(&#123; <span class="attr">video</span>: <span class="literal">true</span> &#125;)</span><br><span class="line">  .then(<span class="function"><span class="params">stream</span> =&gt;</span> &#123;</span><br><span class="line">    videoElement.srcObject = stream;</span><br><span class="line">  &#125;, error =&gt; <span class="built_in">console</span>.log(error));</span><br></pre></td></tr></table></figure>
+<h2 id="MediaRecorder"><a href="#MediaRecorder" class="headerlink" title="MediaRecorder"></a>MediaRecorder</h2></li>
+<li><p>记录和捕获媒体，也就是视频和音频</p>
+</li>
+<li><p>getDisplayMedia 和 getUserMedia 获取到的流都需要使用MediaRecorder存储起来，并且可以保存成文件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> herf</span><br><span class="line"><span class="keyword">this</span>.recorder = <span class="keyword">new</span> MediaRecorder(stream);</span><br><span class="line"><span class="keyword">this</span>.recorder.ondataavailable = <span class="function"><span class="params">e</span> =&gt;</span> &#123; </span><br><span class="line">  herf = e.data;</span><br><span class="line">  download.href = URL.createObjectURL(herf);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">this</span>.recorder.start();</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="第二种使用ffmpeg"><a href="#第二种使用ffmpeg" class="headerlink" title="第二种使用ffmpeg"></a>第二种使用ffmpeg</h1><p>官网安装包下载 <a href="https://ffmpeg.zeranoe.com/builds/" target="_blank" rel="noopener">https://ffmpeg.zeranoe.com/builds/</a></p>
+<p>一些基本参数</p>
+<ul>
+<li>-formats                输出所有可用格式</li>
+<li>-f fmt                  指定格式(音频或视频格式)</li>
+<li>-i filename              指定输入文件名，在linux下当然也能指定:0.0(屏幕录制)或摄像头</li>
+<li>-y                      覆盖已有文件</li>
+<li>-t duration              记录时长为t</li>
+<li>-fs limit_size          设置文件大小上限</li>
+<li>-itsoffset time_off      设置时间偏移(s)，该选项影响所有后面的输入文件。该偏移被加到输入文件的时戳，定义一个正偏移意味着相应的流被延迟了 offset秒。 [-]hh:mm:ss* [.xxx]的格式也支持<br>音 频</li>
+<li>-ab bitrate           设置音频码率</li>
+<li>-ar freq              设置音频采样率</li>
+<li>-ac channels          设置通道 缺省为1<br>视 频</li>
+<li>-b bitrate            设置比特率，缺省200kb/s</li>
+<li>-r fps                设置帧频 缺省25</li>
+<li>-s size               设置帧大小 格式为WXH 缺省160X128.下面的简写也可以直接使用：</li>
+</ul>
+<h2 id="录屏相关命令"><a href="#录屏相关命令" class="headerlink" title="录屏相关命令"></a>录屏相关命令</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">列出可用的设备包括音频和摄像等等</span><br><span class="line">ffmpeg -list_devices true -f dshow -i dummy</span><br><span class="line"></span><br><span class="line">录屏，你也可以加入关于视频的一些基本参数来获得你想要的文件</span><br><span class="line">ffmpeg -f gdigrab -i desktop captrue.mkv -y</span><br></pre></td></tr></table></figure>
+<h2 id="node调用"><a href="#node调用" class="headerlink" title="node调用"></a>node调用</h2><p>cd进入bin文件夹后执行录屏相关命令</p>
+<p>关于停止录制，虽然ffmpeg按 Q 可以停止录制，但是我们通过代码调用是看不到cmd命令行的而且他在录制过程中是一直占用这个进程什么命令也无法输入<br>所以这个地方我只想到一个办法就是强制停止该进程</p>
+<p>参考文章</p>
+<p>MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/getUserMedia" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/getUserMedia</a><br>&emsp;<a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder</a><br>&emsp;<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/enumerateDevices" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/enumerateDevices</a></p>
+<p>W3C <a href="https://w3c.github.io/mediacapture-screen-share/" target="_blank" rel="noopener">https://w3c.github.io/mediacapture-screen-share/</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Tong-H WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Tong-H Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/随手笔记/" rel="tag"># 随手笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/16/https/" rel="next" title="前端是否需要对密码进行加密传输 && HTTPS">
+                <i class="fa fa-chevron-left"></i> 前端是否需要对密码进行加密传输 && HTTPS
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/11/16/english-clockIn/" rel="prev" title="英语单词打卡记录">
+                英语单词打卡记录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTIxNC8xNTc0MQ"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="Tong-H" />
+            
+              <p class="site-author-name" itemprop="name">Tong-H</p>
+              <p class="site-description motion-element" itemprop="description">停下来你就完蛋</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/tong-h" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:tongt0232@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/20de04cc53de" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-rss-square"></i>简书</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#背景介绍"><span class="nav-number">1.</span> <span class="nav-text">背景介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#HTML5实现"><span class="nav-number">2.</span> <span class="nav-text">HTML5实现</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#mediaDevices"><span class="nav-number">2.1.</span> <span class="nav-text">mediaDevices</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getUserMedia"><span class="nav-number">2.2.</span> <span class="nav-text">getUserMedia</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#getDisplayMedia"><span class="nav-number">2.3.</span> <span class="nav-text">getDisplayMedia</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MediaRecorder"><span class="nav-number">2.4.</span> <span class="nav-text">MediaRecorder</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#第二种使用ffmpeg"><span class="nav-number">3.</span> <span class="nav-text">第二种使用ffmpeg</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#录屏相关命令"><span class="nav-number">3.1.</span> <span class="nav-text">录屏相关命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#node调用"><span class="nav-number">3.2.</span> <span class="nav-text">node调用</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tong-H</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">29.1k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

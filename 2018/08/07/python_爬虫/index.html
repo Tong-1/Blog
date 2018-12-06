@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-fill-left.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next2.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/favicon-16x16-next.png?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="网络爬虫," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="博主是个前端小白，最近在学习爬虫，写个实战系列也是想记录自己学习的过程，以便后续回顾 欢迎大家一起交流学习、共同进步 这篇文章达成的效果是爬掘金网的首页的数据存到mysql数据库里  做这个实战你需要具有一点点python的基础知识，当然没有也行可以复制代码先跑一跑感受一下会有动力一点 爬取的网站：https://juejin.im/timeline 系统：win10 python版本:3.7 M">
+<meta name="keywords" content="网络爬虫">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python爬虫之爬取掘金网首页存入mysql数据库">
+<meta property="og:url" content="http://yoursite.com/2018/08/07/python_爬虫/index.html">
+<meta property="og:site_name" content="没事儿">
+<meta property="og:description" content="博主是个前端小白，最近在学习爬虫，写个实战系列也是想记录自己学习的过程，以便后续回顾 欢迎大家一起交流学习、共同进步 这篇文章达成的效果是爬掘金网的首页的数据存到mysql数据库里  做这个实战你需要具有一点点python的基础知识，当然没有也行可以复制代码先跑一跑感受一下会有动力一点 爬取的网站：https://juejin.im/timeline 系统：win10 python版本:3.7 M">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://img-blog.csdn.net/2018080714283577?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180807143043893?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180802145942417?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180807120526739?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180807120941504?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180807124337750?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180807130603595?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180802151203471?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180803104853455?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180807133227686?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:image" content="https://img-blog.csdn.net/20180807133445579?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+<meta property="og:updated_time" content="2018-09-28T09:15:59.335Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python爬虫之爬取掘金网首页存入mysql数据库">
+<meta name="twitter:description" content="博主是个前端小白，最近在学习爬虫，写个实战系列也是想记录自己学习的过程，以便后续回顾 欢迎大家一起交流学习、共同进步 这篇文章达成的效果是爬掘金网的首页的数据存到mysql数据库里  做这个实战你需要具有一点点python的基础知识，当然没有也行可以复制代码先跑一跑感受一下会有动力一点 爬取的网站：https://juejin.im/timeline 系统：win10 python版本:3.7 M">
+<meta name="twitter:image" content="https://img-blog.csdn.net/2018080714283577?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2018/08/07/python_爬虫/"/>
+
+
+
+
+
+  <title>python爬虫之爬取掘金网首页存入mysql数据库 | 没事儿</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d0e674bed1e36732e9bb5c61c02011d9";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">没事儿</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">welcome</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            Commonweal 404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/08/07/python_爬虫/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tong-H">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="没事儿">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">python爬虫之爬取掘金网首页存入mysql数据库</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-08-07T14:51:10+08:00">
+                2018-08-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index">
+                    <span itemprop="name">python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1.5k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  6 minute
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>博主是个前端小白，最近在学习爬虫，写个实战系列也是想记录自己学习的过程，以便后续回顾</p>
+<p>欢迎大家一起交流学习、共同进步</p>
+<p>这篇文章达成的效果是爬掘金网的首页的数据存到mysql数据库里</p>
+<p><img src="https://img-blog.csdn.net/2018080714283577?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="效果"><br><img src="https://img-blog.csdn.net/20180807143043893?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="效果"></p>
+<p>做这个实战你需要具有一点点python的基础知识，当然没有也行可以复制代码先跑一跑感受一下会有动力一点</p>
+<p>爬取的网站：<a href="https://juejin.im/timeline" target="_blank" rel="noopener">https://juejin.im/timeline</a></p>
+<p>系统：win10</p>
+<p>python版本:3.7</p>
+<p>MYSQL安装包下载：<a href="https://dev.mysql.com/downloads/windows/installer/" target="_blank" rel="noopener">https://dev.mysql.com/downloads/windows/installer/</a> </p>
+<p><img src="https://img-blog.csdn.net/20180802145942417?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="效果"></p>
+<p>mysql-installer-web-community  15.9M那个是在线安装</p>
+<p>mysql-installer-community 推荐下载第二个离线安装</p>
+<p>现在这个安装包好像不分32位还是64位，我是64位的安装成功，MSI安装版安装挺简单的我就不赘述了（其实我安装蛮久了没记录下来）</p>
+<p>安装完成可以通过·mysql -u root -p查看</p>
+<p>mysql安装成功后你还需要一个python操作mysql的库，cmd执行使用pip安装pymysql:</p>
+<p>pip install pymysql<br>环境准备好后就开始愉快的学习吧</p>
+<p>网站分析<br>我们进入网站<a href="https://juejin.im/，然后打开f12（博主用的是chrome浏览器，在前端眼里chrome是最好浏览器没有之一）" target="_blank" rel="noopener">https://juejin.im/，然后打开f12（博主用的是chrome浏览器，在前端眼里chrome是最好浏览器没有之一）</a></p>
+<p>掘金网是个动态网站，即客户端（浏览器）根据服务端（服务器）返回的数据动态渲染网页</p>
+<p>那么数据从哪儿来，服务端会根据客户端不同的请求或者请求参数的差异来返回数据</p>
+<p>这里我们需要登陆下，我们登陆成功即通过服务端验证后服务器会签发一个 Token发送给客户端，你可以理解为一个验证身份的令牌，客户端收到 Token 以后把它存储起来，每次向服务端请求资源的时候都需要带着这个token，服务端收到请求，去验证客户端请求里面带着的 Token，如果验证成功，就向客户端返回请求的数据</p>
+<p><img src="https://img-blog.csdn.net/20180807120526739?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="效果"></p>
+<p>我们可以看到有很多请求，什么图片、脚本资源、svg很多</p>
+<p>点击XHR按钮过滤请求只显示XMLHttpRequest方法发送的请求</p>
+<p><img src="https://img-blog.csdn.net/20180807120941504?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="效果"></p>
+<p>过滤之后现在挨着查看，找到返回文章数据的那条请求</p>
+<p>大部分数据都是页面或者服务器做判断用的，我们提取这些参数就好</p>
+<p>[‘category’][‘name’] 文章分类<br>[‘title’] 文章标题<br>[‘content’] 文章概要<br>[‘originalUrl’] 文章链接<br>[’tags’] 文章标签<br>[‘user’][‘username’] 文章作者</p>
+<p><img src="https://img-blog.csdn.net/20180807124337750?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="效果"></p>
+<p>然后我们查看他的Headers，滑到底部可以看到uery string params是由客户端发给服务器时请求携带的参数</p>
+<p><img src="https://img-blog.csdn.net/20180807130603595?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="参数"></p>
+<p>这些参数里面有个limit是请求的条数，就是你请求多少条就会返回多少条数据</p>
+<p>现在上代码<br>需要3个库，除了第一个pymsql以为都是python自带的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">import pymysql # 操作mysql的库</span><br><span class="line">from urllib import request, parse #请求需要的库</span><br><span class="line">import json # 处理参数需要的库</span><br></pre></td></tr></table></figure></p>
+<p>我们先发送请求获取数据<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">def juejin_req(data_num): # data_num是请求的条数</span><br><span class="line">    url = &apos;https://timeline-merger-ms.juejin.im/v1/get_entry_by_rank&apos; # 请求的url</span><br><span class="line">    req_data = &#123;  # 请求需要携带的参数</span><br><span class="line">        &apos;src&apos;: &apos;web&apos;,</span><br><span class="line">        &apos;uid&apos;: &apos;5b5ebcd1f265da0f60132076&apos;,</span><br><span class="line">        &apos;device_id&apos;: 1533608440568,</span><br><span class="line">        &apos;token&apos;: &apos;你的token&apos;,</span><br><span class="line">        &apos;limit&apos;: data_num,</span><br><span class="line">        &apos;category&apos;: &apos;all&apos;,</span><br><span class="line">        &apos;recomment&apos;: 1</span><br><span class="line">    &#125;</span><br><span class="line">    req_data = str(parse.urlencode(req_data, &apos;utf-8&apos;)) # 由于是get请求所以我们在使用parse.urlencode()方法转换编码格式后还需要使用str()方法转换为字符串</span><br><span class="line">    json_data = request.urlopen(url+&apos;?&apos;+req_data) # 拼凑url发送请求</span><br><span class="line">    print(&apos;数据请求成功&apos;)</span><br><span class="line">    json_data = json_data.read().decode(&apos;utf-8&apos;)  # 拿到数据转换编码格式</span><br><span class="line">    json_data = json.loads(json_data)  # 使用json.loads()将字符串序列化</span><br><span class="line">    json_data = json_data[&apos;d&apos;][&apos;entrylist&apos;] # 获取到数据列表</span><br><span class="line">    sql_data = [] # 最后储存到数据的变量</span><br><span class="line">    for item in json_data: # 循环遍历列表提取需要的数据</span><br><span class="line">        tag = [] </span><br><span class="line">        for aa in item[&apos;tags&apos;]: # 提取标签</span><br><span class="line">            tag.append(aa[&apos;title&apos;])</span><br><span class="line">        sql_data.append((item[&apos;category&apos;][&apos;name&apos;],  item[&apos;title&apos;], item[&apos;content&apos;], item[&apos;originalUrl&apos;], str(tag), item[&apos;user&apos;][&apos;username&apos;],))</span><br><span class="line">    print(&apos;一共有%s条数据&apos; % len(sql_data))</span><br><span class="line">    return sql_data</span><br></pre></td></tr></table></figure></p>
+<p>打开workbench，这是自带的一款可视化的sql操作工具</p>
+<p><img src="https://img-blog.csdn.net/20180802151203471?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="参数"></p>
+<p>首先我们先新建一个连接<br>点击新建一个连接—–填上连接名字hellosql—–点击ok—–在弹出的弹框中输入你的密码–点击ok</p>
+<p><img src="https://img-blog.csdn.net/20180803104853455?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="参数"></p>
+<p>连接建立后我们新建一个数据库，在左侧红圈空白地方右键—create scheme（新建一个数据库），这地方我已经建了</p>
+<p><img src="https://img-blog.csdn.net/20180807133227686?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="参数"></p>
+<p>输入数据库名字reptiledata—点击apply—出现一个弹框继续点击apply，这样我们就新建了一个数据库</p>
+<p><img src="https://img-blog.csdn.net/20180807133445579?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1RvbmdfMTE=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="参数"></p>
+<p>这是操作数据库的代码，获取到请求的数据后将数据return处理在传给juejin_sql函数，所以把这段代码放在上面那段代码后面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">def juejin_sql(sql_data):</span><br><span class="line">    print(&apos;连接数据库&apos;)</span><br><span class="line">    db = pymysql.connect(host=&apos;localhost&apos;,</span><br><span class="line">                        port=3306, # 端口号</span><br><span class="line">                        user=&apos;root&apos;, </span><br><span class="line">                        password=&apos;123456&apos;, # 密码</span><br><span class="line">                        database=&apos;reptiledata&apos;) # 数据库</span><br><span class="line">    cursor = db.cursor() # 建立一个游标对象</span><br><span class="line">    try:</span><br><span class="line">        #判断表是否存在，若不存在则新建</span><br><span class="line">        cursor.execute(&quot;&quot;&quot;CREATE TABLE IF NOT EXISTS juejin(</span><br><span class="line">                    category  TEXT,</span><br><span class="line">                    title  TEXT,</span><br><span class="line">                    content  TEXT,</span><br><span class="line">                    originalUrl  TEXT,</span><br><span class="line">                    tags  TEXT,</span><br><span class="line">                    username TEXT)&quot;&quot;&quot;)</span><br><span class="line">    except:</span><br><span class="line">        print(&quot;Table &apos;juejin&apos; already exists&quot;)</span><br><span class="line">        return False</span><br><span class="line">    sql = &quot;&quot;&quot;insert into juejin(category, title, content, originalUrl, tags, username)</span><br><span class="line">            values (%s, %s, %s, %s, %s, %s)&quot;&quot;&quot; # sql语句</span><br><span class="line">    print(&apos;正在批量添加&apos;)</span><br><span class="line">    cursor.executemany(sql, sql_data) # 批量添加</span><br><span class="line">    cursor.execute(&apos;select count(*) from juejin&apos;)</span><br><span class="line">    results = cursor.fetchall() # 查询全部总条数</span><br><span class="line">    print(&apos;数据库目前有%d条数据&apos; % results[0][0])</span><br><span class="line">    db.commit()  # 对于数据增删改之后一定要提交操作</span><br><span class="line">    cursor.close()  # 关闭游标</span><br><span class="line">    print(&apos;操作完成关闭数据库关闭游标&apos;)</span><br><span class="line">    db.close()  # 关闭数据库连接</span><br><span class="line"></span><br><span class="line">juejin_sql(juejin_req(100))</span><br></pre></td></tr></table></figure></p>
+<p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Tong-H WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Tong-H Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/网络爬虫/" rel="tag"># 网络爬虫</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/24/平面&&ui/" rel="next" title="UI处女作后的自我总结">
+                <i class="fa fa-chevron-left"></i> UI处女作后的自我总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/08/07/mpvue/" rel="prev" title="mpvue小程序以及微信直播踩坑总结">
+                mpvue小程序以及微信直播踩坑总结 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTIxNC8xNTc0MQ"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="Tong-H" />
+            
+              <p class="site-author-name" itemprop="name">Tong-H</p>
+              <p class="site-description motion-element" itemprop="description">停下来你就完蛋</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">27</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/tong-h" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:tongt0232@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/20de04cc53de" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-rss-square"></i>简书</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tong-H</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">29.1k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
