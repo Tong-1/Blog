@@ -3,21 +3,42 @@
   
     
     <entry>
-      <title>2018年终总结</title>
-      <link href="/2019/01/24/2018end/"/>
-      <url>/2019/01/24/2018end/</url>
-      <content type="html"><![CDATA[<blockquote><p>&#8195;&#8195;又是一年 End，感觉现在时间过得越来越快，下了个倒计时的app，设置了年终和一些重要日子的倒计时，每次打开app看到那一点点变化的数字就会觉得有点点心痛。之前在网上看过一个话题为什么随着年龄的增大会感觉时间过得越来越快，有两个说法：当你专注做某样事情的时候和你重复做某一样事情的时候。相信这两种感觉大部分人都深有体会，感觉现在时间比小时候过得快是因为小时候大脑储存的东西不多每一天都是新鲜未知的，大脑在不断的调用insert或者update接口存储或者更新，但是长大后每天都是重复着昨天的生活，每天都只是在调用search接口，然后当你每天重复着一样的事情时间就过得很快很快。感觉扯远了，但是感觉时间越来越不够用是真的，小时候对于过年是充满期待和兴奋的，但是现在对于年终会有种莫名的感伤，比如现在敲下这些字的时候就挺让人难受的，可能有人觉得有点矫情，但是大好的时光就那么一些，然后现在又失去一点…….</p></blockquote><blockquote><p>&#8195;&#8195;今年开始写blog了，一直都习惯记笔记，即便开始写blog还是习惯用word记笔记，现在这篇word文档已经有160多页了。blog和笔记的不同在于笔记里大多是很零碎的知识点会经常用和翻看而放在blog里至少要像一篇文章，所以其实写的时候就相当于在整理笔记里面的知识点会发现很多不足的地方，所以写blog也是个不错习惯。最开始会在csdn、掘金、简书各大平台投放但是后来搭了一个blog系统就懒得复制粘贴了，不过简书倒是坚持更新了，主要因为简书点赞呀关注什么的回馈很快，这是个激励能制造一些动力，但是简书首页的那些标题党和心灵鸡汤真的很烦。</p></blockquote><blockquote><p>&#8195;&#8195;今年仍然很焦虑，和去年一样的焦虑烦躁，工作上几个后台，一个小程序，一个安卓app，一个windows的桌面app，工作之余学习了express，mysql，简单的python，列出来好像还不少，但是对于这些框架语言都了解太少太浅了，这是挺一个致命的点，今年技术上的学习状态不如说学习方式其实不如去年，太浮躁了，只专注于表面能看到的效果而不去学习框架内部的知识和底层的原理，广而不深。坏习惯！！！</p></blockquote><blockquote><p>&#8195;&#8195;今年10月份终于报了自考英语本科，开始每天刷单词开始爱上图书馆，学英语真的不是容易事，但是好在对英语有兴趣的且有必须学习的理由，这两者加在一起等于充足的动力，但是学习向来都不是一件快乐的事情，有兴趣只是没那么痛苦罢了<br>  报名时的明确目标：</p><ul><li>作为一个程序员能不依靠辅助工具顺畅的读懂英文文档</li><li>作为一个美剧迷能摆脱字幕</li><li>作为一个自考生能拿到证</li></ul></blockquote><blockquote><p>&#8195;&#8195;今年21了，2018的我相当嫌弃2017的我，把化妆减肥当作日常，格外怕冷一出公司大门分分钟想回去加班。提前进入中老年状态，开始泡枸杞红枣，开始每天烫脚，开始每天吃各种豆子，开始喝热水即使夏天，开始看各种热量表成分表，开始拒绝垃圾食品，开始每天起早即使周末，夏天7点左右冬天八点左右就自然醒了然后起床，居然不赖床，这居然是我的作息</p></blockquote><blockquote><h2 id="2019-警告："><a href="#2019-警告：" class="headerlink" title="2019 警告："></a>2019 警告：</h2><ul><li>控制饮食！！！减肥控制饮食大概是毕生的事业了，永远提防体重</li><li>多咀嚼！！！吃东西慢点，再慢点</li><li>喝水！！！没事就喝水吧</li><li>去图书馆！！！不要待在家里，不要相信自己的自制力，没事就背上包包去图书馆吧</li><li>刷单词！！！每天的单词一定要清完</li><li>不要浮躁！！！静下来，静下来</li></ul></blockquote><p>最后写年终总结的确是个挺好的习惯</p>]]></content>
+      <title>cannvas的imagedata对象</title>
+      <link href="/2019/02/21/cannvas-1/"/>
+      <url>/2019/02/21/cannvas-1/</url>
+      <content type="html"><![CDATA[<h2 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h2><p>ImageData 是canvas的图像数据，由<strong> ImageData() </strong>构造函数返回一个实例化的对象，<strong> 三个可读属性 </strong> </p><ul><li><p>data：一个 Uint8ClampedArray 类型的一维数组，包含RGBA 顺序的数据，每4个元素表示一个RGBA 值即对应一个像素, 左上角在数组的索引0位置，像素从左到右被处理，然后往下，遍历整个数组<br><strong><font color="#ca2b1f"> RGBA：</font></strong> R - 红色（0-255）、G - 绿色（0-255）、B - 蓝色（0-255）、A - alpha 通道（0-255; 0 是透明的，255 是完全可见的）<br><strong><font color="#ca2b1f">  Uint8ClampedArray（8位无符号整型固定数组）：</font></strong> 类型化数组表示一个由值固定在0-255区间的8位无符号整型组成的数组；如果你指定一个在 [0,255] 区间外的值，它将被替换为0或255；如果你指定一个非整数，那么它将被设置为最接近它的整数。（数组）内容被初始化为0。</p></li><li><p>width：以像素为单位的图像的宽</p></li><li><p>height：以像素为单位的图像的高</p></li></ul><p><strong><font color="#ca2b1f" size="4"> 三个参数的关系是：data.length = height * width * 4 </font></strong><br>不满足这个关系的时候就会报错：” The input data length is not a multiple of (4 * width).” ，不要问我为什么知道</p><h2 id="构建一个ImageData-对象"><a href="#构建一个ImageData-对象" class="headerlink" title="构建一个ImageData 对象"></a>构建一个ImageData 对象</h2><h3 id="使用canvas-API"><a href="#使用canvas-API" class="headerlink" title="使用canvas API"></a>使用canvas API</h3><p><strong> createImageData(): 传入宽和高获得一个ImageData对象或者传入一个已经存在的ImageData对象渲染到画布 </strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">"canvas"</span>)</span><br><span class="line"><span class="keyword">var</span> ctx = canvas.getContext(<span class="string">"2d"</span>)</span><br><span class="line"><span class="built_in">console</span>.log(ctx.createImageData(<span class="number">200</span>, <span class="number">200</span>))</span><br></pre></td></tr></table></figure></p><p><strong> getImageData(): 提取一个矩形区域的图像数据，返回一个ImageData对象 </strong><br>ctx.getImageData(矩形区域的左上角 x 坐标, 矩形区域的左上角 y 坐标, 矩形区域的宽度, 矩形区域的高度)<br>下面是一个简单的小例子让div背景色随着鼠标指针下的图片颜色变化而变化，思路是使用 getImageData() 获取鼠标下1像素的区域，也就是一个RGBA值赋值给div<br>运行时注意canvas图片使用 getImageData() 的跨域问题<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> img = <span class="keyword">new</span> Image()</span><br><span class="line">img.src = <span class="string">'./static/img/1547436818106.png'</span></span><br><span class="line"><span class="keyword">let</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>)</span><br><span class="line"><span class="keyword">let</span> ctx = canvas.getContext(<span class="string">'2d'</span>)</span><br><span class="line">img.onload = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  ctx.drawImage(img, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">  img.style.display = <span class="string">'none'</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> color = <span class="built_in">document</span>.getElementById(<span class="string">'color'</span>)</span><br><span class="line">canvas.addEventListener(<span class="string">'mousemove'</span>, (e) =&gt;&#123;</span><br><span class="line">  <span class="keyword">let</span> pixel = ctx.getImageData(e.layerx, e.layery, <span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">  color.style.background =  <span class="string">'rgba('</span> + pixel.data[<span class="number">0</span>] + <span class="string">','</span> + pixel.data[<span class="number">1</span>] + <span class="string">','</span> + pixel.data[<span class="number">2</span>] + <span class="string">','</span> + (pixel.data[<span class="number">3</span>] / <span class="number">255</span>) + <span class="string">')'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p><h3 id="直接使用ImageData-构造函数创建-data可为空"><a href="#直接使用ImageData-构造函数创建-data可为空" class="headerlink" title="直接使用ImageData()构造函数创建, data可为空"></a>直接使用ImageData()构造函数创建, data可为空</h3><p>当data为空时会自动按照width和height的大小，以0填充整个像素矩阵，也就是一个空白画布<br>若需要传入data图像数据，要注意 width * height * 4 = data.length<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> imagedata = <span class="keyword">new</span> ImageData(data, width, height)</span><br><span class="line"><span class="comment">// ImageData &#123; width: width, height: height, data: Uint8ClampedArray[width * height * 4] &#125;</span></span><br></pre></td></tr></table></figure></p><h2 id="操作像素"><a href="#操作像素" class="headerlink" title="操作像素"></a>操作像素</h2><p><strong> <font color="#ca2b1f">putImageData()</font>: 对画布进行像素数据的写入，也就是将指定的 ImageData 对象放到画布上，7个参数，前3个为必填 </strong><br>ctx.putImageData(imagedata, 图像数据在目标画布中的位置X坐标, Y坐标, 在图像数据中截取一个矩形区域左上角的位置X坐标, Y坐标, 矩形区域Width, Height);<br>一个小例子图片灰度处理，思路是使用 getImageData() 获取当前 ImageData 数据，然后遍历 data 数组改变 RGBA 的值，最后在使用 putImageData() 放回画布<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> img = <span class="keyword">new</span> Image()</span><br><span class="line">img.src = <span class="string">'./static/img/shareedu.png'</span></span><br><span class="line"><span class="keyword">let</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>)</span><br><span class="line"><span class="keyword">let</span> ctx = canvas.getContext(<span class="string">'2d'</span>)</span><br><span class="line">img.onload = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  ctx.drawImage(img, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">  img.style.display = <span class="string">'none'</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'btn'</span>).addEventListener(<span class="string">'click'</span>, ()=&gt;&#123;</span><br><span class="line">  <span class="keyword">let</span> pre = ctx.getImageData(<span class="number">0</span>,<span class="number">0</span>,canvas.width, canvas.height)</span><br><span class="line">  <span class="keyword">let</span> data = pre.data</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; data.length; i += <span class="number">4</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> avg = (data[i] + data[i +<span class="number">1</span>] + data[i +<span class="number">2</span>]) / <span class="number">3</span></span><br><span class="line">    data[i] = avg</span><br><span class="line">    data[i + <span class="number">1</span>] = avg</span><br><span class="line">    data[i + <span class="number">2</span>] = avg</span><br><span class="line">  &#125;</span><br><span class="line">  ctx.putImageData(pre, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p><p><strong> <font color="#ca2b1f">drawImage()</font>: 在画布上绘制图像，9个参数，image, dx, dy为必填 </strong><br>image: 图像源<br>sx: 选择需要的图像源区域，矩形选择框的左上角 X 轴坐标。<br>sy:  矩形选择框的Y 轴坐标。<br>sWidth: 需要绘制到目标上下文中的，image的矩形（裁剪）选择框的宽度。如果不说明，整个矩形（裁剪）从坐标的sx和sy开始，到image的右下角结束。<br>sHeight: 需要绘制到目标上下文中的，image的矩形（裁剪）选择框的高度。<br>dx: image的左上角在目标canvas上 X 轴坐标。<br>dy: image的左上角在目标canvas上 Y 轴坐标。<br>dWidth: image在目标canvas上绘制的宽度。 允许对绘制的image进行缩放<br>dHeight: image在目标canvas上绘制的高度。 允许对绘制的image进行缩放<br>一个小例子将图片放在鼠标指定位置<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">"canvas"</span>)</span><br><span class="line"><span class="keyword">let</span> ctx = canvas.getContext(<span class="string">"2d"</span>)</span><br><span class="line"><span class="keyword">let</span> img = <span class="keyword">new</span> Image()</span><br><span class="line">img.src = <span class="string">'./static/img/shareedu.png'</span></span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>).addEventListener(<span class="string">'mousedown'</span>, (e)=&gt;&#123;</span><br><span class="line">  ctx.clearRect(<span class="number">0</span>,<span class="number">0</span>,ctx.canvas.width,ctx.canvas.height)</span><br><span class="line">  ctx.drawImage(img, e.offsetX, e.offsetY, <span class="number">200</span>, <span class="number">200</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p><p><strong> <font color="#ca2b1f">imageSmoothingEnabled</font>, 这是个属性设置图片是否平滑，只需要将他赋值为true（平滑）或者false（不平滑） </strong></p><p><strong> <font color="#ca2b1f">canvas.toDataURL(‘image/png’, quality)</font> 返回一个包含图片展示的 data URI , 2个参数, 图片格式默认为png, 0到1的品质选择（图片格式为 image/jpeg 或 image/webp的情况下） </strong></p><p><strong> <font color="#ca2b1f">canvas.toBlob(callback, type, encoderOptions)</font>,创建一个Blob对像，用以展示canvas上的图片，3个参数 </strong><br>callback：回调函数返回一个blob对象<br>type：图片格式，默认为’image/png’<br>encoderOptions:  0到1的品质选择（图片格式为 image/jpeg 或 image/webp的情况下）</p>]]></content>
       
       <categories>
           
-          <category> 其他 </category>
+          <category> WEB </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 日常 </tag>
+            <tag> canvas </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>2018年终总结</title>
+      <link href="/2019/01/24/2018end/"/>
+      <url>/2019/01/24/2018end/</url>
+      <content type="html"><![CDATA[<blockquote><p>&#8195;&#8195;又是一年 End，感觉现在时间过得越来越快，下了个倒计时的app，设置了年终和一些重要日子的倒计时，每次打开app看到那一点点变化的数字就会觉得有点点心痛。之前在网上看过一个话题为什么随着年龄的增大会感觉时间过得越来越快，有两个说法：当你专注做某样事情的时候和你重复做某一样事情的时候。相信这两种感觉大部分人都深有体会，感觉现在时间比小时候过得快是因为小时候大脑储存的东西不多每一天都是新鲜未知的，大脑在不断的调用insert或者update接口存储或者更新，但是长大后每天都是重复着昨天的生活，每天都只是在调用search接口，然后当你每天重复着一样的事情时间就过得很快很快。感觉扯远了，但是感觉时间越来越不够用是真的，小时候对于过年是充满期待和兴奋的，但是现在对于年终会有种莫名的感伤，比如现在敲下这些字的时候就挺让人难受的，可能有人觉得有点矫情，但是大好的时光就那么一些，然后现在又失去一点…….</p></blockquote><blockquote><p>&#8195;&#8195;今年开始写blog了，一直都习惯记笔记，即便开始写blog还是习惯用word记笔记，现在这篇word文档已经有160多页了。blog和笔记的不同在于笔记里大多是很零碎的知识点会经常用和翻看而放在blog里至少要像一篇文章，所以其实写的时候就相当于在整理笔记里面的知识点会发现很多不足的地方，所以写blog也是个不错习惯。最开始会在csdn、掘金、简书各大平台投放但是后来搭了一个blog系统就懒得复制粘贴了，不过简书倒是坚持更新了，主要因为简书点赞呀关注什么的回馈很快，这是个激励能制造一些动力，但是简书首页的那些标题党和心灵鸡汤真的很烦。</p></blockquote><blockquote><p>&#8195;&#8195;今年仍然很焦虑，和去年一样的焦虑烦躁，工作上几个后台，一个小程序，一个安卓app，一个windows的桌面app，工作之余学习了express，mysql，简单的python，列出来好像还不少，但是对于这些框架语言都了解太少太浅了，这是挺一个致命的点，今年技术上的学习状态不如说学习方式其实不如去年，太浮躁了，只专注于表面能看到的效果而不去学习框架内部的知识和底层的原理，广而不深。坏习惯！！！</p></blockquote><blockquote><p>&#8195;&#8195;今年10月份终于报了自考英语本科，开始每天刷单词开始爱上图书馆，学英语真的不是容易事，但是好在对英语有兴趣的且有必须学习的理由，这两者加在一起等于充足的动力，但是学习向来都不是一件快乐的事情，有兴趣只是没那么痛苦罢了<br>  报名时的明确目标：</p><ul><li>作为一个程序员能不依靠辅助工具顺畅的读懂英文文档</li><li>作为一个美剧迷能摆脱字幕</li><li>作为一个自考生能拿到证</li></ul></blockquote><blockquote><p>&#8195;&#8195;今年21了，2018的我相当嫌弃2017的我，把化妆减肥当作日常，格外怕冷一出公司大门分分钟想回去加班。提前进入中老年状态，开始泡枸杞红枣，开始每天烫脚，开始每天吃各种豆子，开始喝热水即使夏天，开始看各种热量表成分表，开始拒绝垃圾食品，开始每天起早即使周末，夏天7点左右冬天八点左右就自然醒了然后起床，居然不赖床，这居然是我的作息</p></blockquote><blockquote><h2 id="2019-："><a href="#2019-：" class="headerlink" title="2019 ："></a>2019 ：</h2><ul><li>控制饮食！！！减肥控制饮食大概是毕生的事业了，永远提防体重</li><li>多咀嚼！！！吃东西慢点，再慢点</li><li>喝水！！！没事就喝水吧</li><li>去图书馆！！！不要待在家里，不要相信自己的自制力，没事就背上包包去图书馆吧</li><li>刷单词！！！每天的单词一定要清完</li><li>不要浮躁！！！静下来，静下来</li></ul></blockquote><p>最后写年终总结的确是个挺好的习惯</p>]]></content>
+      
+      <categories>
+          
+          <category> rests </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> rests </tag>
             
         </tags>
       
@@ -31,7 +52,7 @@
       
       <categories>
           
-          <category> 大前端 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -52,7 +73,7 @@
       
       <categories>
           
-          <category> 其他 </category>
+          <category> rests </category>
           
       </categories>
       
@@ -73,14 +94,14 @@
       
       <categories>
           
-          <category> 大前端 </category>
+          <category> WEB </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 随手笔记 </tag>
+            <tag> ffmpeg </tag>
             
         </tags>
       
@@ -94,7 +115,7 @@
       
       <categories>
           
-          <category> 日常笔记 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -136,7 +157,7 @@
       
       <categories>
           
-          <category> 日常笔记 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -157,7 +178,7 @@
       
       <categories>
           
-          <category> 日常笔记 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -178,7 +199,7 @@
       
       <categories>
           
-          <category> 大前端 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -199,7 +220,7 @@
       
       <categories>
           
-          <category> 日常笔记 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -220,7 +241,7 @@
       
       <categories>
           
-          <category> 日常笔记 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -241,7 +262,7 @@
       
       <categories>
           
-          <category> 日常笔记 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -258,7 +279,7 @@
       <title>markdown语法(备忘)</title>
       <link href="/2018/08/23/markdown/"/>
       <url>/2018/08/23/markdown/</url>
-      <content type="html"><![CDATA[<p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1535269125851&amp;di=5b30256aeac0e1016d165ded3ccaa568&amp;imgtype=0&amp;src=http%3A%2F%2Fnote.youdao.com%2Fiyoudao%2Fwp-content%2Fuploads%2F2016%2F09%2F8881.jpg" alt="示例图片"></p><p><a href="https://www.appinn.com/markdown/index.html" target="_blank" rel="noopener">官方文档</a></p><h1 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h1><p>半方大的空白&ensp;或&#8194;<br>全方大的空白&emsp;或&#8195;<br>不断行的空白格&nbsp;或&#160;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">半方大的空白&amp;ensp;或&amp;#8194;</span><br><span class="line">全方大的空白&amp;emsp;或&amp;#8195;</span><br><span class="line">不断行的空白格&amp;nbsp;或&amp;#160;</span><br></pre></td></tr></table></figure></p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">少量代码使用 ` 一个反引号包裹</span><br><span class="line">多行代码使用三个反引号包裹</span><br></pre></td></tr></table></figure><p>使用三个反引号包裹并指定语言<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">```javascript</span><br><span class="line">$(document).ready(function () &#123;</span><br><span class="line">    alert(&apos;hello world&apos;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p><p>支持的语言：1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</p><h1 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h1><h1 id="1号"><a href="#1号" class="headerlink" title="1号"></a>1号</h1><h2 id="2号"><a href="#2号" class="headerlink" title="2号"></a>2号</h2><h3 id="3号"><a href="#3号" class="headerlink" title="3号"></a>3号</h3><h4 id="4号"><a href="#4号" class="headerlink" title="4号"></a>4号</h4><h5 id="5号"><a href="#5号" class="headerlink" title="5号"></a>5号</h5><h6 id="6号"><a href="#6号" class="headerlink" title="6号"></a>6号</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 1号</span><br><span class="line">## 2号</span><br><span class="line">### 3号</span><br><span class="line">#### 4号</span><br><span class="line">##### 5号</span><br><span class="line">###### 6号</span><br></pre></td></tr></table></figure><h1 id="字体着重"><a href="#字体着重" class="headerlink" title="字体着重"></a>字体着重</h1><p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em>`<br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**这是加粗的文字**</span><br><span class="line">*这是倾斜的文字*`</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure></p><h1 id="字体缩进"><a href="#字体缩进" class="headerlink" title="字体缩进"></a>字体缩进</h1><blockquote><p>这是引用的内容</p><blockquote><p>这是引用的内容</p><blockquote><blockquote><blockquote><p>这是引用的内容</p></blockquote></blockquote></blockquote></blockquote></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br><span class="line">&gt;&gt;这是引用的内容</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容</span><br></pre></td></tr></table></figure><h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><p>三个以上的 - 或者 * ,效果一样</p><hr><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">***</span><br></pre></td></tr></table></figure><h1 id="图片引用"><a href="#图片引用" class="headerlink" title="图片引用"></a>图片引用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &apos;&apos;图片title&apos;&apos;)</span><br></pre></td></tr></table></figure><h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度](http://baidu.com)</span><br></pre></td></tr></table></figure><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><ul><li>列表</li></ul><p>1.列表内容<br>2.列表内容<br>3.列表内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">无序列表，使用- + *效果一样</span><br><span class="line">- 列表</span><br><span class="line">+ 列表</span><br><span class="line">* 列表</span><br><span class="line"></span><br><span class="line">有序列表</span><br><span class="line">1.列表内容</span><br><span class="line">2.列表内容</span><br><span class="line">3.列表内容</span><br><span class="line"></span><br><span class="line">注意：符号跟内容之间要有一个空格</span><br></pre></td></tr></table></figure></p><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table><thead><tr><th>表头</th><th style="text-align:center">表头</th><th style="text-align:right">表头</th></tr></thead><tbody><tr><td>内容</td><td style="text-align:center">内容</td><td style="text-align:right">内容</td></tr><tr><td>内容</td><td style="text-align:center">内容</td><td style="text-align:right">内容</td></tr></tbody></table><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|---:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line">| 左对齐标题 | 右对齐标题 | 居中对齐标题 |</span><br><span class="line">| :------| ------: | :------: |</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度](http://baidu.com)</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度](http://baidu.com)</span><br></pre></td></tr></table></figure><p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>]]></content>
+      <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">特殊符号使用 \ 转义，例 \* \# \&gt;</span><br></pre></td></tr></table></figure><h1 id="字体颜色"><a href="#字体颜色" class="headerlink" title="字体颜色"></a>字体颜色</h1><font face="黑体">我是黑体字</font><br><font face="微软雅黑">我是微软雅黑</font><br><font face="STCAIYUN">我是华文彩云</font><br><font color="#0099ff" size="7" face="黑体">color=#0099ff size=72 face=”黑体”</font><br><font color="#00ffff" size="72">color=#00ffff</font><br><font color="gray" size="72">color=gray</font><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;</span><br><span class="line">&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;/font&gt;</span><br><span class="line">&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;</span><br><span class="line">&lt;font color=#0099ff size=7 face=&quot;黑体&quot;&gt;color=#0099ff size=72 face=&quot;黑体&quot;&lt;/font&gt;</span><br><span class="line">&lt;font color=#00ffff size=72&gt;color=#00ffff&lt;/font&gt;</span><br><span class="line">&lt;font color=gray size=72&gt;color=gray&lt;/font&gt;</span><br></pre></td></tr></table></figure><p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1535269125851&amp;di=5b30256aeac0e1016d165ded3ccaa568&amp;imgtype=0&amp;src=http%3A%2F%2Fnote.youdao.com%2Fiyoudao%2Fwp-content%2Fuploads%2F2016%2F09%2F8881.jpg" alt="示例图片"></p><p><a href="https://www.appinn.com/markdown/index.html" target="_blank" rel="noopener">官方文档</a></p><h1 id="空格"><a href="#空格" class="headerlink" title="空格"></a>空格</h1><p>半方大的空白&ensp;或&#8194;<br>全方大的空白&emsp;或&#8195;<br>不断行的空白格&nbsp;或&#160;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">半方大的空白&amp;ensp;或&amp;#8194;</span><br><span class="line">全方大的空白&amp;emsp;或&amp;#8195;</span><br><span class="line">不断行的空白格&amp;nbsp;或&amp;#160;</span><br></pre></td></tr></table></figure></p><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">少量代码使用 ` 一个反引号包裹</span><br><span class="line">多行代码使用三个反引号包裹</span><br></pre></td></tr></table></figure><p>使用三个反引号包裹并指定语言<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">```javascript</span><br><span class="line">$(document).ready(function () &#123;</span><br><span class="line">    alert(&apos;hello world&apos;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p><p>支持的语言：1c, abnf, accesslog, actionscript, ada, apache, applescript, arduino, armasm, asciidoc, aspectj, autohotkey, autoit, avrasm, awk, axapta, bash, basic, bnf, brainfuck, cal, capnproto, ceylon, clean, clojure, clojure-repl, cmake, coffeescript, coq, cos, cpp, crmsh, crystal, cs, csp, css, d, dart, delphi, diff, django, dns, dockerfile, dos, dsconfig, dts, dust, ebnf, elixir, elm, erb, erlang, erlang-repl, excel, fix, flix, fortran, fsharp, gams, gauss, gcode, gherkin, glsl, go, golo, gradle, groovy, haml, handlebars, haskell, haxe, hsp, htmlbars, http, hy, inform7, ini, irpf90, java, javascript, json, julia, kotlin, lasso, ldif, leaf, less, lisp, livecodeserver, livescript, llvm, lsl, lua, makefile, markdown, mathematica, matlab, maxima, mel, mercury, mipsasm, mizar, mojolicious, monkey, moonscript, n1ql, nginx, nimrod, nix, nsis, objectivec, ocaml, openscad, oxygene, parser3, perl, pf, php, pony, powershell, processing, profile, prolog, protobuf, puppet, purebasic, python, q, qml, r, rib, roboconf, rsl, ruby, ruleslanguage, rust, scala, scheme, scilab, scss, smali, smalltalk, sml, sqf, sql, stan, stata, step21, stylus, subunit, swift, taggerscript, tap, tcl, tex, thrift, tp, twig, typescript, vala, vbnet, vbscript, vbscript-html, verilog, vhdl, vim, x86asm, xl, xml, xquery, yaml, zephir</p><h1 id="字体大小"><a href="#字体大小" class="headerlink" title="字体大小"></a>字体大小</h1><h1 id="1号"><a href="#1号" class="headerlink" title="1号"></a>1号</h1><h2 id="2号"><a href="#2号" class="headerlink" title="2号"></a>2号</h2><h3 id="3号"><a href="#3号" class="headerlink" title="3号"></a>3号</h3><h4 id="4号"><a href="#4号" class="headerlink" title="4号"></a>4号</h4><h5 id="5号"><a href="#5号" class="headerlink" title="5号"></a>5号</h5><h6 id="6号"><a href="#6号" class="headerlink" title="6号"></a>6号</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 1号</span><br><span class="line">## 2号</span><br><span class="line">### 3号</span><br><span class="line">#### 4号</span><br><span class="line">##### 5号</span><br><span class="line">###### 6号</span><br></pre></td></tr></table></figure><h1 id="字体着重"><a href="#字体着重" class="headerlink" title="字体着重"></a>字体着重</h1><p><strong>这是加粗的文字</strong><br><em>这是倾斜的文字</em>`<br><strong><em>这是斜体加粗的文字</em></strong><br><del>这是加删除线的文字</del><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">**这是加粗的文字**</span><br><span class="line">*这是倾斜的文字*`</span><br><span class="line">***这是斜体加粗的文字***</span><br><span class="line">~~这是加删除线的文字~~</span><br></pre></td></tr></table></figure></p><h1 id="字体缩进"><a href="#字体缩进" class="headerlink" title="字体缩进"></a>字体缩进</h1><blockquote><p>这是引用的内容</p><blockquote><p>这是引用的内容</p><blockquote><blockquote><blockquote><p>这是引用的内容</p></blockquote></blockquote></blockquote></blockquote></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;这是引用的内容</span><br><span class="line">&gt;&gt;这是引用的内容</span><br><span class="line">&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;这是引用的内容</span><br></pre></td></tr></table></figure><h1 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h1><p>三个以上的 - 或者 * ,效果一样</p><hr><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">***</span><br></pre></td></tr></table></figure><h1 id="图片引用"><a href="#图片引用" class="headerlink" title="图片引用"></a>图片引用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![图片alt](图片地址 &apos;&apos;图片title&apos;&apos;)</span><br></pre></td></tr></table></figure><h1 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度](http://baidu.com)</span><br></pre></td></tr></table></figure><h1 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h1><ul><li>列表</li></ul><p>1.列表内容<br>2.列表内容<br>3.列表内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">无序列表，使用- + *效果一样</span><br><span class="line">- 列表</span><br><span class="line">+ 列表</span><br><span class="line">* 列表</span><br><span class="line"></span><br><span class="line">有序列表</span><br><span class="line">1.列表内容</span><br><span class="line">2.列表内容</span><br><span class="line">3.列表内容</span><br><span class="line"></span><br><span class="line">注意：符号跟内容之间要有一个空格</span><br></pre></td></tr></table></figure></p><h1 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h1><table><thead><tr><th>表头</th><th style="text-align:center">表头</th><th style="text-align:right">表头</th></tr></thead><tbody><tr><td>内容</td><td style="text-align:center">内容</td><td style="text-align:right">内容</td></tr><tr><td>内容</td><td style="text-align:center">内容</td><td style="text-align:right">内容</td></tr></tbody></table><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">表头|表头|表头</span><br><span class="line">---|:--:|---:</span><br><span class="line">内容|内容|内容</span><br><span class="line">内容|内容|内容</span><br><span class="line"></span><br><span class="line">| 左对齐标题 | 右对齐标题 | 居中对齐标题 |</span><br><span class="line">| :------| ------: | :------: |</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度](http://baidu.com)</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[百度](http://baidu.com)</span><br></pre></td></tr></table></figure>]]></content>
       
       <categories>
           
@@ -270,6 +291,27 @@
         <tags>
             
             <tag> markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>关于hexo的常用命令(备忘)</title>
+      <link href="/2018/08/22/hexo/"/>
+      <url>/2018/08/22/hexo/</url>
+      <content type="html"><![CDATA[<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p><a href="https://hexo.io/zh-cn/api/" target="_blank" rel="noopener">官方文档</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ git clone &apos;远程仓库&apos; themes/ &apos;本地文件名称&apos;</span><br><span class="line">hexo s 启动服务</span><br><span class="line">hexo clean  清除缓存文件 (db.json) 和已生成的静态文件 (public)</span><br><span class="line">hexo g  部署之前预先生成静态文件</span><br><span class="line">hexo d  部署</span><br><span class="line"></span><br><span class="line">hexo new &lt;title&gt; 新建一篇文章</span><br><span class="line">hexo new draft &lt;title&gt;  新建一篇草稿</span><br><span class="line">hexo publish &lt;title&gt; 将草稿移入posts文件夹</span><br><span class="line"></span><br><span class="line">图片上传插件</span><br><span class="line">npm install hexo-asset-image --save</span><br><span class="line"></span><br><span class="line">代码上传到github所需要的依赖包</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p><p>hexo部署报错：The file will have its original line endings in your working directory.</p><ul><li>删除.deploy_git文件夹</li><li>运行 git config –global core.autocrlf false</li><li>正常流程 hexo clean / hexo g / hexo d</li></ul>]]></content>
+      
+      <categories>
+          
+          <category> tool </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -304,7 +346,7 @@
       
       <categories>
           
-          <category> 日常笔记 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -325,7 +367,7 @@
       
       <categories>
           
-          <category> 大前端 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -346,7 +388,7 @@
       
       <categories>
           
-          <category> 日常笔记 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -367,7 +409,7 @@
       
       <categories>
           
-          <category> 大前端 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -402,21 +444,21 @@
     </entry>
     
     <entry>
-      <title>UI处女作后的自我总结</title>
+      <title>UI和平面设计的区别</title>
       <link href="/2018/06/24/%E5%B9%B3%E9%9D%A2&amp;&amp;ui/"/>
       <url>/2018/06/24/%E5%B9%B3%E9%9D%A2&amp;&amp;ui/</url>
       <content type="html"><![CDATA[<p>前段时间自告奋勇的给新项目做UI设计，项目包括一个网站一个app还有一个后台，后台没有设计套用以前的模板主要是将就前端也就是我还有我的小伙伴们,总的花费时间共一周左右</p><p>作为曾经的一只平面设计狗，这是我UI处女作  哈哈哈哈！！！</p><p>在没做前端之前一直觉得平面和UI都是根据客户的需求设计画图嘛也都是平面图也没什么太大的区别，而且UI还不用像平面设计海报那样做一些复杂抓人眼球的效果，毕竟现在的页面为了追求速度用户体验什么的都是扁平化趋于简洁</p><p>这次呢是深切感受到了UI和平面的区别</p><p>在学习css开始我就知道UI画的图都是需要前端实现的，设计的时候，除了好的创意，还应该考虑到技术上的可行性，就像这次设计页面的时候是自动把自己代入了前端这个角色所以在设计时更多的考虑到css样式布局js的特效数据渲染什么的还有组件模块的复用问题等等，设计方面远不如平面设计那么自由洒脱</p><p>大部分平面设计的作品都是以印刷的平面形式表现，这需要设计师去了解各种材料之间的区别以及不同材料所做出来的成品效果的差别，但在设计方面却是比较自由的，在符合主题的情况下怎么好看怎么漂亮怎么抓人眼球怎么来，很多时候平面设计师一个人对接一个客户就能完成一个作品，而ui除了产品客户以外还得对接前端后端需要遵守一系列的项目流程，而最后的成功也是团队协作达成的效果，这也是很大的一个不同点</p><p>UI设计的时候除了考虑前端的实现还有最重要的是用户体验和交互，毕竟网页是会”动”起来的，不管是网站还是其他什么软件都是需要用户去操作，这需要去琢磨研究用户的行为，所以好的ui设计不只是画面的美观还要让用户操作起来感觉舒适简单自由</p><p>所以总的来讲呢，平面注重视觉创意，UI却是更注重用户交互，两者在视觉传达方面是共通的，但是在难点侧重点方面却是不一样的</p><p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>]]></content>
       
       <categories>
           
-          <category> 其他 </category>
+          <category> rests </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> UI </tag>
+            <tag> rests </tag>
             
         </tags>
       
@@ -451,7 +493,7 @@
       
       <categories>
           
-          <category> 日常笔记 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -472,7 +514,7 @@
       
       <categories>
           
-          <category> 日常笔记 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -493,7 +535,7 @@
       
       <categories>
           
-          <category> 大前端 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -535,7 +577,7 @@
       
       <categories>
           
-          <category> 大前端 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -556,7 +598,7 @@
       
       <categories>
           
-          <category> 大前端 </category>
+          <category> WEB </category>
           
       </categories>
       
@@ -577,7 +619,7 @@
       
       <categories>
           
-          <category> 大前端 </category>
+          <category> WEB </category>
           
       </categories>
       

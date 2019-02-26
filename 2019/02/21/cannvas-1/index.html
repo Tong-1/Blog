@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-fill-left.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next2.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/favicon-16x16-next.png?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="canvas," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="背景介绍ImageData 是canvas的图像数据，由 ImageData() 构造函数返回一个实例化的对象， 三个可读属性    data：一个 Uint8ClampedArray 类型的一维数组，包含RGBA 顺序的数据，每4个元素表示一个RGBA 值即对应一个像素, 左上角在数组的索引0位置，像素从左到右被处理，然后往下，遍历整个数组 RGBA： R - 红色（0-255）、G - 绿色（">
+<meta name="keywords" content="canvas">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cannvas的imagedata对象">
+<meta property="og:url" content="http://yoursite.com/2019/02/21/cannvas-1/index.html">
+<meta property="og:site_name" content="没事儿">
+<meta property="og:description" content="背景介绍ImageData 是canvas的图像数据，由 ImageData() 构造函数返回一个实例化的对象， 三个可读属性    data：一个 Uint8ClampedArray 类型的一维数组，包含RGBA 顺序的数据，每4个元素表示一个RGBA 值即对应一个像素, 左上角在数组的索引0位置，像素从左到右被处理，然后往下，遍历整个数组 RGBA： R - 红色（0-255）、G - 绿色（">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-02-26T05:36:59.889Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cannvas的imagedata对象">
+<meta name="twitter:description" content="背景介绍ImageData 是canvas的图像数据，由 ImageData() 构造函数返回一个实例化的对象， 三个可读属性    data：一个 Uint8ClampedArray 类型的一维数组，包含RGBA 顺序的数据，每4个元素表示一个RGBA 值即对应一个像素, 左上角在数组的索引0位置，像素从左到右被处理，然后往下，遍历整个数组 RGBA： R - 红色（0-255）、G - 绿色（">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/02/21/cannvas-1/"/>
+
+
+
+
+
+  <title>cannvas的imagedata对象 | 没事儿</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d0e674bed1e36732e9bb5c61c02011d9";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">没事儿</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">welcome</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            Commonweal 404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/21/cannvas-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tong-H">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="没事儿">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">cannvas的imagedata对象</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-21T15:43:04+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/WEB/" itemprop="url" rel="index">
+                    <span itemprop="name">WEB</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  1.3k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  5 minute
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h2><p>ImageData 是canvas的图像数据，由<strong> ImageData() </strong>构造函数返回一个实例化的对象，<strong> 三个可读属性 </strong> </p>
+<ul>
+<li><p>data：一个 Uint8ClampedArray 类型的一维数组，包含RGBA 顺序的数据，每4个元素表示一个RGBA 值即对应一个像素, 左上角在数组的索引0位置，像素从左到右被处理，然后往下，遍历整个数组<br><strong><font color="#ca2b1f"> RGBA：</font></strong> R - 红色（0-255）、G - 绿色（0-255）、B - 蓝色（0-255）、A - alpha 通道（0-255; 0 是透明的，255 是完全可见的）<br><strong><font color="#ca2b1f">  Uint8ClampedArray（8位无符号整型固定数组）：</font></strong> 类型化数组表示一个由值固定在0-255区间的8位无符号整型组成的数组；如果你指定一个在 [0,255] 区间外的值，它将被替换为0或255；如果你指定一个非整数，那么它将被设置为最接近它的整数。（数组）内容被初始化为0。</p>
+</li>
+<li><p>width：以像素为单位的图像的宽</p>
+</li>
+<li><p>height：以像素为单位的图像的高</p>
+</li>
+</ul>
+<p><strong><font color="#ca2b1f" size="4"> 三个参数的关系是：data.length = height * width * 4 </font></strong><br>不满足这个关系的时候就会报错：” The input data length is not a multiple of (4 * width).” ，不要问我为什么知道</p>
+<h2 id="构建一个ImageData-对象"><a href="#构建一个ImageData-对象" class="headerlink" title="构建一个ImageData 对象"></a>构建一个ImageData 对象</h2><h3 id="使用canvas-API"><a href="#使用canvas-API" class="headerlink" title="使用canvas API"></a>使用canvas API</h3><p><strong> createImageData(): 传入宽和高获得一个ImageData对象或者传入一个已经存在的ImageData对象渲染到画布 </strong><br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">"canvas"</span>)</span><br><span class="line"><span class="keyword">var</span> ctx = canvas.getContext(<span class="string">"2d"</span>)</span><br><span class="line"><span class="built_in">console</span>.log(ctx.createImageData(<span class="number">200</span>, <span class="number">200</span>))</span><br></pre></td></tr></table></figure></p>
+<p><strong> getImageData(): 提取一个矩形区域的图像数据，返回一个ImageData对象 </strong><br>ctx.getImageData(矩形区域的左上角 x 坐标, 矩形区域的左上角 y 坐标, 矩形区域的宽度, 矩形区域的高度)<br>下面是一个简单的小例子让div背景色随着鼠标指针下的图片颜色变化而变化，思路是使用 getImageData() 获取鼠标下1像素的区域，也就是一个RGBA值赋值给div<br>运行时注意canvas图片使用 getImageData() 的跨域问题<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> img = <span class="keyword">new</span> Image()</span><br><span class="line">img.src = <span class="string">'./static/img/1547436818106.png'</span></span><br><span class="line"><span class="keyword">let</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>)</span><br><span class="line"><span class="keyword">let</span> ctx = canvas.getContext(<span class="string">'2d'</span>)</span><br><span class="line">img.onload = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  ctx.drawImage(img, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">  img.style.display = <span class="string">'none'</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> color = <span class="built_in">document</span>.getElementById(<span class="string">'color'</span>)</span><br><span class="line">canvas.addEventListener(<span class="string">'mousemove'</span>, (e) =&gt;&#123;</span><br><span class="line">  <span class="keyword">let</span> pixel = ctx.getImageData(e.layerx, e.layery, <span class="number">1</span>, <span class="number">1</span>)</span><br><span class="line">  color.style.background =  <span class="string">'rgba('</span> + pixel.data[<span class="number">0</span>] + <span class="string">','</span> + pixel.data[<span class="number">1</span>] + <span class="string">','</span> + pixel.data[<span class="number">2</span>] + <span class="string">','</span> + (pixel.data[<span class="number">3</span>] / <span class="number">255</span>) + <span class="string">')'</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<h3 id="直接使用ImageData-构造函数创建-data可为空"><a href="#直接使用ImageData-构造函数创建-data可为空" class="headerlink" title="直接使用ImageData()构造函数创建, data可为空"></a>直接使用ImageData()构造函数创建, data可为空</h3><p>当data为空时会自动按照width和height的大小，以0填充整个像素矩阵，也就是一个空白画布<br>若需要传入data图像数据，要注意 width * height * 4 = data.length<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> imagedata = <span class="keyword">new</span> ImageData(data, width, height)</span><br><span class="line"><span class="comment">// ImageData &#123; width: width, height: height, data: Uint8ClampedArray[width * height * 4] &#125;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="操作像素"><a href="#操作像素" class="headerlink" title="操作像素"></a>操作像素</h2><p><strong> <font color="#ca2b1f">putImageData()</font>: 对画布进行像素数据的写入，也就是将指定的 ImageData 对象放到画布上，7个参数，前3个为必填 </strong><br>ctx.putImageData(imagedata, 图像数据在目标画布中的位置X坐标, Y坐标, 在图像数据中截取一个矩形区域左上角的位置X坐标, Y坐标, 矩形区域Width, Height);<br>一个小例子图片灰度处理，思路是使用 getImageData() 获取当前 ImageData 数据，然后遍历 data 数组改变 RGBA 的值，最后在使用 putImageData() 放回画布<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> img = <span class="keyword">new</span> Image()</span><br><span class="line">img.src = <span class="string">'./static/img/shareedu.png'</span></span><br><span class="line"><span class="keyword">let</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>)</span><br><span class="line"><span class="keyword">let</span> ctx = canvas.getContext(<span class="string">'2d'</span>)</span><br><span class="line">img.onload = <span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">  ctx.drawImage(img, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">  img.style.display = <span class="string">'none'</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'btn'</span>).addEventListener(<span class="string">'click'</span>, ()=&gt;&#123;</span><br><span class="line">  <span class="keyword">let</span> pre = ctx.getImageData(<span class="number">0</span>,<span class="number">0</span>,canvas.width, canvas.height)</span><br><span class="line">  <span class="keyword">let</span> data = pre.data</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; data.length; i += <span class="number">4</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> avg = (data[i] + data[i +<span class="number">1</span>] + data[i +<span class="number">2</span>]) / <span class="number">3</span></span><br><span class="line">    data[i] = avg</span><br><span class="line">    data[i + <span class="number">1</span>] = avg</span><br><span class="line">    data[i + <span class="number">2</span>] = avg</span><br><span class="line">  &#125;</span><br><span class="line">  ctx.putImageData(pre, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong> <font color="#ca2b1f">drawImage()</font>: 在画布上绘制图像，9个参数，image, dx, dy为必填 </strong><br>image: 图像源<br>sx: 选择需要的图像源区域，矩形选择框的左上角 X 轴坐标。<br>sy:  矩形选择框的Y 轴坐标。<br>sWidth: 需要绘制到目标上下文中的，image的矩形（裁剪）选择框的宽度。如果不说明，整个矩形（裁剪）从坐标的sx和sy开始，到image的右下角结束。<br>sHeight: 需要绘制到目标上下文中的，image的矩形（裁剪）选择框的高度。<br>dx: image的左上角在目标canvas上 X 轴坐标。<br>dy: image的左上角在目标canvas上 Y 轴坐标。<br>dWidth: image在目标canvas上绘制的宽度。 允许对绘制的image进行缩放<br>dHeight: image在目标canvas上绘制的高度。 允许对绘制的image进行缩放<br>一个小例子将图片放在鼠标指定位置<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> canvas = <span class="built_in">document</span>.getElementById(<span class="string">"canvas"</span>)</span><br><span class="line"><span class="keyword">let</span> ctx = canvas.getContext(<span class="string">"2d"</span>)</span><br><span class="line"><span class="keyword">let</span> img = <span class="keyword">new</span> Image()</span><br><span class="line">img.src = <span class="string">'./static/img/shareedu.png'</span></span><br><span class="line"><span class="built_in">document</span>.getElementById(<span class="string">'canvas'</span>).addEventListener(<span class="string">'mousedown'</span>, (e)=&gt;&#123;</span><br><span class="line">  ctx.clearRect(<span class="number">0</span>,<span class="number">0</span>,ctx.canvas.width,ctx.canvas.height)</span><br><span class="line">  ctx.drawImage(img, e.offsetX, e.offsetY, <span class="number">200</span>, <span class="number">200</span>)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure></p>
+<p><strong> <font color="#ca2b1f">imageSmoothingEnabled</font>, 这是个属性设置图片是否平滑，只需要将他赋值为true（平滑）或者false（不平滑） </strong></p>
+<p><strong> <font color="#ca2b1f">canvas.toDataURL(‘image/png’, quality)</font> 返回一个包含图片展示的 data URI , 2个参数, 图片格式默认为png, 0到1的品质选择（图片格式为 image/jpeg 或 image/webp的情况下） </strong></p>
+<p><strong> <font color="#ca2b1f">canvas.toBlob(callback, type, encoderOptions)</font>,创建一个Blob对像，用以展示canvas上的图片，3个参数 </strong><br>callback：回调函数返回一个blob对象<br>type：图片格式，默认为’image/png’<br>encoderOptions:  0到1的品质选择（图片格式为 image/jpeg 或 image/webp的情况下）</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Tong-H WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Tong-H Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/canvas/" rel="tag"># canvas</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/24/2018end/" rel="next" title="2018年终总结">
+                <i class="fa fa-chevron-left"></i> 2018年终总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTIxNC8xNTc0MQ"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="Tong-H" />
+            
+              <p class="site-author-name" itemprop="name">Tong-H</p>
+              <p class="site-description motion-element" itemprop="description">停下来你就完蛋</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/tong-h" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:tongt0232@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/Tong_11" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-rss-square"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/20de04cc53de" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-rss-square"></i>简书</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#背景介绍"><span class="nav-number">1.</span> <span class="nav-text">背景介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#构建一个ImageData-对象"><span class="nav-number">2.</span> <span class="nav-text">构建一个ImageData 对象</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用canvas-API"><span class="nav-number">2.1.</span> <span class="nav-text">使用canvas API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#直接使用ImageData-构造函数创建-data可为空"><span class="nav-number">2.2.</span> <span class="nav-text">直接使用ImageData()构造函数创建, data可为空</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作像素"><span class="nav-number">3.</span> <span class="nav-text">操作像素</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tong-H</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">33.7k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      访问数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
