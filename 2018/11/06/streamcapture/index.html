@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="没事儿">
 <meta property="og:description" content="前段时间做一个windows的桌面应用，vue + electron，涉及到录屏和摄像功能，网上相关的文档蛮少的给需要的人一些参考 如果文章描写有误或者还有更好的方法，请留言告诉我，笔芯 (´▽`ʃ♡ƪ) 背景介绍 涉及技术：vue、electron、ffmpeg、node  关于录屏和摄像对比了两种方法  使用HTML5的api实现 摄像：mediaDevices（获取设备）+ getUserM">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-26T05:39:52.118Z">
+<meta property="og:updated_time" content="2019-03-15T06:25:29.226Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端使用html5、ffmpeg实现录屏摄像等功能">
 <meta name="twitter:description" content="前段时间做一个windows的桌面应用，vue + electron，涉及到录屏和摄像功能，网上相关的文档蛮少的给需要的人一些参考 如果文章描写有误或者还有更好的方法，请留言告诉我，笔芯 (´▽`ʃ♡ƪ) 背景介绍 涉及技术：vue、electron、ffmpeg、node  关于录屏和摄像对比了两种方法  使用HTML5的api实现 摄像：mediaDevices（获取设备）+ getUserM">
@@ -412,7 +412,7 @@
 </li>
 <li><p>录屏主要依靠该方法，和getUserMedia一样返回一个promise对象，调用成功返回流，将这个流赋给video 元素实现边录边看</p>
 </li>
-<li><p><strong> 需要注意的是</strong> 如果你做的是网页端在谷歌上使用这个元素，需要在chrome://flags/开启Experimental Web Platform features功能</p>
+<li><p><strong> 需要注意的是</strong> 如果你做的是网页端在谷歌上使用这个元素，需要在chrome://flags/开启Experimental Web Platform features功能<br><a href="https://tong-h.github.io/canvas-store/capture/index.html" target="_blank" rel="noopener">demo戳这儿</a></p>
 <p>&emsp;&emsp;&emsp;&emsp;而Electron基于node + chromium构建，在electron需要引入desktopCapturer模块，并在基于该模块使用这个方法</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">navigator.mediaDevices.getDisplayMedia(&#123; <span class="attr">video</span>: <span class="literal">true</span> &#125;)</span><br><span class="line">  .then(<span class="function"><span class="params">stream</span> =&gt;</span> &#123;</span><br><span class="line">    videoElement.srcObject = stream;</span><br><span class="line">  &#125;, error =&gt; <span class="built_in">console</span>.log(error));</span><br></pre></td></tr></table></figure>
 <h2 id="MediaRecorder"><a href="#MediaRecorder" class="headerlink" title="MediaRecorder"></a>MediaRecorder</h2></li>
@@ -602,7 +602,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">33</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -719,7 +719,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">34.3k</span>
+    <span title="Site words total count">35.1k</span>
   
 </div>
 
