@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="mysql," />
+  <meta name="keywords" content="tong-h个人博客" />
 
 
 
@@ -86,18 +86,19 @@
 
 
 
-<meta name="description" content="sql语法特点：  没有””双引号，字符串使用’’单引号包含； 没有逻辑相等，赋值和逻辑相等都是=； 类型不再是最严格的，任何数据都可以包含在’’单引号内； 没有布尔值的概念，但是在视图中可以输入true/false； 它也有关系运算符：&amp;gt; &amp;lt; &amp;gt;= &amp;lt;= = &amp;lt;&amp;gt; !=，返回一个布尔值； 它也有逻辑运算符：！(not) &amp;amp;&amp;amp;(and) ||(o">
-<meta name="keywords" content="mysql">
+<meta name="description" content="看了很多大佬的文章，自己也对项目做了一些优化，其实有很多地方平常码代码的时候稍微注意一下就能节约很多性能开销 1.离屏渲染在离屏canvas上预渲染相似的图形或重复的对象，通俗的解释是将离屏canvas当成预渲染，在离屏canvas上绘制好一整块图形，绘制好后在放到视图canvas中，适合每一帧画图运算复杂的图形 比如你想把一张图片放到canvas上，使用drawImage()方法，有三种写法12">
 <meta property="og:type" content="article">
-<meta property="og:title" content="mysql常用语句">
-<meta property="og:url" content="http://yoursite.com/2018/10/10/mysql/index.html">
+<meta property="og:title" content="canvas性能优化">
+<meta property="og:url" content="http://yoursite.com/2019/03/18/canvas-3/index.html">
 <meta property="og:site_name" content="没事儿">
-<meta property="og:description" content="sql语法特点：  没有””双引号，字符串使用’’单引号包含； 没有逻辑相等，赋值和逻辑相等都是=； 类型不再是最严格的，任何数据都可以包含在’’单引号内； 没有布尔值的概念，但是在视图中可以输入true/false； 它也有关系运算符：&amp;gt; &amp;lt; &amp;gt;= &amp;lt;= = &amp;lt;&amp;gt; !=，返回一个布尔值； 它也有逻辑运算符：！(not) &amp;amp;&amp;amp;(and) ||(o">
+<meta property="og:description" content="看了很多大佬的文章，自己也对项目做了一些优化，其实有很多地方平常码代码的时候稍微注意一下就能节约很多性能开销 1.离屏渲染在离屏canvas上预渲染相似的图形或重复的对象，通俗的解释是将离屏canvas当成预渲染，在离屏canvas上绘制好一整块图形，绘制好后在放到视图canvas中，适合每一帧画图运算复杂的图形 比如你想把一张图片放到canvas上，使用drawImage()方法，有三种写法12">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-31T10:06:15.000Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/18/canvas-3/canvas-3.gif">
+<meta property="og:updated_time" content="2019-03-18T08:22:00.547Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mysql常用语句">
-<meta name="twitter:description" content="sql语法特点：  没有””双引号，字符串使用’’单引号包含； 没有逻辑相等，赋值和逻辑相等都是=； 类型不再是最严格的，任何数据都可以包含在’’单引号内； 没有布尔值的概念，但是在视图中可以输入true/false； 它也有关系运算符：&amp;gt; &amp;lt; &amp;gt;= &amp;lt;= = &amp;lt;&amp;gt; !=，返回一个布尔值； 它也有逻辑运算符：！(not) &amp;amp;&amp;amp;(and) ||(o">
+<meta name="twitter:title" content="canvas性能优化">
+<meta name="twitter:description" content="看了很多大佬的文章，自己也对项目做了一些优化，其实有很多地方平常码代码的时候稍微注意一下就能节约很多性能开销 1.离屏渲染在离屏canvas上预渲染相似的图形或重复的对象，通俗的解释是将离屏canvas当成预渲染，在离屏canvas上绘制好一整块图形，绘制好后在放到视图canvas中，适合每一帧画图运算复杂的图形 比如你想把一张图片放到canvas上，使用drawImage()方法，有三种写法12">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/18/canvas-3/canvas-3.gif">
 
 
 
@@ -127,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/10/mysql/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/18/canvas-3/"/>
 
 
 
 
 
-  <title>mysql常用语句 | 没事儿</title>
+  <title>canvas性能优化 | 没事儿</title>
   
 
 
@@ -260,7 +261,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/10/10/mysql/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/canvas-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tong-H">
@@ -277,7 +278,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">mysql常用语句</h1>
+          <h1 class="post-title" itemprop="name headline">canvas性能优化</h1>
         
 
         <div class="post-meta">
@@ -289,8 +290,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-10T17:36:05+08:00">
-                2018-10-10
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-18T11:40:14+08:00">
+                2019-03-18
               </time>
             
 
@@ -299,28 +300,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/mysql/" itemprop="url" rel="index">
-                    <span itemprop="name">mysql</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -348,7 +327,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  841
+                  1.3k
                 </span>
               
 
@@ -364,7 +343,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  3 minute
+                  5 minute
                 </span>
               
             </div>
@@ -385,21 +364,31 @@
       
 
       
-        <p>sql语法特点：</p>
-<ul>
-<li>没有””双引号，字符串使用’’单引号包含；</li>
-<li>没有逻辑相等，赋值和逻辑相等都是=；</li>
-<li>类型不再是最严格的，任何数据都可以包含在’’单引号内；</li>
-<li>没有布尔值的概念，但是在视图中可以输入true/false；</li>
-<li>它也有关系运算符：&gt; &lt; &gt;= &lt;= = &lt;&gt; !=，返回一个布尔值；</li>
-<li>它也有逻辑运算符：！(not) &amp;&amp;(and) ||(or)；</li>
-<li><p>它不区别大小写。</p>
-</li>
-<li><p>以下语句，user为表名, id,name,sex,card,phone,address为字段</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"drop table if exists user"</span></span><br><span class="line"><span class="comment"># 如果存在(if exists)就删除表</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 如果没有(if not exists)就新增表，设置id为主键，address为外键关联address表的id字段</span></span><br><span class="line"><span class="string">"""create table if not exists user(</span></span><br><span class="line"><span class="string">    id int auto_increment primary key,</span></span><br><span class="line"><span class="string">    name varchar(5),</span></span><br><span class="line"><span class="string">    sex  char(1),</span></span><br><span class="line"><span class="string">    card  char(18),</span></span><br><span class="line"><span class="string">    phone  char(11),</span></span><br><span class="line"><span class="string">    address varchar(30),</span></span><br><span class="line"><span class="string">    foreign key(address) references address(id))"""</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改自增长Id,数据库新增的数据会从1000开始但是原来的数据不会改变</span></span><br><span class="line"><span class="string">"alter table user auto_increment=1000"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 新增数据库表字段plus</span></span><br><span class="line"><span class="string">"alter table user add plus varchar(8)"</span></span><br><span class="line"><span class="comment"># --------------------------插入数据----------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># 数据插入时一定要注意 类型对应，数量对应，顺序对应</span></span><br><span class="line"><span class="comment"># 字符串值必须包含在''以内，赋值可以使用default,null</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 插入单条数据，如果不列出字段名mysql会按照顺序添加</span></span><br><span class="line"><span class="string">"""insert into user(name, sex, id_card, phone, address)</span></span><br><span class="line"><span class="string">        values ('李四', '女', '511569845612354879', '10086', '太古里77号')"""</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 批量插入数据</span></span><br><span class="line"><span class="string">"""insert into user(name, sex, id_card, phone, address)</span></span><br><span class="line"><span class="string">        values (%s, %s, %s, %s, %s)"""</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># ----------------------------------------查询数据--------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># order by 对查询结果进行排序 select 字段1,字段2,字段3 from 表名 order by 字段 desc(降序)||asc(升序)</span></span><br><span class="line"><span class="string">"select address,id from user order by id desc"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 去重复查询 select distinct 字段 from 表名</span></span><br><span class="line"><span class="string">"select distinct address from user"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 分页查询 limit select 字段1，字段2 from 表名 limit 初始位置，记录数</span></span><br><span class="line"><span class="string">"select id, name, sex, id_card from user limit 3,6"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 精准查询 in 只查找括号内的数据； not in 则相反</span></span><br><span class="line"><span class="string">"select * from user where ID in (1001,1003)"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 精准查询 between and 查找1001-1003范围内的数据；not between and 相反</span></span><br><span class="line"><span class="string">"select * from user where ID between 1001 and 1003"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 模糊查询 like (% 代表任意字符 _ 代表单个字符)；not like相反</span></span><br><span class="line"><span class="string">"select * from user where name like '_麻%'"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 多条件查询 and 关键字</span></span><br><span class="line"><span class="string">"select * from user where sex='女' and address='太古里77号'"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 多条件查询 or 关键字 只需满足一个条件</span></span><br><span class="line"><span class="string">"select * from user where name='王麻子子' or address='太古里77号' "</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 多表查询，两个表comment，movie</span></span><br><span class="line"><span class="comment"># 语法：select * from 表1(左表) left join 表2(右表) on 表2.字段 = 表1.字段</span></span><br><span class="line"><span class="string">"select * from comment left join movie on movie.id = comment.movieid"</span></span><br><span class="line"><span class="comment"># inner join / join单独用   返回所有匹配的行</span></span><br><span class="line"><span class="comment"># left join     不论是否匹配会返回“left join”左边表所有的行，匹配不上的字段为null</span></span><br><span class="line"><span class="comment"># right join    和left join相反，会返回右边表的所有的行</span></span><br><span class="line"><span class="comment"># full join     只要存在一条匹配就会返回两个表所有的行</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># ------删除数据和更新数据 or,and,between and,like等关键字可以查询到多条数据然后批量删除或者更新-------------</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 删除数据</span></span><br><span class="line"><span class="comment">#delete [from] 表名 where 条件</span></span><br><span class="line"><span class="string">"delete from user where name='王麻子子' or address='太古里77号'"</span></span><br><span class="line"><span class="comment"># 数据库清空</span></span><br><span class="line"><span class="string">"truncate table user"</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 更新数据</span></span><br><span class="line"><span class="string">"update user set name = '更新' where ID in (1005,1006)"</span></span><br></pre></td></tr></table></figure>
-</li>
+        <p>看了很多大佬的文章，自己也对项目做了一些优化，其实有很多地方平常码代码的时候稍微注意一下就能节约很多性能开销</p>
+<h1 id="1-离屏渲染"><a href="#1-离屏渲染" class="headerlink" title="1.离屏渲染"></a>1.离屏渲染</h1><p>在离屏canvas上预渲染相似的图形或重复的对象，通俗的解释是将离屏canvas当成预渲染，在离屏canvas上绘制好一整块图形，绘制好后在放到视图canvas中，适合每一帧画图运算复杂的图形</p>
+<p>比如你想把一张图片放到canvas上，使用drawImage()方法，有三种写法<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 将image放到目标canvas指定位置</span></span><br><span class="line"><span class="keyword">void</span> ctx.drawImage(image, dx, dy); </span><br><span class="line"><span class="comment">// 将image放到目标canvas指定位置，指定宽高渲染</span></span><br><span class="line"><span class="keyword">void</span> ctx.drawImage(image, dx, dy, dWidth, dHeight);</span><br><span class="line"><span class="comment">// 将image裁剪之后放到目标canvas指定位置，指定宽高渲染</span></span><br><span class="line"><span class="keyword">void</span> ctx.drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);</span><br></pre></td></tr></table></figure></p>
+<p>第一种只是把图片原样放到canvas里，第二章指定宽高就意味着放大或者缩小图片后再放进去，带三种是裁剪后再放大或者缩小放到canvas中，这三种写法操作依次增加，性能开销也是依次提高<br>而离屏渲染就可以让我们先把图片裁剪成想要的尺寸内容保存起来，绘制的时候就可以使用第一种写法简单的把图片放进去就完了</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 在离屏 canvas 上绘制</span></span><br><span class="line"><span class="keyword">var</span> offscreencanvas = <span class="built_in">document</span>.createElement(<span class="string">'canvas'</span>);</span><br><span class="line"><span class="comment">// 宽高赋值为想要的图片尺寸</span></span><br><span class="line">offscreencanvas.width = dWidth;</span><br><span class="line">offscreencanvas.height = dHeight;</span><br><span class="line"><span class="comment">// 裁剪</span></span><br><span class="line">offscreencanvas.getContext(<span class="string">'2d'</span>).drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);</span><br><span class="line"><span class="comment">// 在视图canvas中绘制</span></span><br><span class="line">viewcontext.drawImage(canvas, x, y);</span><br></pre></td></tr></table></figure>
+<h1 id="2-分层画布"><a href="#2-分层画布" class="headerlink" title="2.分层画布"></a>2.分层画布</h1><p>多个相互重叠的canvas根据变化程度分开渲染，越复杂的场景越适合</p>
+<p>比如一个简单的游戏场景，游戏背景始终不变或者变化次数较少但是人物游戏的主体是一直在根据玩家的指挥不停的改变，</p>
+<p>场景：最近写的一个画板，比如这样一个简单的画圆，可以看到有原来的绘画的痕迹，那就要 渲染没画圆之前的画布 -&gt; 再画圆，鼠标移动的时候不断的执行这个渲染过程</p>
+<p><img src="/2019/03/18/canvas-3/canvas-3.gif" alt="示例画圆gif"></p>
+<p>这个时候就可以使用分层画布，画画在一个上层canvas上，原来绘画痕迹在下层canvas上，那么画圆的过程就是清空 -&gt; 画圆，画好之后再放到下层canvas上，这样就不需要去渲染之前的画布，就能节约性能开销</p>
+<h1 id="3-一次性绘制"><a href="#3-一次性绘制" class="headerlink" title="3.一次性绘制"></a>3.一次性绘制</h1><p>绘制操作的性能开销较高，可以创建一个包含所有线条的路径，然后通过单个绘制路径调用进行绘制</p>
+<p>从这样<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; points.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">  <span class="keyword">var</span> p1 = points[i];</span><br><span class="line">  <span class="keyword">var</span> p2 = points[i+<span class="number">1</span>];</span><br><span class="line">  context.beginPath();</span><br><span class="line">  context.moveTo(p1.x, p1.y);</span><br><span class="line">  context.lineTo(p2.x, p2.y);</span><br><span class="line">  context.stroke();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>变成这样，在绘制复杂路径时，最好将所有点都放入路径中，而不是分别呈现各个片段<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">context.beginPath();</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; points.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">  <span class="keyword">var</span> p1 = points[i];</span><br><span class="line">  <span class="keyword">var</span> p2 = points[i+<span class="number">1</span>];</span><br><span class="line">  context.moveTo(p1.x, p1.y);</span><br><span class="line">  context.lineTo(p2.x, p2.y);</span><br><span class="line">&#125;</span><br><span class="line">context.stroke();</span><br></pre></td></tr></table></figure></p>
+<h1 id="4-使用requestAnimationFrame执行动画"><a href="#4-使用requestAnimationFrame执行动画" class="headerlink" title="4.使用requestAnimationFrame执行动画"></a>4.使用requestAnimationFrame执行动画</h1><p>canvas动画的本质是不断地擦除和重绘，再结合一些时间控制的方法达到动画的目的<br>显示器刷新频率是60Hz，最平滑动画的最佳循环间隔是1000ms/60，约等于16.6ms<br>而requestAnimationFrame就是根据显示器刷新频率来的，这是浏览器专门为动画提供的API，在运行时浏览器会自动优化方法的调用，节省系统资源，提高系统性能，如果页面不是激活状态下的话，requestAnimationFrame() 会被暂停调用以提升性能和电池寿命</p>
+<p>详细看<a href="https://tong-h.github.io/2019/03/07/canvas-2/#more" target="_blank" rel="noopener">这儿</a></p>
+<h1 id="5-清空画布"><a href="#5-清空画布" class="headerlink" title="5.清空画布"></a>5.清空画布</h1><p>三种方法性能，性能依次提高<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">context.fillRect()</span><br><span class="line">context.clearRect()</span><br><span class="line">canvas.width = canvas.width; <span class="comment">// 一种画布专用的技巧</span></span><br></pre></td></tr></table></figure></p>
+<h1 id="6-减少调用canvas的api"><a href="#6-减少调用canvas的api" class="headerlink" title="6.减少调用canvas的api"></a>6.减少调用canvas的api</h1><p>比如像背景可以使用css属性设置或者img标签加一些定位什么的</p>
+<p>画布的缩放可以使用CSS transforms，不要将小画布放大，而是去将大画布缩小<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> scaleX = canvas.width / <span class="built_in">window</span>.innerWidth;</span><br><span class="line"><span class="keyword">var</span> scaleY = canvas.height / <span class="built_in">window</span>.innerHeight;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> scaleToFit = <span class="built_in">Math</span>.min(scaleX, scaleY);</span><br><span class="line"><span class="keyword">var</span> scaleToCover = <span class="built_in">Math</span>.max(scaleX, scaleY);</span><br><span class="line"></span><br><span class="line">stage.style.transformOrigin = <span class="string">'0 0'</span>; <span class="comment">//scale from top left</span></span><br><span class="line">stage.style.transform = <span class="string">'scale('</span> + scaleToFit + <span class="string">')'</span>;</span><br></pre></td></tr></table></figure></p>
+<h1 id="其他注意点"><a href="#其他注意点" class="headerlink" title="其他注意点"></a>其他注意点</h1><ul>
+<li>尽可能使用计算代替canvas渲染，通常情况下，渲染比计算的开销大很多（3~4 个量级）</li>
+<li>减少改变 context 的状态以及不要赋一些乱七八糟类型的值，比如人家要一个number你要给一个string，浏览器会用一些额外时间来处理这些非法输入，可能会造成三四倍的时间开销</li>
+<li>避免使用浮点数坐标，使用非整数的坐标绘制内容，系统会自动使用抗锯齿功能，尝试对线条进行平滑处理，这又是一种性能消耗。可以调用 Math.round 四舍五入取整</li>
+<li>减少使用 shadowBlur 效果，和很多图像环境渲染一样，阴影渲染的性能开销通常比较高</li>
 </ul>
-<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://www.cnblogs.com/esofar/p/6185210.html" target="_blank" rel="noopener">https://www.cnblogs.com/esofar/p/6185210.html</a> 史上最全的MSSQL复习笔记</p>
+<h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Optimizing_canvas</a><br><a href="https://www.html5rocks.com/zh/tutorials/canvas/performance/" target="_blank" rel="noopener">https://www.html5rocks.com/zh/tutorials/canvas/performance/</a><br><a href="http://taobaofed.org/blog/2016/02/22/canvas-performance/" target="_blank" rel="noopener">http://taobaofed.org/blog/2016/02/22/canvas-performance/</a></p>
 
       
     </div>
@@ -444,12 +433,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/mysql/" rel="tag"># mysql</a>
-          
-        </div>
-      
 
       
       
@@ -459,8 +442,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/10/09/node_fromdata/" rel="next" title="nodejs之接收formdata表单">
-                <i class="fa fa-chevron-left"></i> nodejs之接收formdata表单
+              <a href="/2019/03/07/canvas-2/" rel="next" title="canvas动画篇">
+                <i class="fa fa-chevron-left"></i> canvas动画篇
               </a>
             
           </div>
@@ -468,10 +451,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/16/https/" rel="prev" title="前端是否需要对密码进行加密传输 && HTTPS">
-                前端是否需要对密码进行加密传输 && HTTPS <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -640,7 +619,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number">1.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-离屏渲染"><span class="nav-number">1.</span> <span class="nav-text">1.离屏渲染</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-分层画布"><span class="nav-number">2.</span> <span class="nav-text">2.分层画布</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-一次性绘制"><span class="nav-number">3.</span> <span class="nav-text">3.一次性绘制</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-使用requestAnimationFrame执行动画"><span class="nav-number">4.</span> <span class="nav-text">4.使用requestAnimationFrame执行动画</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-清空画布"><span class="nav-number">5.</span> <span class="nav-text">5.清空画布</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-减少调用canvas的api"><span class="nav-number">6.</span> <span class="nav-text">6.减少调用canvas的api</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#其他注意点"><span class="nav-number">7.</span> <span class="nav-text">其他注意点</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number">8.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
             
 
           </div>
