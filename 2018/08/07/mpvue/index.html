@@ -94,7 +94,7 @@
 <meta property="og:site_name" content="没事儿">
 <meta property="og:description" content="前段时间刚写完一个mpvue的小程序，现在得闲必须赶紧记录和总结一下，不然很多东西又要忘了 我是比较熟悉vue的语法，但是也犹豫过是用原生还是用mpvue，因为那时候原生小程序已经相当成熟而mpvue才刚出来（踩坑和填坑的前人还很少） 所以我学习了几天原生的框架和语法，果断选择了mpvue，真的是没有对比就没有伤害，对比原生体验不要太好 mpvue是一个使用 Vue.js 开发小程序的前端框架，他">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-26T05:40:29.767Z">
+<meta property="og:updated_time" content="2019-02-26T05:40:29.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="mpvue小程序以及微信直播踩坑总结">
 <meta name="twitter:description" content="前段时间刚写完一个mpvue的小程序，现在得闲必须赶紧记录和总结一下，不然很多东西又要忘了 我是比较熟悉vue的语法，但是也犹豫过是用原生还是用mpvue，因为那时候原生小程序已经相当成熟而mpvue才刚出来（踩坑和填坑的前人还很少） 所以我学习了几天原生的框架和语法，果断选择了mpvue，真的是没有对比就没有伤害，对比原生体验不要太好 mpvue是一个使用 Vue.js 开发小程序的前端框架，他">
@@ -409,7 +409,7 @@
 <h2 id="页面跳转后并没有销毁页面实例"><a href="#页面跳转后并没有销毁页面实例" class="headerlink" title="页面跳转后并没有销毁页面实例"></a>页面跳转后并没有销毁页面实例</h2><p>比如一个搜索页面，页面第一次进来所有的数据都是空的，但你搜索一次之后，input框就有值了，这个时候再跳转到其他页面或者返回之后再进入这个页面那个值依然存在，页面跳转后并没有销毁页面实例，而是将其推入页面栈中，所以会保存之前的旧的数据，目前为止看到的比较统一的解决办法就是：在onShow()或者onLoad()手动清空</p>
 <h2 id="关于微信直播"><a href="#关于微信直播" class="headerlink" title="关于微信直播"></a>关于微信直播</h2><p>这个小程序需要引入监控相当于是直播功能，这个组件也是有点坑</p>
 <p>Live-player组件本身只能播放，如果想要在组件上加功能，像什么全屏静音播放暂停之类的功能需要使用wx.createLivePlayerContext()方法，而且由于live-player层级是最高的，如果你需要在组件上加功能比如点一下全屏再点下退出全屏或者加css样式，你必须写在 cover-view cover-image上面，直接加在live-player上是没用的</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;live-player id=<span class="string">'liveInfo'</span> src=<span class="string">""</span> mode=<span class="string">"live"</span> autoplay=<span class="string">'false'</span> @bindstatechange=<span class="string">"statechange"</span> binderror=<span class="string">"error"</span>&gt;</span><br><span class="line">    &lt;cover-image @click=<span class="string">"requestFullScreen"</span>&gt;&lt;/cover-image&gt;</span><br><span class="line">&lt;/live-player&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;live-player id=<span class="string">'liveInfo'</span> src=<span class="string">""</span> mode=<span class="string">"live"</span> autoplay=<span class="string">'false'</span> @bindstatechange=<span class="string">"statechange"</span> binderror=<span class="string">"error"</span>&gt;</span><br><span class="line">    &lt;cover-image @click=<span class="string">"requestFullScreen"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">cover-image</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">live-player</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
 <p>你以为这样就完了嘛，不，如果你有一个直播列表，比如一个屏幕同时有一个以上的live-player组件那么你全屏的时候就会发现其余的组件因为层级的原因全部覆盖在你全屏的那个组件之上</p>
 <p>解决办法：全屏是v-if隐藏其余的组件，退出时再显示</p>
 <p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
@@ -570,7 +570,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-count">35</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -687,7 +687,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">36.4k</span>
+    <span title="Site words total count">38.8k</span>
   
 </div>
 

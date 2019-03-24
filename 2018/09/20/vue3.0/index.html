@@ -89,14 +89,14 @@
 <meta name="description" content="尤雨溪：Vue 3.0 计划 原文需翻墙尤雨溪：Vue 3.0 计划 掘金译文 关于安装Vue CLI 的包名称由 vue-cli 改成了 @vue/cli1234npm install -g @vue/cli安装完成后查看版本vue --V 项目创建关于项目创建，除了命令创建3.x还增加了图形化界面创建以及管理vue项目在创建新项目时还可以混合选用多种集成  TypeScript PWA Vue">
 <meta name="keywords" content="vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue3.0初体验">
+<meta property="og:title" content="vue cli 3.0初体验">
 <meta property="og:url" content="http://yoursite.com/2018/09/20/vue3.0/index.html">
 <meta property="og:site_name" content="没事儿">
 <meta property="og:description" content="尤雨溪：Vue 3.0 计划 原文需翻墙尤雨溪：Vue 3.0 计划 掘金译文 关于安装Vue CLI 的包名称由 vue-cli 改成了 @vue/cli1234npm install -g @vue/cli安装完成后查看版本vue --V 项目创建关于项目创建，除了命令创建3.x还增加了图形化界面创建以及管理vue项目在创建新项目时还可以混合选用多种集成  TypeScript PWA Vue">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-04T10:08:59.100Z">
+<meta property="og:updated_time" content="2019-03-19T06:04:09.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vue3.0初体验">
+<meta name="twitter:title" content="vue cli 3.0初体验">
 <meta name="twitter:description" content="尤雨溪：Vue 3.0 计划 原文需翻墙尤雨溪：Vue 3.0 计划 掘金译文 关于安装Vue CLI 的包名称由 vue-cli 改成了 @vue/cli1234npm install -g @vue/cli安装完成后查看版本vue --V 项目创建关于项目创建，除了命令创建3.x还增加了图形化界面创建以及管理vue项目在创建新项目时还可以混合选用多种集成  TypeScript PWA Vue">
 
 
@@ -133,7 +133,7 @@
 
 
 
-  <title>vue3.0初体验 | 没事儿</title>
+  <title>vue cli 3.0初体验 | 没事儿</title>
   
 
 
@@ -277,7 +277,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">vue3.0初体验</h1>
+          <h1 class="post-title" itemprop="name headline">vue cli 3.0初体验</h1>
         
 
         <div class="post-meta">
@@ -348,7 +348,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  2k
+                  2.1k
                 </span>
               
 
@@ -480,6 +480,7 @@
 </ul>
 <h2 id="第三方插件安装"><a href="#第三方插件安装" class="headerlink" title="第三方插件安装"></a>第三方插件安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">安装并调用 vue-cli-plugin-apollo，不带 @vue 前缀，该命令会换作解析一个 unscoped 的包</span><br><span class="line">执行此命令后src里会创建一个plugins文件夹，里面会自动生成关于插件的配置文件</span><br><span class="line">vue add axios</span><br><span class="line"></span><br><span class="line">基于一个指定的 scope 使用第三方插件，如果一个插件名为 @foo/vue-cli-plugin-bar，你可以这样添加它：</span><br><span class="line">vue add @foo/bar</span><br></pre></td></tr></table></figure>
 <h1 id="配置修改"><a href="#配置修改" class="headerlink" title="配置修改"></a>配置修改</h1><p>例：向所有 Sass 样式传入共享的全局变量<br>在根目录新建一个vue.config.js，加入以下配置<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  css: &#123;</span><br><span class="line">    loaderOptions: &#123;</span><br><span class="line">      <span class="comment">// 给 sass-loader 传递选项</span></span><br><span class="line">      sass: &#123;</span><br><span class="line">        <span class="comment">// @/ 是 src/ 的别名</span></span><br><span class="line">        <span class="comment">// 所以这里假设你有 `src/variables.scss` 这个文件</span></span><br><span class="line">        data: <span class="string">`@import "@/variables.scss";`</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="打包后路径问题"><a href="#打包后路径问题" class="headerlink" title="打包后路径问题"></a>打包后路径问题</h1><p>在vue.config.js文件种加入’baseUrl: ‘./‘’<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">    //...</span><br><span class="line">    baseUrl: &apos;./&apos;</span><br><span class="line">    //...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>虽然官方说这个文件会被 @vue/cli-service 自动加载，但如果你启动项目用的是npm run serve，那么你最好使用npx vue-cli-service serve重启一下</p>
 <h1 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h1><p>官方文档 <a href="https://cli.vuejs.org/zh/guide/" target="_blank" rel="noopener">https://cli.vuejs.org/zh/guide/</a><br>browserslist的github <a href="https://github.com/browserslist/browserslist" target="_blank" rel="noopener">https://github.com/browserslist/browserslist</a><br><a href="https://mp.weixin.qq.com/s/hfr2Q3FXZFIdqM_r8HrLwQ" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/hfr2Q3FXZFIdqM_r8HrLwQ</a></p>
 <p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
@@ -640,7 +641,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-count">35</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -723,7 +724,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于安装"><span class="nav-number">1.</span> <span class="nav-text">关于安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目创建"><span class="nav-number">2.</span> <span class="nav-text">项目创建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用命令创建"><span class="nav-number">2.1.</span> <span class="nav-text">使用命令创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图形化界面"><span class="nav-number">2.2.</span> <span class="nav-text">图形化界面</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实用新功能"><span class="nav-number">3.</span> <span class="nav-text">实用新功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#browserslist"><span class="nav-number">3.1.</span> <span class="nav-text">browserslist</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-cli服务"><span class="nav-number">3.2.</span> <span class="nav-text">vue-cli服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#现代模式"><span class="nav-number">3.3.</span> <span class="nav-text">现代模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件的添加"><span class="nav-number">3.4.</span> <span class="nav-text">插件的添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CLI-插件安装"><span class="nav-number">3.5.</span> <span class="nav-text">CLI 插件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三方插件安装"><span class="nav-number">3.6.</span> <span class="nav-text">第三方插件安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置修改"><span class="nav-number">4.</span> <span class="nav-text">配置修改</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number">5.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#关于安装"><span class="nav-number">1.</span> <span class="nav-text">关于安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#项目创建"><span class="nav-number">2.</span> <span class="nav-text">项目创建</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#使用命令创建"><span class="nav-number">2.1.</span> <span class="nav-text">使用命令创建</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图形化界面"><span class="nav-number">2.2.</span> <span class="nav-text">图形化界面</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实用新功能"><span class="nav-number">3.</span> <span class="nav-text">实用新功能</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#browserslist"><span class="nav-number">3.1.</span> <span class="nav-text">browserslist</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-cli服务"><span class="nav-number">3.2.</span> <span class="nav-text">vue-cli服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#现代模式"><span class="nav-number">3.3.</span> <span class="nav-text">现代模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件的添加"><span class="nav-number">3.4.</span> <span class="nav-text">插件的添加</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#CLI-插件安装"><span class="nav-number">3.5.</span> <span class="nav-text">CLI 插件安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三方插件安装"><span class="nav-number">3.6.</span> <span class="nav-text">第三方插件安装</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置修改"><span class="nav-number">4.</span> <span class="nav-text">配置修改</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#打包后路径问题"><span class="nav-number">5.</span> <span class="nav-text">打包后路径问题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考文章"><span class="nav-number">6.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
             
 
           </div>
@@ -757,7 +758,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">36.4k</span>
+    <span title="Site words total count">38.8k</span>
   
 </div>
 
