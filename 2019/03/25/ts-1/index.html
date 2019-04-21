@@ -93,7 +93,7 @@
 <meta property="og:site_name" content="没事儿">
 <meta property="og:description" content="vue-cli已经内置了 TypeScript 工具支持，在 Vue  (3.x) 中也计划了相当多的 TypeScript 支持改进，很多大佬以及用过的人也都在推荐入坑，而且目前也比较成熟，资源也很丰富，值得入坑 ? typescript官方介绍 TypeScript 是 JavaScript 的类型的超集，它可以编译成纯 JavaScript。编译出来的 JavaScript 可以运行在任何浏">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-24T10:49:51.018Z">
+<meta property="og:updated_time" content="2019-04-08T06:17:25.653Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="typescript 学习之基础篇">
 <meta name="twitter:description" content="vue-cli已经内置了 TypeScript 工具支持，在 Vue  (3.x) 中也计划了相当多的 TypeScript 支持改进，很多大佬以及用过的人也都在推荐入坑，而且目前也比较成熟，资源也很丰富，值得入坑 ? typescript官方介绍 TypeScript 是 JavaScript 的类型的超集，它可以编译成纯 JavaScript。编译出来的 JavaScript 可以运行在任何浏">
@@ -325,7 +325,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  2.4k
+                  2.6k
                 </span>
               
 
@@ -341,7 +341,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  9 minute
+                  10 minute
                 </span>
               
             </div>
@@ -415,6 +415,10 @@
 <h1 id="枚举：enum关键字用于限定取值在一定范围内"><a href="#枚举：enum关键字用于限定取值在一定范围内" class="headerlink" title="枚举：enum关键字用于限定取值在一定范围内"></a>枚举：<code>enum</code>关键字用于限定取值在一定范围内</h1><p>普通枚举<br><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 枚举成员会被赋值为从 0 开始递增的数字</span></span><br><span class="line"><span class="keyword">enum</span> Days &#123;Sun, Mon, Tue, Wed, Thu, Fri, Sat&#125;; </span><br><span class="line"><span class="built_in">console</span>.log(Days[<span class="string">"Sun"</span>] === <span class="number">0</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(Days.Sun === <span class="number">0</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(Days[<span class="number">0</span>] === <span class="string">"Sun"</span>); <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 当我们手动赋值时，未被赋值的枚举项会接着上一个枚举项 +1 递增，手动赋值的枚举项也可以为小数或负数</span></span><br><span class="line"><span class="keyword">enum</span> Days &#123;Sun = <span class="number">7</span>, Mon = <span class="number">8</span>, Tue, Wed, Thu = <span class="number">5.5</span>, Fri, Sat&#125;;</span><br><span class="line"><span class="built_in">console</span>.log(Days.Mon === <span class="number">8</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(Days.Wed === <span class="number">10</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(Days.Fri === <span class="number">6.5</span>); <span class="comment">// true</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 手动赋值的枚举项可以不是数字，需要使用类型断言来让 tsc 无视类型检查，非数字枚举项后面不能跟未手动赋值的枚举项，因为无法获得初始值</span></span><br><span class="line"><span class="keyword">enum</span> Days &#123;Sun = <span class="number">7</span>, Mon, Tue, Wed, Thu, Fri, Sat = &lt;<span class="built_in">any</span>&gt;<span class="string">"S"</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 当枚举项是计算所得项时，后面不能跟是未手动赋值的项</span></span><br><span class="line"><span class="keyword">enum</span> Color &#123;Red, Green, Blue = <span class="string">"blue"</span>.length&#125;;</span><br></pre></td></tr></table></figure></p>
 <p>常数枚举：<code>const enum</code>关键字定义，常数枚举会在编译阶段被删除，并且不能包含计算成员<br><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">enum</span> Directions &#123;Up, Down, Left, Right&#125;</span><br></pre></td></tr></table></figure></p>
 <p>外部枚举：是指使用<code>declare enum</code> 定义的枚举类型，只会用于编译时的检查，编译结果中会被删除<br><figure class="highlight ts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">declare</span> <span class="keyword">enum</span> Directions &#123;Up, Down, Left, Right&#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="类：基于es6-class-和-es7-新提案的基础上添加了三种访问修饰符"><a href="#类：基于es6-class-和-es7-新提案的基础上添加了三种访问修饰符" class="headerlink" title="类：基于es6 class 和 es7 新提案的基础上添加了三种访问修饰符"></a>类：基于es6 class 和 es7 新提案的基础上添加了三种访问修饰符</h1><p><em>public：修饰的属性或方法是公有的，任何地方都能被访问
+</em>private：修饰的属性或方法是私有的，不能在声明它的类的外部访问<br>*protected：和 private 类似，区别是它在子类中允许被访问 </p>
+<h1 id="泛型：定义函数、接口或类的时候，使用的时候再指定类型的一种特性"><a href="#泛型：定义函数、接口或类的时候，使用的时候再指定类型的一种特性" class="headerlink" title="泛型：定义函数、接口或类的时候，使用的时候再指定类型的一种特性"></a>泛型：定义函数、接口或类的时候，使用的时候再指定类型的一种特性</h1><p>vs code 提示：Experimental support for decorators is a feature that is subject to change in a future release. Set the ‘experimentalDecorators’ option to remove this </p>
+<p>在 tsconfig.json 文件中修改规则 experimentalDecorators</p>
 <h1 id="学习资源"><a href="#学习资源" class="headerlink" title="学习资源"></a>学习资源</h1><p>官网 <a href="http://www.typescriptlang.org/" target="_blank" rel="noopener">http://www.typescriptlang.org/</a><br>对新手比官网更友好些 <a href="https://ts.xcatliu.com/introduction/what-is-typescript.html" target="_blank" rel="noopener">https://ts.xcatliu.com/introduction/what-is-typescript.html</a><br>vue + ts项目实战 <a href="https://juejin.im/post/5b54886ce51d45198f5c75d7#heading-14" target="_blank" rel="noopener">https://juejin.im/post/5b54886ce51d45198f5c75d7#heading-14</a></p>
 
       
@@ -478,6 +482,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/04/04/webworker/" rel="prev" title="Web Worker && postMessage && onMessage 使用教程">
+                Web Worker && postMessage && onMessage 使用教程 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -563,7 +571,7 @@
               
                 <a href="/archives">
               
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">36</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -646,7 +654,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#typescript"><span class="nav-number">1.</span> <span class="nav-text">? typescript</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原始数据类型声明"><span class="nav-number">2.</span> <span class="nav-text">原始数据类型声明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内置对象：指根据标准在全局作用域（Global）上存在的对象，这些对象可作为类型赋值给变量"><span class="nav-number">3.</span> <span class="nav-text">内置对象：指根据标准在全局作用域（Global）上存在的对象，这些对象可作为类型赋值给变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#赋值多个类型"><span class="nav-number">4.</span> <span class="nav-text">赋值多个类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#任意类型-any：表示允许赋值为任意类型，且能在赋值过程中改变类型"><span class="nav-number">4.1.</span> <span class="nav-text">任意类型 any：表示允许赋值为任意类型，且能在赋值过程中改变类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#联合类型：可以指定多种类型，可赋值为其中一种，使用-分隔每个类型"><span class="nav-number">4.2.</span> <span class="nav-text">联合类型：可以指定多种类型，可赋值为其中一种，使用 |` 分隔每个类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用接口定义对象类型"><span class="nav-number">5.</span> <span class="nav-text">使用接口定义对象类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数组类型：类型-方括号，-数组的每一项元素都必须符合类型"><span class="nav-number">6.</span> <span class="nav-text">数组类型：类型 + 方括号，  数组的每一项元素都必须符合类型 </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数的类型定义"><span class="nav-number">7.</span> <span class="nav-text">函数的类型定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类型断言：-lt-类型-gt-值，当需要在还不确定类型的时候就访问其中一个类型的属性或方法时我们可以手动指定这个值的类型"><span class="nav-number">8.</span> <span class="nav-text">类型断言：&lt;类型&gt;值，当需要在还不确定类型的时候就访问其中一个类型的属性或方法时我们可以手动指定这个值的类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类型别名：使用type关键字给一个类型起个新名字，常用于联合类型"><span class="nav-number">9.</span> <span class="nav-text">类型别名：使用type关键字给一个类型起个新名字，常用于联合类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串字面量类型：使用type关键字约束取值只能是某几个字符串中的一个"><span class="nav-number">10.</span> <span class="nav-text">字符串字面量类型：使用type关键字约束取值只能是某几个字符串中的一个</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#声明文件"><span class="nav-number">11.</span> <span class="nav-text">声明文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#元祖：数组合并了相同类型的对象，而元组（Tuple）合并了不同类型的对象"><span class="nav-number">12.</span> <span class="nav-text">元祖：数组合并了相同类型的对象，而元组（Tuple）合并了不同类型的对象</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#枚举：enum关键字用于限定取值在一定范围内"><span class="nav-number">13.</span> <span class="nav-text">枚举：enum关键字用于限定取值在一定范围内</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#学习资源"><span class="nav-number">14.</span> <span class="nav-text">学习资源</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#typescript"><span class="nav-number">1.</span> <span class="nav-text">? typescript</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原始数据类型声明"><span class="nav-number">2.</span> <span class="nav-text">原始数据类型声明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#内置对象：指根据标准在全局作用域（Global）上存在的对象，这些对象可作为类型赋值给变量"><span class="nav-number">3.</span> <span class="nav-text">内置对象：指根据标准在全局作用域（Global）上存在的对象，这些对象可作为类型赋值给变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#赋值多个类型"><span class="nav-number">4.</span> <span class="nav-text">赋值多个类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#任意类型-any：表示允许赋值为任意类型，且能在赋值过程中改变类型"><span class="nav-number">4.1.</span> <span class="nav-text">任意类型 any：表示允许赋值为任意类型，且能在赋值过程中改变类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#联合类型：可以指定多种类型，可赋值为其中一种，使用-分隔每个类型"><span class="nav-number">4.2.</span> <span class="nav-text">联合类型：可以指定多种类型，可赋值为其中一种，使用 |` 分隔每个类型</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用接口定义对象类型"><span class="nav-number">5.</span> <span class="nav-text">使用接口定义对象类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数组类型：类型-方括号，-数组的每一项元素都必须符合类型"><span class="nav-number">6.</span> <span class="nav-text">数组类型：类型 + 方括号，  数组的每一项元素都必须符合类型 </span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#函数的类型定义"><span class="nav-number">7.</span> <span class="nav-text">函数的类型定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类型断言：-lt-类型-gt-值，当需要在还不确定类型的时候就访问其中一个类型的属性或方法时我们可以手动指定这个值的类型"><span class="nav-number">8.</span> <span class="nav-text">类型断言：&lt;类型&gt;值，当需要在还不确定类型的时候就访问其中一个类型的属性或方法时我们可以手动指定这个值的类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类型别名：使用type关键字给一个类型起个新名字，常用于联合类型"><span class="nav-number">9.</span> <span class="nav-text">类型别名：使用type关键字给一个类型起个新名字，常用于联合类型</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#字符串字面量类型：使用type关键字约束取值只能是某几个字符串中的一个"><span class="nav-number">10.</span> <span class="nav-text">字符串字面量类型：使用type关键字约束取值只能是某几个字符串中的一个</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#声明文件"><span class="nav-number">11.</span> <span class="nav-text">声明文件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#元祖：数组合并了相同类型的对象，而元组（Tuple）合并了不同类型的对象"><span class="nav-number">12.</span> <span class="nav-text">元祖：数组合并了相同类型的对象，而元组（Tuple）合并了不同类型的对象</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#枚举：enum关键字用于限定取值在一定范围内"><span class="nav-number">13.</span> <span class="nav-text">枚举：enum关键字用于限定取值在一定范围内</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#类：基于es6-class-和-es7-新提案的基础上添加了三种访问修饰符"><span class="nav-number">14.</span> <span class="nav-text">类：基于es6 class 和 es7 新提案的基础上添加了三种访问修饰符</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#泛型：定义函数、接口或类的时候，使用的时候再指定类型的一种特性"><span class="nav-number">15.</span> <span class="nav-text">泛型：定义函数、接口或类的时候，使用的时候再指定类型的一种特性</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#学习资源"><span class="nav-number">16.</span> <span class="nav-text">学习资源</span></a></li></ol></div>
             
 
           </div>
@@ -680,7 +688,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">38.8k</span>
+    <span title="Site words total count">40.3k</span>
   
 </div>
 
