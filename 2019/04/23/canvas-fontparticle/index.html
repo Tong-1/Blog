@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-fill-left.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next2.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/favicon-16x16-next.png?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="tong-h个人博客" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="想要往仓库多填一些干货，一个文字粒子效果 点这里看效果  随机初始化部分粒子1、首先要明白每个粒子都是一个对象，都有自己的移动轨迹，起点，移动速度，终点 2、粒子活动轨迹：初始化 —- 聚合拼合文字形状 —- 散开 —- 再聚合 —- 散开… 3、我们需要根据动画时间调整粒子移动的速度来安排他们的位置 123456789101112131415161718192021222324252627282">
+<meta property="og:type" content="article">
+<meta property="og:title" content="canvas 文字粒子特效">
+<meta property="og:url" content="http://yoursite.com/2019/04/23/canvas-fontparticle/index.html">
+<meta property="og:site_name" content="没事儿">
+<meta property="og:description" content="想要往仓库多填一些干货，一个文字粒子效果 点这里看效果  随机初始化部分粒子1、首先要明白每个粒子都是一个对象，都有自己的移动轨迹，起点，移动速度，终点 2、粒子活动轨迹：初始化 —- 聚合拼合文字形状 —- 散开 —- 再聚合 —- 散开… 3、我们需要根据动画时间调整粒子移动的速度来安排他们的位置 123456789101112131415161718192021222324252627282">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="https://tong-h.github.io/canvas-store/fontparticle/img.png">
+<meta property="og:updated_time" content="2019-04-23T13:57:28.438Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="canvas 文字粒子特效">
+<meta name="twitter:description" content="想要往仓库多填一些干货，一个文字粒子效果 点这里看效果  随机初始化部分粒子1、首先要明白每个粒子都是一个对象，都有自己的移动轨迹，起点，移动速度，终点 2、粒子活动轨迹：初始化 —- 聚合拼合文字形状 —- 散开 —- 再聚合 —- 散开… 3、我们需要根据动画时间调整粒子移动的速度来安排他们的位置 123456789101112131415161718192021222324252627282">
+<meta name="twitter:image" content="https://tong-h.github.io/canvas-store/fontparticle/img.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/04/23/canvas-fontparticle/"/>
+
+
+
+
+
+  <title>canvas 文字粒子特效 | 没事儿</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?d0e674bed1e36732e9bb5c61c02011d9";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">没事儿</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">welcome</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            Commonweal 404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/23/canvas-fontparticle/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tong-H">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="没事儿">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">canvas 文字粒子特效</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-23T15:43:11+08:00">
+                2019-04-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  980
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  4 minute
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>想要往仓库多填一些干货，一个文字粒子效果 <a href="https://tong-h.github.io/canvas-store/fontparticle/index.html" target="_blank" rel="noopener">点这里看效果</a></p>
+<p><img src="https://tong-h.github.io/canvas-store/fontparticle/img.png" alt="效果图"></p>
+<h1 id="随机初始化部分粒子"><a href="#随机初始化部分粒子" class="headerlink" title="随机初始化部分粒子"></a>随机初始化部分粒子</h1><p>1、首先要明白每个粒子都是一个对象，都有自己的移动轨迹，起点，移动速度，终点</p>
+<p>2、粒子活动轨迹：初始化 —- 聚合拼合文字形状 —- 散开 —- 再聚合 —- 散开…</p>
+<p>3、我们需要根据动画时间调整粒子移动的速度来安排他们的位置</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Point</span></span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>() &#123;</span><br><span class="line">        <span class="keyword">this</span>.startx = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * docsize[<span class="number">0</span>]),   <span class="comment">// 初始起点</span></span><br><span class="line">        <span class="keyword">this</span>.starty = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * docsize[<span class="number">1</span>]),</span><br><span class="line">        <span class="keyword">this</span>.speedx = (<span class="built_in">Math</span>.random() * <span class="number">2</span> - <span class="number">1</span>) * pointspeed,     <span class="comment">// 移动速度</span></span><br><span class="line">        <span class="keyword">this</span>.speedy = (<span class="built_in">Math</span>.random() * <span class="number">2</span> - <span class="number">1</span>) * pointspeed, </span><br><span class="line">        <span class="keyword">this</span>.endx = <span class="number">0</span>,                                          <span class="comment">// 终点</span></span><br><span class="line">        <span class="keyword">this</span>.endy = <span class="number">0</span>,                    </span><br><span class="line">        <span class="keyword">this</span>.color = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * <span class="number">5</span>)              <span class="comment">// 粒子颜色</span></span><br><span class="line">    &#125;</span><br><span class="line">    endpoint(x, y) &#123;</span><br><span class="line">        <span class="keyword">this</span>.endx = x</span><br><span class="line">        <span class="keyword">this</span>.endy = y</span><br><span class="line">    &#125;</span><br><span class="line">    animal() &#123;</span><br><span class="line">        <span class="keyword">this</span>.startx += <span class="keyword">this</span>.speedx</span><br><span class="line">        <span class="keyword">this</span>.starty += <span class="keyword">this</span>.speedy</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 到达边界改变粒子运动方向</span></span><br><span class="line">        <span class="keyword">this</span>.speedx *= <span class="keyword">this</span>.startx &gt; docsize[<span class="number">0</span>] || <span class="keyword">this</span>.startx &lt; <span class="number">0</span> ? <span class="number">-1</span> : <span class="number">1</span></span><br><span class="line">        <span class="keyword">this</span>.speedy *= <span class="keyword">this</span>.starty &gt; docsize[<span class="number">1</span>] || <span class="keyword">this</span>.starty &lt; <span class="number">0</span> ? <span class="number">-1</span> : <span class="number">1</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// 调整点的移动速度用以聚和拼合文字</span></span><br><span class="line">        <span class="keyword">if</span>(time === <span class="number">100</span> || time === <span class="number">600</span> || time === <span class="number">1100</span>) &#123; </span><br><span class="line">            <span class="keyword">this</span>.speedx = (<span class="keyword">this</span>.endx - <span class="keyword">this</span>.startx) / joinspeed</span><br><span class="line">            <span class="keyword">this</span>.speedy = (<span class="keyword">this</span>.endy - <span class="keyword">this</span>.starty) / joinspeed</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 到达终点后静止不动</span></span><br><span class="line">        <span class="keyword">if</span>(time === <span class="number">100</span> + joinspeed || time === <span class="number">600</span> + joinspeed || time === <span class="number">1100</span> + joinspeed) &#123;</span><br><span class="line">            <span class="keyword">this</span>.speedx = <span class="number">0</span></span><br><span class="line">            <span class="keyword">this</span>.speedy = <span class="number">0</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 散开</span></span><br><span class="line">        <span class="keyword">if</span>(time === <span class="number">300</span> || time === <span class="number">800</span>) &#123;</span><br><span class="line">            <span class="keyword">this</span>.speedx = (<span class="built_in">Math</span>.random() * <span class="number">2</span> - <span class="number">1</span>) * pointspeed</span><br><span class="line">            <span class="keyword">this</span>.speedy = (<span class="built_in">Math</span>.random() * <span class="number">2</span> - <span class="number">1</span>) * pointspeed</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        maincontent.beginPath()</span><br><span class="line">        maincontent.fillStyle = color[<span class="keyword">this</span>.color]</span><br><span class="line">        maincontent.arc(<span class="keyword">this</span>.startx, <span class="keyword">this</span>.starty, <span class="number">7</span>, <span class="number">0</span>, <span class="built_in">Math</span>.PI * <span class="number">2</span>)</span><br><span class="line">        maincontent.fill()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="使用-canvas-画板生成文字"><a href="#使用-canvas-画板生成文字" class="headerlink" title="使用 canvas 画板生成文字"></a>使用 canvas 画板生成文字</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 【文字面积，循环时用于判读y轴高度，粒子大小间隔， 文字宽度】</span></span><br><span class="line"><span class="keyword">let</span> [imgdata, cyclic, size, textwith] = [&#123;&#125;, <span class="number">1</span>, <span class="number">16</span>, <span class="number">0</span>]</span><br><span class="line"></span><br><span class="line">textcontext.font = <span class="string">"normal 900 "</span> + fontsize +<span class="string">"px Avenir, Helvetica Neue, Helvetica, Arial, sans-serif"</span></span><br><span class="line">textwith = <span class="built_in">Math</span>.floor(textcontext.measureText(text).width)</span><br><span class="line">textcontext.fillStyle = <span class="string">'#ff0000'</span></span><br><span class="line">textcontext.fillText(text, (docsize[<span class="number">0</span>] - textwith) / <span class="number">2</span>, (docsize[<span class="number">1</span>]) / <span class="number">2</span>)</span><br><span class="line">textwith = ~~ (textwith) * size + size</span><br></pre></td></tr></table></figure>
+<h1 id="遍历-imageData-获取文字区域的像素坐标"><a href="#遍历-imageData-获取文字区域的像素坐标" class="headerlink" title="遍历 imageData 获取文字区域的像素坐标"></a>遍历 imageData 获取文字区域的像素坐标</h1><p>不了解 imagedata 怎么用？ 看看这篇文章<a href="https://tong-h.github.io/2019/02/21/canvas-1/#more" target="_blank" rel="noopener">cannvas的imagedata对象</a></p>
+<p>获取坐标这里有很多种方法，我看了一些教程好像没人像我这么写，要注意的是</p>
+<ul>
+<li>imageData 4个元素为一个像素，也就是一个R G B A 值，A 是 alpha 透明度</li>
+<li>空白的区域rgba就是 0,0,0,0 , 文字区域就是有颜色的如果你没有设置字体颜色默认是黑色 rgba 就是 0,0,0,255，通过判断第四个元素可以获取文字区域</li>
+<li>但是我建议重新设置一个其他的颜色比如红色 255,0,0,255，用第1个和2个数字来判断这样字体边缘会圆滑些，因为在字体边缘黑色和白色的交界处可能有某几个像素不是透明的</li>
+<li>每个坐标最后都会生成一个圆，所以这里获取的是圆心的坐标，圆之间还需要留有空隙，所以遍历的时候你要根据你的圆的大小掌握好间隔</li>
+<li>获取文字区域粒子数量后需要判断，目前屏幕上现有的粒子是否足够拼合和文字或者是否还需再添加粒子</li>
+<li>确定粒子数量后再将文字坐标作为粒子移动终点赋值给粒子</li>
+</ul>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 获取文字所在区域，尽可能减小面积</span></span><br><span class="line">imgdata = textcontext.getImageData(<span class="number">0</span>,<span class="number">0</span>, textwith, fontsize * <span class="number">2</span>)</span><br><span class="line">textcontext.clearRect(<span class="number">0</span>, <span class="number">0</span>, docsize[<span class="number">0</span>], docsize[<span class="number">1</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment">// 粒子圆心坐标，粒子数组</span></span><br><span class="line"><span class="keyword">let</span> [x, y, len] = [<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">// 遍历data数据查找文字所在的坐标</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; imgdata.data.length; i += size * <span class="number">4</span>) &#123;</span><br><span class="line">    <span class="keyword">if</span> (imgdata.data[i] === <span class="number">255</span> &amp;&amp; imgdata.data[i+<span class="number">3</span>] === <span class="number">255</span>) &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 判断当前粒子数量是否能够拼合文字</span></span><br><span class="line">        <span class="keyword">if</span> (len &gt; pointarr.length - <span class="number">1</span>) pointarr.push(<span class="keyword">new</span> Point)</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取每个粒子聚拢的终点</span></span><br><span class="line">        pointarr[len].endpoint(i /<span class="number">4</span> % textwith, cyclic)</span><br><span class="line">        len ++</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (i/<span class="number">4</span> == cyclic * textwith) &#123;</span><br><span class="line">        cyclic += size</span><br><span class="line">        i = textwith * (cyclic<span class="number">-1</span>) * <span class="number">4</span></span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">pointarr.length - <span class="number">1</span> - len &gt; <span class="number">0</span> ? pointarr.splice(len, pointarr.length - len) : <span class="string">''</span></span><br></pre></td></tr></table></figure>
+<h1 id="源码带有详细的注解点这儿"><a href="#源码带有详细的注解点这儿" class="headerlink" title="源码带有详细的注解点这儿"></a>源码带有详细的注解<a href="https://tong-h.github.io/canvas-store/roundPercent/index.html" target="_blank" rel="noopener">点这儿</a></h1><p><a href="https://github.com/Tong-H/canvas-store" target="_blank" rel="noopener">更多效果</a><br>开源不易，觉得还不错点个 start 吧 (´▽`ʃ♡ƪ)</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div></div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Tong-H WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Tong-H Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/04/21/webworker/" rel="next" title="Web Worker && postMessage && onMessage 使用教程">
+                <i class="fa fa-chevron-left"></i> Web Worker && postMessage && onMessage 使用教程
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTIxNC8xNTc0MQ"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.png"
+                alt="Tong-H" />
+            
+              <p class="site-author-name" itemprop="name">Tong-H</p>
+              <p class="site-description motion-element" itemprop="description">It's more tiring to stop</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">37</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/tong-h" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:tongt0232@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://blog.csdn.net/Tong_11" target="_blank" title="CSDN">
+                      
+                        <i class="fa fa-fw fa-rss-square"></i>CSDN</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.jianshu.com/u/20de04cc53de" target="_blank" title="简书">
+                      
+                        <i class="fa fa-fw fa-rss-square"></i>简书</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#随机初始化部分粒子"><span class="nav-number">1.</span> <span class="nav-text">随机初始化部分粒子</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#使用-canvas-画板生成文字"><span class="nav-number">2.</span> <span class="nav-text">使用 canvas 画板生成文字</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#遍历-imageData-获取文字区域的像素坐标"><span class="nav-number">3.</span> <span class="nav-text">遍历 imageData 获取文字区域的像素坐标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#源码带有详细的注解点这儿"><span class="nav-number">4.</span> <span class="nav-text">源码带有详细的注解点这儿</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Tong-H</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">41.3k</span>
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      访问数
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人
+    </span>
+  
+
+  
+    <span class="site-pv">
+      总访问量
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      次
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
