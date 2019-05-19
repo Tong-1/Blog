@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="rests," />
+  <meta name="keywords" content="tong-h个人博客" />
 
 
 
@@ -86,18 +86,17 @@
 
 
 
-<meta name="description" content="&amp;#8195;&amp;#8195;又是一年 End，感觉现在时间过得越来越快，下了个倒计时的app，设置了年终和一些重要日子的倒计时，每次打开app看到那一点点变化的数字就会觉得有点点心痛。之前在网上看过一个话题为什么随着年龄的增大会感觉时间过得越来越快，有两个说法：当你专注做某样事情的时候和你重复做某一样事情的时候。相信这两种感觉大部分人都深有体会，感觉现在时间比小时候过得快是因为小时候大脑储存的东">
-<meta name="keywords" content="rests">
+<meta name="description" content="有关浏览器缓存的几个疑问  浏览器缓存判断流程？ 两种分类协商缓存和强制缓存是什么？怎么判断？ 缓存的资源放在哪儿？ 不同的刷新对缓存的影响？  浏览器缓存的流程当客户端请求某个资源，首先需要询问浏览器是否存在缓存有以下三种结果：  不存在，那么直接向服务器发起请求，就像第一次访问该网站一样 存在，通过Cache-Control、Expires判断后缓存已失效，那么则使用协商缓存，携带该资源缓存标">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2018年终总结">
-<meta property="og:url" content="http://yoursite.com/2019/01/24/2018end/index.html">
+<meta property="og:title" content="理解浏览器缓存机制">
+<meta property="og:url" content="http://yoursite.com/2019/05/14/browser_cache/index.html">
 <meta property="og:site_name" content="没事儿">
-<meta property="og:description" content="&amp;#8195;&amp;#8195;又是一年 End，感觉现在时间过得越来越快，下了个倒计时的app，设置了年终和一些重要日子的倒计时，每次打开app看到那一点点变化的数字就会觉得有点点心痛。之前在网上看过一个话题为什么随着年龄的增大会感觉时间过得越来越快，有两个说法：当你专注做某样事情的时候和你重复做某一样事情的时候。相信这两种感觉大部分人都深有体会，感觉现在时间比小时候过得快是因为小时候大脑储存的东">
+<meta property="og:description" content="有关浏览器缓存的几个疑问  浏览器缓存判断流程？ 两种分类协商缓存和强制缓存是什么？怎么判断？ 缓存的资源放在哪儿？ 不同的刷新对缓存的影响？  浏览器缓存的流程当客户端请求某个资源，首先需要询问浏览器是否存在缓存有以下三种结果：  不存在，那么直接向服务器发起请求，就像第一次访问该网站一样 存在，通过Cache-Control、Expires判断后缓存已失效，那么则使用协商缓存，携带该资源缓存标">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-04-21T10:55:17.000Z">
+<meta property="og:updated_time" content="2019-05-14T09:29:57.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2018年终总结">
-<meta name="twitter:description" content="&amp;#8195;&amp;#8195;又是一年 End，感觉现在时间过得越来越快，下了个倒计时的app，设置了年终和一些重要日子的倒计时，每次打开app看到那一点点变化的数字就会觉得有点点心痛。之前在网上看过一个话题为什么随着年龄的增大会感觉时间过得越来越快，有两个说法：当你专注做某样事情的时候和你重复做某一样事情的时候。相信这两种感觉大部分人都深有体会，感觉现在时间比小时候过得快是因为小时候大脑储存的东">
+<meta name="twitter:title" content="理解浏览器缓存机制">
+<meta name="twitter:description" content="有关浏览器缓存的几个疑问  浏览器缓存判断流程？ 两种分类协商缓存和强制缓存是什么？怎么判断？ 缓存的资源放在哪儿？ 不同的刷新对缓存的影响？  浏览器缓存的流程当客户端请求某个资源，首先需要询问浏览器是否存在缓存有以下三种结果：  不存在，那么直接向服务器发起请求，就像第一次访问该网站一样 存在，通过Cache-Control、Expires判断后缓存已失效，那么则使用协商缓存，携带该资源缓存标">
 
 
 
@@ -127,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/24/2018end/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/05/14/browser_cache/"/>
 
 
 
 
 
-  <title>2018年终总结 | 没事儿</title>
+  <title>理解浏览器缓存机制 | 没事儿</title>
   
 
 
@@ -260,7 +259,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/24/2018end/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/browser_cache/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Tong-H">
@@ -277,7 +276,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">2018年终总结</h1>
+          <h1 class="post-title" itemprop="name headline">理解浏览器缓存机制</h1>
         
 
         <div class="post-meta">
@@ -289,8 +288,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-24T09:55:16+08:00">
-                2019-01-24
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-05-14T11:44:11+08:00">
+                2019-05-14
               </time>
             
 
@@ -299,28 +298,6 @@
             
           </span>
 
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/rests/" itemprop="url" rel="index">
-                    <span itemprop="name">rests</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
           
 
           
@@ -348,7 +325,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  1.1k
+                  1.6k
                 </span>
               
 
@@ -364,7 +341,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  3 minute
+                  5 minute
                 </span>
               
             </div>
@@ -385,37 +362,81 @@
       
 
       
-        <blockquote>
-<p>&#8195;&#8195;又是一年 End，感觉现在时间过得越来越快，下了个倒计时的app，设置了年终和一些重要日子的倒计时，每次打开app看到那一点点变化的数字就会觉得有点点心痛。之前在网上看过一个话题为什么随着年龄的增大会感觉时间过得越来越快，有两个说法：当你专注做某样事情的时候和你重复做某一样事情的时候。相信这两种感觉大部分人都深有体会，感觉现在时间比小时候过得快是因为小时候大脑储存的东西不多每一天都是新鲜未知的，大脑在不断的调用insert或者update接口存储或者更新，但是长大后每天都是重复着昨天的生活，每天都只是在调用search接口，然后当你每天重复着一样的事情时间就过得很快很快。感觉扯远了，但是感觉时间越来越不够用是真的，小时候对于过年是充满期待和兴奋的，但是现在对于年终会有种莫名的感伤，比如现在敲下这些字的时候就挺让人难受的，可能有人觉得有点矫情，但是大好的时光就那么一些，然后现在又失去一点…….</p>
-</blockquote>
-<blockquote>
-<p>&#8195;&#8195;今年开始写blog了，一直都习惯记笔记，即便开始写blog还是习惯用word记笔记，现在这篇word文档已经有160多页了。blog和笔记的不同在于笔记里大多是很零碎的知识点会经常用和翻看而放在blog里至少要像一篇文章，所以其实写的时候就相当于在整理笔记里面的知识点会发现很多不足的地方，所以写blog也是个不错习惯。最开始会在csdn、掘金、简书各大平台投放但是后来搭了一个blog系统就懒得复制粘贴了，只有简书一直坚持更新，主要因为简书点赞呀关注什么的回馈很快，这是个激励能制造一些动力，但是简书首页的那些标题党和心灵鸡汤真的。。。</p>
-</blockquote>
-<blockquote>
-<p>&#8195;&#8195;今年仍然很焦虑，和去年一样的焦虑烦躁，工作上几个后台，一个数据平台，一个小程序，一个安卓app，一个windows的桌面app，工作之余学习了express，mysql，简单的python，列出来好像还不少，但是对于这些框架语言都了解太少太浅了，这是挺致命的，今年技术上的学习状态或者学习方式不如去年，太浮躁了，只专注于表面能看到的效果而不去学习框架内部的知识和底层的原理，广而不深。坏习惯！！！</p>
-</blockquote>
-<blockquote>
-<p>&#8195;&#8195;今年10月份终于报了自考英语本科，开始每天刷单词开始爱上图书馆，学英语真的不是容易事，但是好在对英语有兴趣的且有必须学习的理由，这两者加在一起等于充足的动力，但是学习向来都不是一件快乐的事情，有兴趣只是没那么痛苦罢了<br>  报名时的明确目标：</p>
+        <p>有关浏览器缓存的几个疑问</p>
 <ul>
-<li>作为一个程序员能不依靠辅助工具顺畅的读懂英文文档</li>
-<li>作为一个美剧迷能摆脱字幕</li>
-<li>作为一个自考生能拿到证</li>
+<li>浏览器缓存判断流程？</li>
+<li>两种分类协商缓存和强制缓存是什么？怎么判断？</li>
+<li>缓存的资源放在哪儿？</li>
+<li>不同的刷新对缓存的影响？</li>
 </ul>
-</blockquote>
-<blockquote>
-<p>&#8195;&#8195;每一年都是这样，今年的自己回过头去看去年的自己总是万分嫌弃。把化妆减肥当作日常，格外怕冷一出公司大门分分钟想回去加班。提前进入中老年状态，泡枸杞红枣，每天烫脚，吃各种豆子，喝热水即使夏天，看各种热量表成分表，每天起早即使周末，夏天7点左右冬天八点左右就自然醒了然后起床，居然不赖床，这居然是我的作息</p>
-</blockquote>
-<blockquote>
-<h2 id="2019-："><a href="#2019-：" class="headerlink" title="2019 ："></a>2019 ：</h2><ul>
-<li>控制饮食！！！减肥控制饮食大概是毕生的事业了，永远提防体重</li>
-<li>多咀嚼！！！吃东西慢点，再慢点</li>
-<li>喝水！！！没事就喝水吧</li>
-<li>去图书馆！！！不要待在家里，不要相信自己的自制力，没事就背上包包去图书馆吧</li>
-<li>刷单词！！！每天的单词一定要清完</li>
-<li>不要浮躁！！！静下来，静下来</li>
+<h2 id="浏览器缓存的流程"><a href="#浏览器缓存的流程" class="headerlink" title="浏览器缓存的流程"></a>浏览器缓存的流程</h2><p>当客户端请求某个资源，首先需要询问浏览器是否存在缓存<br>有以下三种结果：</p>
+<ul>
+<li>不存在，那么直接向服务器发起请求，就像第一次访问该网站一样</li>
+<li>存在，通过Cache-Control、Expires判断后缓存已失效，那么则使用协商缓存，携带该资源缓存标识向服务器发起请求，服务器根据 http header 判断后决定是否使用缓存，若协商缓存失效重新拉取请求结果则状态码为 200 ，若协商缓存生效那么继续使用缓存状态码为 304</li>
+<li>存在，通过Cache-Control、Expires判断后未失效，那么继续使用缓存状态码为 304</li>
 </ul>
-</blockquote>
-<p>最后写年终总结的确是个挺好的习惯</p>
+<p>图示：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">  浏览器发起请求</span><br><span class="line">        |</span><br><span class="line">        |</span><br><span class="line">    是否有缓存 ——— 是 ——— 缓存是否失效 ——— 是 ——— 协商缓存 ———— 成功</span><br><span class="line">        |                     |                    |           |</span><br><span class="line">        |                     |                    |           |</span><br><span class="line">        否                    否                  失败          |</span><br><span class="line">        |                     |                    |           |</span><br><span class="line">        |—————————————————————|————————————————————|           |</span><br><span class="line">        |                     |                                |</span><br><span class="line">  向服务器请求资源           读取缓存————————————————————————————|</span><br><span class="line">        |                     |</span><br><span class="line">        |                     |</span><br><span class="line">根据 http header 存缓存        |</span><br><span class="line">        |                     |</span><br><span class="line">        |—————————————————————|</span><br><span class="line">        |</span><br><span class="line">     完成加载</span><br></pre></td></tr></table></figure>
+<p>所以有两种缓存类型，强制缓存和协商缓存，优先判断的不需要发 http 请求的是强制缓存<br>当强制缓存无效时才启用协商缓存，协商缓存需要发送 http 请求交由服务器判断，可以应用于一些时常需要动态更新的资源文件</p>
+<h2 id="强制缓存"><a href="#强制缓存" class="headerlink" title="强制缓存"></a>强制缓存</h2><p>浏览器判断强制缓存是否存在和是否失效这两个：Cache-Control、Expires</p>
+<ul>
+<li>Cache-Control *</li>
+</ul>
+<p>http/1.1的字段，控制网页缓存的主要规则，取值：</p>
+<ul>
+<li>public： 所有内容都将被缓存</li>
+<li>private：默认值，所有内容只有客户端可以缓存， CDN 等中继缓存服务器不能缓存</li>
+<li>no-cache：客户端缓存内容，但由协商缓存决定是否使用缓存</li>
+<li>no-store：所有内容都不会被缓存</li>
+<li>max-ag=xxx：缓存内容在xxx秒后失效</li>
+<li>max-stale=xxx: 指定时间内，即使缓存过时依然使用资源</li>
+<li>min-fresh=xxx：缓存的资源至上要保持指定时间的新鲜期</li>
+<li>only-if-cached：仅仅返回已经缓存的资源，不访问网络，无缓存返回 504</li>
+<li><p>no-transform：强制要求代理服务器不要对资源进行转换，禁止代理服务器对 Content-Type、Content-Encoding, Content-Range 字段进行修改</p>
+</li>
+<li><p>Expires *</p>
+</li>
+</ul>
+<p>http/1.0 的字段，请求结果缓存到期时间，优先级低于 Cache-Control:max-age<br>由于 Expires 设置的时绝对时间<br>若 Expires 和 Cache-Control:max-age 两者都没出现浏览器默认使用启发式算法：响应头的（ Date - Last - Modified ）<em> 10，也就是（响应时间 - 文件最后修改时间 ）</em> 10</p>
+<h2 id="协商缓存"><a href="#协商缓存" class="headerlink" title="协商缓存"></a>协商缓存</h2><p>Etag / If-None-Match 优先级高于Last-Modified / If-Modfied-Since，同时存在前者生效</p>
+<ul>
+<li><p>Last-Modified / If-Modified-Since / If-Unmodified-since *</p>
+</li>
+<li><p>Last-Modified 是服务器响应请求时返回该资源在服务器的最后修改时间</p>
+</li>
+<li>If-Modified-Since 是客户端再次发起请求时携带上次服务器返回的Last-Modified, 服务器接收到这个时间将与该资源在服务器最后修改的时间进行对比，若服务器修改的时间大于客户端发送的时间，则状态码200重新返回资源，否则返回304表示资源无更新继续使用缓存</li>
+<li><p>If-Unmodified-since 同上，资源未修改正常执行更新反之返回412</p>
+</li>
+<li><p>Etag / If-None-Match *</p>
+</li>
+<li><p>Etag 是资源唯一标识符，服务器响应请求时返回当前资源的唯一标识符</p>
+</li>
+<li>If-None-Match 是客户端再次发起该请求时携带上次请求时服务器返回的唯一标识符 Etag，服务器接收到该值会与该资源在服务器的 Etag 值做对比，一致状态码 304 表示无更新继续使用缓存，反之则返回资源文件状态码 200</li>
+</ul>
+<h2 id="缓存的资源在哪儿？"><a href="#缓存的资源在哪儿？" class="headerlink" title="缓存的资源在哪儿？"></a>缓存的资源在哪儿？</h2><p>浏览器通过 http 请求获取到资源，那么资源会缓存在哪儿</p>
+<p>memory cache：内存缓存，会将编译解析的文件，直接存入该进程内存中，占据一定的内存资源，以便下次快速读取，进程关闭即清空</p>
+<p>from disk cache：硬盘缓存，盘缓存是将缓存写入硬盘文件中，读取缓存需要对该缓存存放的硬盘文件进行i/o操作，然后解析读取，速度比内存缓存慢</p>
+<p>浏览器读取缓存时 memory ——&gt; disk ——&gt; 两者都没有便发起网络请求 ——&gt; 获取资源缓存到硬盘和内存</p>
+<p>在浏览器中，css 文件会存入硬盘文件中，因为 css 文件通常只在页面渲染时加载一次，<br>而 js 和图片等文件解析执行后直接存入内存缓存中，是因为可能会频繁读取，当刷新页面时只需直接从内存缓存中读取</p>
+<h2 id="浏览器行为对缓存的影响"><a href="#浏览器行为对缓存的影响" class="headerlink" title="浏览器行为对缓存的影响"></a>浏览器行为对缓存的影响</h2><ul>
+<li>刷新网页，如果缓存没有失效，浏览器直接使用缓存，反之 http 请求数据</li>
+<li>手动刷新 / F5，浏览器会认为缓存失效，在请求服务器时加上Cache-Control: max-age=0字段，然后询问服务器数据是否更新</li>
+<li>强制刷新 / Ctrl + F5，浏览器会直接忽略缓存，在请求服务器时加上Cache-Control: no-cache字段，然后重新向服务器拉取文件</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li><p>其他和缓存相关的 header 头部 *</p>
+</li>
+<li><p>date 响应生成时间</p>
+</li>
+<li>age 代理服务器生成，表示代理服务器对于请求资源的已缓存时间, 单位为秒</li>
+<li>Pragma：no-cache: http / 1.0 作用和 Cache-Control:no-cache 一样，如果在控制台勾选 Disable cache, 浏览器自动带上该字段</li>
+<li><p>vary 缓存版本，可用于区分 pc 和 移动端需要加载的资源</p>
+</li>
+<li><p>浏览器禁用缓存 *</p>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"Cache-Control"</span> <span class="attr">content</span>=<span class="string">"no-cache, no-store, must-revalidate"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://mp.weixin.qq.com/s?__biz=MjM5MTA1MjAxMQ==&amp;mid=2651226262&amp;idx=1&amp;sn=2128db200b88479face67ed8e095757c&amp;chksm=bd4959128a3ed0041b43a5683c75c4b88c7d35fac909a59c14b4e9fc11e8d408680b171d2706&amp;scene=21#wechat_redirect" target="_blank" rel="noopener">浏览器的缓存机制小结</a><br><a href="https://mp.weixin.qq.com/s/d2zeGhUptGUGJpB5xHQbOA" target="_blank" rel="noopener">彻底理解浏览器的缓存机制</a><br>[]</p>
 
       
     </div>
@@ -460,12 +481,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/rests/" rel="tag"># rests</a>
-          
-        </div>
-      
 
       
       
@@ -475,8 +490,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/13/electron/" rel="next" title="Electron踩坑指南不完全篇">
-                <i class="fa fa-chevron-left"></i> Electron踩坑指南不完全篇
+              <a href="/2019/04/23/canvas-fontparticle/" rel="next" title="canvas 文字粒子特效">
+                <i class="fa fa-chevron-left"></i> canvas 文字粒子特效
               </a>
             
           </div>
@@ -484,10 +499,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/21/canvas-1/" rel="prev" title="cannvas的imagedata对象">
-                cannvas的imagedata对象 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -656,7 +667,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2019-："><span class="nav-number">1.</span> <span class="nav-text">2019 ：</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器缓存的流程"><span class="nav-number">1.</span> <span class="nav-text">浏览器缓存的流程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#强制缓存"><span class="nav-number">2.</span> <span class="nav-text">强制缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#协商缓存"><span class="nav-number">3.</span> <span class="nav-text">协商缓存</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#缓存的资源在哪儿？"><span class="nav-number">4.</span> <span class="nav-text">缓存的资源在哪儿？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器行为对缓存的影响"><span class="nav-number">5.</span> <span class="nav-text">浏览器行为对缓存的影响</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">6.</span> <span class="nav-text">其他</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文章"><span class="nav-number">7.</span> <span class="nav-text">参考文章</span></a></li></ol></div>
             
 
           </div>
@@ -690,7 +701,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">41.3k</span>
+    <span title="Site words total count">41.7k</span>
   
 </div>
 
