@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>没事儿</title>
+  
+  <subtitle>welcome</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-08-02T06:13:51.620Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>没事儿</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-theme</title>
+    <link href="http://yoursite.com/2019/08/02/hexo-theme/"/>
+    <id>http://yoursite.com/2019/08/02/hexo-theme/</id>
+    <published>2019-08-02T06:13:51.000Z</published>
+    <updated>2019-08-02T06:13:51.620Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>npm &amp;&amp; yarn 差异以及常用命令</title>
+    <link href="http://yoursite.com/2019/07/01/npm&amp;&amp;yarn/"/>
+    <id>http://yoursite.com/2019/07/01/npm&amp;&amp;yarn/</id>
+    <published>2019-07-01T09:26:11.000Z</published>
+    <updated>2019-07-01T10:13:22.543Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;yarn 从去年vue-cli更新以来一直用，但一直都没认真了解过&lt;/p&gt;
+&lt;h2 id=&quot;yarn-背景介绍&quot;&gt;&lt;a href=&quot;#yarn-背景介绍&quot; class=&quot;headerlink&quot; title=&quot;yarn 背景介绍&quot;&gt;&lt;/a&gt;yarn
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>理解浏览器缓存机制</title>
+    <link href="http://yoursite.com/2019/05/14/browser_cache/"/>
+    <id>http://yoursite.com/2019/05/14/browser_cache/</id>
+    <published>2019-05-14T03:44:11.000Z</published>
+    <updated>2019-05-14T09:29:57.970Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;有关浏览器缓存的几个疑问&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;浏览器缓存判断流程？&lt;/li&gt;
+&lt;li&gt;两种分类协商缓存和强制缓存是什么？怎么判断？&lt;/li&gt;
+&lt;li&gt;缓存的资源放在哪儿？&lt;/li&gt;
+&lt;li&gt;不同的刷新对缓存的影响？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>canvas 文字粒子特效</title>
+    <link href="http://yoursite.com/2019/04/23/canvas-fontparticle/"/>
+    <id>http://yoursite.com/2019/04/23/canvas-fontparticle/</id>
+    <published>2019-04-23T07:43:11.000Z</published>
+    <updated>2019-05-14T09:29:18.262Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;一个文字粒子效果,折腾了一些时间，纯粹觉得好玩 &lt;a href=&quot;https://tong-h.github.io/canvas-store/fontparticle/index.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Web Worker &amp;&amp; postMessage &amp;&amp; onMessage 使用教程</title>
+    <link href="http://yoursite.com/2019/04/21/webworker/"/>
+    <id>http://yoursite.com/2019/04/21/webworker/</id>
+    <published>2019-04-21T08:19:11.000Z</published>
+    <updated>2019-04-23T07:43:41.523Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;最近使用 iframe 的时候想要获取 iframe 文档信息的时候遇到了跨域问题，最后使用 postmessage 做父子页面通信解决需求也顺便学习了下 webworker 的使用&lt;br&gt;webWoker 使用依赖 postMessage() 和
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>typescript 学习之基础篇</title>
+    <link href="http://yoursite.com/2019/03/25/ts-1/"/>
+    <id>http://yoursite.com/2019/03/25/ts-1/</id>
+    <published>2019-03-25T03:40:14.000Z</published>
+    <updated>2019-04-08T06:17:25.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;vue-cli已经内置了 TypeScript 工具支持，在 Vue  (3.x) 中也计划了相当多的 TypeScript 支持改进，很多大佬以及用过的人也都在推荐入坑，而且目前也比较成熟，资源也很丰富，值得入坑&lt;/p&gt;
+&lt;h1 id=&quot;typescript&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>canvas性能优化篇</title>
+    <link href="http://yoursite.com/2019/03/18/canvas-3/"/>
+    <id>http://yoursite.com/2019/03/18/canvas-3/</id>
+    <published>2019-03-18T03:40:14.000Z</published>
+    <updated>2019-03-18T08:48:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;看了很多大佬的文章，自己也对项目做了一些优化，其实有很多地方平常码代码的时候稍微注意一下就能节约很多性能开销&lt;/p&gt;
+&lt;h1 id=&quot;1-离屏渲染&quot;&gt;&lt;a href=&quot;#1-离屏渲染&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>canvas动画篇</title>
+    <link href="http://yoursite.com/2019/03/07/canvas-2/"/>
+    <id>http://yoursite.com/2019/03/07/canvas-2/</id>
+    <published>2019-03-07T06:50:05.000Z</published>
+    <updated>2019-03-18T05:40:13.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;最近用canvas蛮多的，canvas写动画也蛮好使的&lt;/p&gt;
+&lt;h1 id=&quot;canvas-由-js-来控制，但用-js-写动画通常3种方法控制时间&quot;&gt;&lt;a href=&quot;#canvas-由-js-来控制，但用-js-写动画通常3种方法控制时间&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+    
+    
+      <category term="canvas" scheme="http://yoursite.com/tags/canvas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>google 搜索语法</title>
+    <link href="http://yoursite.com/2019/03/01/googleSearch/"/>
+    <id>http://yoursite.com/2019/03/01/googleSearch/</id>
+    <published>2019-03-01T07:04:37.000Z</published>
+    <updated>2019-03-15T06:44:11.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;现在越来越习惯用google了，不是我嫌弃百度，只是用了google发现百度真的让人爱不起来，没有对比就没有伤害&lt;/p&gt;
+&lt;p&gt;收集了一些google常用的语法，备忘&lt;/p&gt;
+&lt;p&gt;这些是已经被弃用的：+、~、inpostauthor:、allinpostauthor:、i
+        
+      
+    
+    </summary>
+    
+      <category term="tool" scheme="http://yoursite.com/categories/tool/"/>
+    
+    
+      <category term="search" scheme="http://yoursite.com/tags/search/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cannvas的imagedata对象</title>
+    <link href="http://yoursite.com/2019/02/21/canvas-1/"/>
+    <id>http://yoursite.com/2019/02/21/canvas-1/</id>
+    <published>2019-02-21T07:43:04.000Z</published>
+    <updated>2019-03-18T07:31:27.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;p&gt;ImageData 是canvas的图像数据，由&lt;strong&gt; ImageData()
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+    
+    
+      <category term="canvas" scheme="http://yoursite.com/tags/canvas/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Electron踩坑指南不完全篇</title>
+    <link href="http://yoursite.com/2018/12/13/electron/"/>
+    <id>http://yoursite.com/2018/12/13/electron/</id>
+    <published>2018-12-13T09:57:46.000Z</published>
+    <updated>2019-02-26T05:39:52.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;前段时间做了个客户端的项目，主要适用于老师教案管理、远程上课录屏、和学生互动答疑等场景，原生开发对公司来说成本有点大，基于guthub上有各种桌面打包框架so只能前端上了&lt;/p&gt;
+&lt;p&gt;Electron + vue =
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+    
+    
+      <category term="Electron" scheme="http://yoursite.com/tags/Electron/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>英语单词打卡记录</title>
+    <link href="http://yoursite.com/2018/11/16/english-clockIn/"/>
+    <id>http://yoursite.com/2018/11/16/english-clockIn/</id>
+    <published>2018-11-16T04:03:58.000Z</published>
+    <updated>2019-02-26T05:40:15.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;背单词接近3个月了，作为一个朝九晚六的上班族，一般背单词的时间是早上地铁有那么半个小时作为新单词时间然后晚上地铁半个小时是新单词为主 +
+        
+      
+    
+    </summary>
+    
+      <category term="rests" scheme="http://yoursite.com/categories/rests/"/>
+    
+    
+      <category term="死磕英语" scheme="http://yoursite.com/tags/%E6%AD%BB%E7%A3%95%E8%8B%B1%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端使用html5、ffmpeg实现录屏摄像等功能</title>
+    <link href="http://yoursite.com/2018/11/06/streamcapture/"/>
+    <id>http://yoursite.com/2018/11/06/streamcapture/</id>
+    <published>2018-11-06T09:05:15.000Z</published>
+    <updated>2019-03-15T06:25:29.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;前段时间做一个windows的桌面应用，vue + electron，涉及到录屏和摄像功能，网上相关的文档蛮少的给需要的人一些参考&lt;/p&gt;
+&lt;p&gt;如果文章描写有误或者还有更好的方法，请留言告诉我，笔芯 (´▽`ʃ♡ƪ)&lt;/p&gt;
+&lt;h1 id=&quot;背景介绍&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+    
+    
+      <category term="ffmpeg" scheme="http://yoursite.com/tags/ffmpeg/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端是否需要对密码进行加密传输 &amp;&amp; HTTPS</title>
+    <link href="http://yoursite.com/2018/10/16/https/"/>
+    <id>http://yoursite.com/2018/10/16/https/</id>
+    <published>2018-10-16T06:38:44.000Z</published>
+    <updated>2019-02-21T07:52:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;最近学习node，写demo登陆和注册功能的时候因为要考虑后台的加密和安全所以也想了下前端的，前端传输密码的时候是否应该加密之后再传输呢&lt;br&gt;看了一些网站的登陆，csdn、简书等是明文传输，但腾讯、百度这些一线大站是经过前端加密的，看了些大佬的文章，顺便自己搬个凳子记个笔
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+    
+    
+      <category term="http" scheme="http://yoursite.com/tags/http/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mysql常用语句</title>
+    <link href="http://yoursite.com/2018/10/10/mysql/"/>
+    <id>http://yoursite.com/2018/10/10/mysql/</id>
+    <published>2018-10-10T09:36:05.000Z</published>
+    <updated>2019-04-05T07:58:50.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;sql语法特点：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;没有””双引号，字符串使用’’单引号包含；&lt;/li&gt;
+&lt;li&gt;没有逻辑相等，赋值和逻辑相等都是=；&lt;/li&gt;
+&lt;li&gt;类型不再是最严格的，任何数据都可以包含在’’单引号内；&lt;/li&gt;
+&lt;li&gt;没有布尔值的概念，但是在视图中可以输入
+        
+      
+    
+    </summary>
+    
+      <category term="mysql" scheme="http://yoursite.com/categories/mysql/"/>
+    
+    
+      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nodejs之接收formdata表单</title>
+    <link href="http://yoursite.com/2018/10/09/node_fromdata/"/>
+    <id>http://yoursite.com/2018/10/09/node_fromdata/</id>
+    <published>2018-10-09T06:31:34.000Z</published>
+    <updated>2019-02-21T07:52:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;最近在学习express，写一个vue+express+mysql的小demo，需要上传一张封面图和一些其他的表单字段….&lt;/p&gt;
+&lt;h1 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+    
+    
+      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nodejs使用cors跨域</title>
+    <link href="http://yoursite.com/2018/09/28/node_cors/"/>
+    <id>http://yoursite.com/2018/09/28/node_cors/</id>
+    <published>2018-09-28T07:32:31.000Z</published>
+    <updated>2019-02-26T05:40:36.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;相关文章：&lt;a href=&quot;https://tong-h.github.io/2017/12/01/Nginx%E7%9A%84%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%B7%A8%E5%9F%9F/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+    
+    
+      <category term="跨域" scheme="http://yoursite.com/tags/%E8%B7%A8%E5%9F%9F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vue cli 3.0初体验</title>
+    <link href="http://yoursite.com/2018/09/20/vue3.0/"/>
+    <id>http://yoursite.com/2018/09/20/vue3.0/</id>
+    <published>2018-09-20T03:17:43.000Z</published>
+    <updated>2019-03-19T06:04:09.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;https://medium.com/the-vue-point/plans-for-the-next-iteration-of-vue-js-777ffea6fabf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;尤雨溪：Vue
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+    
+    
+      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cordova之HybirdApp热更新</title>
+    <link href="http://yoursite.com/2018/08/30/cordova_%E7%83%AD%E6%9B%B4%E6%96%B0/"/>
+    <id>http://yoursite.com/2018/08/30/cordova_热更新/</id>
+    <published>2018-08-30T07:57:11.000Z</published>
+    <updated>2019-02-21T07:52:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;关于热更新&quot;&gt;&lt;a href=&quot;#关于热更新&quot; class=&quot;headerlink&quot; title=&quot;关于热更新&quot;&gt;&lt;/a&gt;关于热更新&lt;/h1&gt;&lt;p&gt;热更新App常用的更新方式。简单来说，就是在用户通过App
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+    
+    
+      <category term="cordova" scheme="http://yoursite.com/tags/cordova/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cordova之相机拍照以及本地图片获取上传</title>
+    <link href="http://yoursite.com/2018/08/27/cordova_%E5%9B%BE%E7%89%87%E8%8E%B7%E5%8F%96%E4%B8%8A%E4%BC%A0/"/>
+    <id>http://yoursite.com/2018/08/27/cordova_图片获取上传/</id>
+    <published>2018-08-27T04:30:52.000Z</published>
+    <updated>2019-02-21T07:52:33.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+    
+    
+      <category term="cordova" scheme="http://yoursite.com/tags/cordova/"/>
+    
+  </entry>
+  
+</feed>
