@@ -96,7 +96,7 @@ html, body {
 }
 @media (min-width: 600px ){
     html, body {
-        font-size: 16px;
+        font-size: 14px;
     }
     .maxwidth {
         width: 100vw;

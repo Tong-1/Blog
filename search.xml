@@ -9,11 +9,23 @@
     <title><![CDATA[npm && yarn 差异以及常用命令]]></title>
     <url>%2F2019%2F07%2F01%2Fnpm%26%26yarn%2F</url>
     <content type="text"><![CDATA[yarn 从去年vue-cli更新以来一直用，但一直都没认真了解过 yarn 背景介绍安装方法 三种安装方式Yarn 是一个包管理器，代码通过包（package） 或者模块（module）的方式来共享， 一个包里包含所有需要共享的代码，以及描述包信息的文件，称为 package.json 。 yarn npm 差异 同步安装：npm 是按照队列执行每个 package，Yarn 是同步执行所有任务 离线模式：Yarn可以从缓存中获取以前安装过的安装包，而npm每次都从网络下载 安装版本统一：yarn.lock 文件记录了所有安装模块的版本号，这样使我们每次拉取同一个项目依赖时使用都是一样的版本号，而 npm 需要执行 npm shrinkwrap 才会生成一个锁定文件 npm-shrinkwrap.json npm 输出内容多长，安装慢就算了还老是失败，相较而言 yarn 真的快多了 常用命令更多命令 官网 CLI 命令 npm 命令 yarn 命令 命令介绍 npm install xxx npm i xxx yarn 安装但不写入package.json npm install –save xxx npm i -s xxx yarn add xxx 安装xxx模块，并且记录到package.json字段对应的dependency npm install –save-dev xxx npm i -D xxx yarn add xxx –dev 安装xxx模块，并且记录到package.jso字段对应的dev-dependency是开发环境必须依赖的模块 npm install –global xxx npm i -g xxx yarn global add xxx 全局安装xxx模块，如果模块里package.json有bin配置，会自动链接，作为cli命令 npm uninstall react –save yarn remove taco 安装并记录package.json中的dependency字段 npm update –save yarn upgrade 更新并记录package.json中的dependency字段 参考文章官网命令知乎文章：npm和yarn的区别，我们该如何选择？]]></content>
+      <categories>
+        <category>tool</category>
+      </categories>
+      <tags>
+        <tag>yarn</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[理解浏览器缓存机制]]></title>
     <url>%2F2019%2F05%2F14%2Fbrowser_cache%2F</url>
     <content type="text"><![CDATA[有关浏览器缓存的几个疑问 浏览器缓存判断流程？ 两种分类协商缓存和强制缓存是什么？怎么判断？ 缓存的资源放在哪儿？ 不同的刷新对缓存的影响？ 浏览器缓存的流程当客户端请求某个资源，首先需要询问浏览器是否存在缓存有以下三种结果： 不存在，那么直接向服务器发起请求，就像第一次访问该网站一样 存在，通过Cache-Control、Expires判断后缓存已失效，那么则使用协商缓存，携带该资源缓存标识向服务器发起请求，服务器根据 http header 判断后决定是否使用缓存，若协商缓存失效重新拉取请求结果则状态码为 200 ，若协商缓存生效那么继续使用缓存状态码为 304 存在，通过Cache-Control、Expires判断后未失效，那么继续使用缓存状态码为 304 图示： 123456789101112131415161718 浏览器发起请求 | | 是否有缓存 ——— 是 ——— 缓存是否失效 ——— 是 ——— 协商缓存 ———— 成功 | | | | | | | | 否 否 失败 | | | | | |—————————————————————|————————————————————| | | | | 向服务器请求资源 读取缓存————————————————————————————| | | | |根据 http header 存缓存 | | | |—————————————————————| | 完成加载 所以有两种缓存类型，强制缓存和协商缓存，优先判断的不需要发 http 请求的是强制缓存当强制缓存无效时才启用协商缓存，协商缓存需要发送 http 请求交由服务器判断，可以应用于一些时常需要动态更新的资源文件 强制缓存浏览器判断强制缓存是否存在和是否失效这两个：Cache-Control、Expires Cache-Control * http/1.1的字段，控制网页缓存的主要规则，取值： public： 所有内容都将被缓存 private：默认值，所有内容只有客户端可以缓存， CDN 等中继缓存服务器不能缓存 no-cache：客户端缓存内容，但由协商缓存决定是否使用缓存 no-store：所有内容都不会被缓存 max-ag=xxx：缓存内容在xxx秒后失效 max-stale=xxx: 指定时间内，即使缓存过时依然使用资源 min-fresh=xxx：缓存的资源至上要保持指定时间的新鲜期 only-if-cached：仅仅返回已经缓存的资源，不访问网络，无缓存返回 504 no-transform：强制要求代理服务器不要对资源进行转换，禁止代理服务器对 Content-Type、Content-Encoding, Content-Range 字段进行修改 Expires * http/1.0 的字段，请求结果缓存到期时间，优先级低于 Cache-Control:max-age由于 Expires 设置的时绝对时间若 Expires 和 Cache-Control:max-age 两者都没出现浏览器默认使用启发式算法：响应头的（ Date - Last - Modified ） 10，也就是（响应时间 - 文件最后修改时间 ） 10 协商缓存Etag / If-None-Match 优先级高于Last-Modified / If-Modfied-Since，同时存在前者生效 Last-Modified / If-Modified-Since / If-Unmodified-since * Last-Modified 是服务器响应请求时返回该资源在服务器的最后修改时间 If-Modified-Since 是客户端再次发起请求时携带上次服务器返回的Last-Modified, 服务器接收到这个时间将与该资源在服务器最后修改的时间进行对比，若服务器修改的时间大于客户端发送的时间，则状态码200重新返回资源，否则返回304表示资源无更新继续使用缓存 If-Unmodified-since 同上，资源未修改正常执行更新反之返回412 Etag / If-None-Match * Etag 是资源唯一标识符，服务器响应请求时返回当前资源的唯一标识符 If-None-Match 是客户端再次发起该请求时携带上次请求时服务器返回的唯一标识符 Etag，服务器接收到该值会与该资源在服务器的 Etag 值做对比，一致状态码 304 表示无更新继续使用缓存，反之则返回资源文件状态码 200 缓存的资源在哪儿？浏览器通过 http 请求获取到资源，那么资源会缓存在哪儿 memory cache：内存缓存，会将编译解析的文件，直接存入该进程内存中，占据一定的内存资源，以便下次快速读取，进程关闭即清空 from disk cache：硬盘缓存，盘缓存是将缓存写入硬盘文件中，读取缓存需要对该缓存存放的硬盘文件进行i/o操作，然后解析读取，速度比内存缓存慢 浏览器读取缓存时 memory ——&gt; disk ——&gt; 两者都没有便发起网络请求 ——&gt; 获取资源缓存到硬盘和内存 在浏览器中，css 文件会存入硬盘文件中，因为 css 文件通常只在页面渲染时加载一次，而 js 和图片等文件解析执行后直接存入内存缓存中，是因为可能会频繁读取，当刷新页面时只需直接从内存缓存中读取 浏览器行为对缓存的影响 刷新网页，如果缓存没有失效，浏览器直接使用缓存，反之 http 请求数据 手动刷新 / F5，浏览器会认为缓存失效，在请求服务器时加上Cache-Control: max-age=0字段，然后询问服务器数据是否更新 强制刷新 / Ctrl + F5，浏览器会直接忽略缓存，在请求服务器时加上Cache-Control: no-cache字段，然后重新向服务器拉取文件 其他 其他和缓存相关的 header 头部 * date 响应生成时间 age 代理服务器生成，表示代理服务器对于请求资源的已缓存时间, 单位为秒 Pragma：no-cache: http / 1.0 作用和 Cache-Control:no-cache 一样，如果在控制台勾选 Disable cache, 浏览器自动带上该字段 vary 缓存版本，可用于区分 pc 和 移动端需要加载的资源 浏览器禁用缓存 * 1&lt;meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/&gt; 参考文章浏览器的缓存机制小结彻底理解浏览器的缓存机制[]]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+      <tags>
+        <tag>缓存</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[canvas 文字粒子特效]]></title>

@@ -1,9 +1,18 @@
 .post .info {
-    text-align: right;
+    text-align: center;
+    padding: 30px 0;
+    color: #707070;
+    font-size: 14px;
 }
 .post .info i {
-    font-size: 16px;
-    padding: 0 6px 0 20px;
+    padding: 0 6px;
+}
+.post .info i::before {
+    padding-right: 6px;
+}
+.post .copyright {
+    padding: 20px 10px;
+    color: #ff9537;
 }
 .postDetail h1, .postDetail h2, .postDetail h3, .postDetail h4, .postDetail h5 {
     margin: 20px 0;

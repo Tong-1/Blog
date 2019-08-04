@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-02T06:13:51.620Z</updated>
+  <updated>2019-08-02T06:13:51.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/08/02/hexo-theme/"/>
     <id>http://yoursite.com/2019/08/02/hexo-theme/</id>
     <published>2019-08-02T06:13:51.000Z</published>
-    <updated>2019-08-02T06:13:51.620Z</updated>
+    <updated>2019-08-02T06:13:51.000Z</updated>
     
     <summary type="html">
     
@@ -35,7 +35,7 @@
     <link href="http://yoursite.com/2019/07/01/npm&amp;&amp;yarn/"/>
     <id>http://yoursite.com/2019/07/01/npm&amp;&amp;yarn/</id>
     <published>2019-07-01T09:26:11.000Z</published>
-    <updated>2019-07-01T10:13:22.543Z</updated>
+    <updated>2019-08-04T04:03:18.897Z</updated>
     
     <summary type="html">
     
@@ -50,6 +50,10 @@
     
     </summary>
     
+      <category term="tool" scheme="http://yoursite.com/categories/tool/"/>
+    
+    
+      <category term="yarn" scheme="http://yoursite.com/tags/yarn/"/>
     
   </entry>
   
@@ -58,7 +62,7 @@
     <link href="http://yoursite.com/2019/05/14/browser_cache/"/>
     <id>http://yoursite.com/2019/05/14/browser_cache/</id>
     <published>2019-05-14T03:44:11.000Z</published>
-    <updated>2019-05-14T09:29:57.970Z</updated>
+    <updated>2019-08-04T03:44:18.648Z</updated>
     
     <summary type="html">
     
@@ -79,6 +83,10 @@
     
     </summary>
     
+      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+    
+    
+      <category term="缓存" scheme="http://yoursite.com/tags/%E7%BC%93%E5%AD%98/"/>
     
   </entry>
   
@@ -87,7 +95,7 @@
     <link href="http://yoursite.com/2019/04/23/canvas-fontparticle/"/>
     <id>http://yoursite.com/2019/04/23/canvas-fontparticle/</id>
     <published>2019-04-23T07:43:11.000Z</published>
-    <updated>2019-05-14T09:29:18.262Z</updated>
+    <updated>2019-05-14T09:29:18.000Z</updated>
     
     <summary type="html">
     
@@ -109,7 +117,7 @@
     <link href="http://yoursite.com/2019/04/21/webworker/"/>
     <id>http://yoursite.com/2019/04/21/webworker/</id>
     <published>2019-04-21T08:19:11.000Z</published>
-    <updated>2019-04-23T07:43:41.523Z</updated>
+    <updated>2019-04-23T07:43:41.000Z</updated>
     
     <summary type="html">
     
@@ -131,7 +139,7 @@
     <link href="http://yoursite.com/2019/03/25/ts-1/"/>
     <id>http://yoursite.com/2019/03/25/ts-1/</id>
     <published>2019-03-25T03:40:14.000Z</published>
-    <updated>2019-04-08T06:17:25.000Z</updated>
+    <updated>2019-04-08T06:17:25.653Z</updated>
     
     <summary type="html">
     
@@ -365,7 +373,7 @@
     <link href="http://yoursite.com/2018/10/10/mysql/"/>
     <id>http://yoursite.com/2018/10/10/mysql/</id>
     <published>2018-10-10T09:36:05.000Z</published>
-    <updated>2019-04-05T07:58:50.000Z</updated>
+    <updated>2019-04-05T07:58:50.052Z</updated>
     
     <summary type="html">
     

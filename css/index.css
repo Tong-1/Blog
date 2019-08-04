@@ -54,7 +54,7 @@
 #posts article > .content p,#posts article > .content div,#posts article > .content h1,#posts article > .content strong,
 #posts article > .content h2,#posts article > .content h3,#posts article > .content li,#posts article > .content ul{
     display: inline;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
     color: #444;
 }

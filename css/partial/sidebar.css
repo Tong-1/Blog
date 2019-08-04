@@ -10,6 +10,18 @@
 #sidebar .info img {
     border-radius: 50%;
 }
+#sidebar .info img:hover {
+    border-radius: 50%;
+    animation: head .6s
+}
+@keyframes head {
+    0% {
+        transform: rotate(360deg)
+    }
+    100% {
+        transform: rotate(0)
+    }
+}
 #sidebar .info div {
     display: inline-block;
     width: calc(100% - 70px);
