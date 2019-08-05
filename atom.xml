@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-02T06:13:51.620Z</updated>
+  <updated>2019-08-05T11:32:47.357Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,16 +17,80 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo-theme</title>
-    <link href="http://yoursite.com/2019/08/02/hexo-theme/"/>
-    <id>http://yoursite.com/2019/08/02/hexo-theme/</id>
-    <published>2019-08-02T06:13:51.000Z</published>
-    <updated>2019-08-02T06:13:51.620Z</updated>
+    <title>hexo 主题制作</title>
+    <link href="http://yoursite.com/2019/08/05/hexo_theme/"/>
+    <id>http://yoursite.com/2019/08/05/hexo_theme/</id>
+    <published>2019-08-05T09:42:48.000Z</published>
+    <updated>2019-08-05T11:32:47.357Z</updated>
     
     <summary type="html">
     
+      
+      
+        
+        
+          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;p&gt;hexo
+        
+      
+    
     </summary>
     
+      <category term="TOOL" scheme="http://yoursite.com/categories/TOOL/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客折腾总结</title>
+    <link href="http://yoursite.com/2019/08/05/about_blog/"/>
+    <id>http://yoursite.com/2019/08/05/about_blog/</id>
+    <published>2019-08-05T09:13:51.000Z</published>
+    <updated>2019-08-05T10:15:46.139Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&amp;emsp;&amp;emsp;之前看到有人说，写 Blog 的人都是这样的，从刚接触 Blog
+        
+      
+    
+    </summary>
+    
+      <category term="RESTS" scheme="http://yoursite.com/categories/RESTS/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>域名解析</title>
+    <link href="http://yoursite.com/2019/08/05/domain/"/>
+    <id>http://yoursite.com/2019/08/05/domain/</id>
+    <published>2019-08-05T06:13:51.000Z</published>
+    <updated>2019-08-05T09:18:34.734Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;二级域名设置&quot;&gt;&lt;a href=&quot;#二级域名设置&quot; class=&quot;headerlink&quot; title=&quot;二级域名设置&quot;&gt;&lt;/a&gt;二级域名设置&lt;/h2&gt;&lt;p&gt;阿里云的域名解析设置页面 —&amp;gt; 点击添加记录 —&amp;gt; 出现弹框&lt;br&gt;   
+        
+      
+    
+    </summary>
+    
+      <category term="SERVER" scheme="http://yoursite.com/categories/SERVER/"/>
+    
+    
+      <category term="domain" scheme="http://yoursite.com/tags/domain/"/>
     
   </entry>
   
@@ -35,7 +99,7 @@
     <link href="http://yoursite.com/2019/07/01/npm&amp;&amp;yarn/"/>
     <id>http://yoursite.com/2019/07/01/npm&amp;&amp;yarn/</id>
     <published>2019-07-01T09:26:11.000Z</published>
-    <updated>2019-08-04T06:58:35.000Z</updated>
+    <updated>2019-08-05T06:54:53.816Z</updated>
     
     <summary type="html">
     
@@ -50,7 +114,7 @@
     
     </summary>
     
-      <category term="tool" scheme="http://yoursite.com/categories/tool/"/>
+      <category term="TOOL" scheme="http://yoursite.com/categories/TOOL/"/>
     
     
       <category term="yarn" scheme="http://yoursite.com/tags/yarn/"/>
@@ -62,7 +126,7 @@
     <link href="http://yoursite.com/2019/05/14/browser_cache/"/>
     <id>http://yoursite.com/2019/05/14/browser_cache/</id>
     <published>2019-05-14T03:44:11.000Z</published>
-    <updated>2019-08-04T03:44:18.000Z</updated>
+    <updated>2019-08-05T06:52:52.780Z</updated>
     
     <summary type="html">
     
@@ -83,7 +147,7 @@
     
     </summary>
     
-      <category term="web" scheme="http://yoursite.com/categories/web/"/>
+      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
     
     
       <category term="缓存" scheme="http://yoursite.com/tags/%E7%BC%93%E5%AD%98/"/>
@@ -220,7 +284,7 @@
     <link href="http://yoursite.com/2019/03/01/googleSearch/"/>
     <id>http://yoursite.com/2019/03/01/googleSearch/</id>
     <published>2019-03-01T07:04:37.000Z</published>
-    <updated>2019-03-15T06:44:11.000Z</updated>
+    <updated>2019-08-05T06:54:53.768Z</updated>
     
     <summary type="html">
     
@@ -236,7 +300,7 @@
     
     </summary>
     
-      <category term="tool" scheme="http://yoursite.com/categories/tool/"/>
+      <category term="TOOL" scheme="http://yoursite.com/categories/TOOL/"/>
     
     
       <category term="search" scheme="http://yoursite.com/tags/search/"/>
@@ -301,7 +365,7 @@
     <link href="http://yoursite.com/2018/11/16/english-clockIn/"/>
     <id>http://yoursite.com/2018/11/16/english-clockIn/</id>
     <published>2018-11-16T04:03:58.000Z</published>
-    <updated>2019-02-26T05:40:15.000Z</updated>
+    <updated>2019-08-05T08:38:03.140Z</updated>
     
     <summary type="html">
     
@@ -315,7 +379,7 @@
     
     </summary>
     
-      <category term="rests" scheme="http://yoursite.com/categories/rests/"/>
+      <category term="RESTS" scheme="http://yoursite.com/categories/RESTS/"/>
     
     
       <category term="死磕英语" scheme="http://yoursite.com/tags/%E6%AD%BB%E7%A3%95%E8%8B%B1%E8%AF%AD/"/>
@@ -381,7 +445,7 @@
     <link href="http://yoursite.com/2018/10/10/mysql/"/>
     <id>http://yoursite.com/2018/10/10/mysql/</id>
     <published>2018-10-10T09:36:05.000Z</published>
-    <updated>2019-04-05T07:58:50.000Z</updated>
+    <updated>2019-08-05T09:18:01.019Z</updated>
     
     <summary type="html">
     
@@ -400,7 +464,7 @@
     
     </summary>
     
-      <category term="mysql" scheme="http://yoursite.com/categories/mysql/"/>
+      <category term="MYSQL" scheme="http://yoursite.com/categories/MYSQL/"/>
     
     
       <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
@@ -483,58 +547,6 @@
     
     
       <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>cordova之HybirdApp热更新</title>
-    <link href="http://yoursite.com/2018/08/30/cordova_%E7%83%AD%E6%9B%B4%E6%96%B0/"/>
-    <id>http://yoursite.com/2018/08/30/cordova_热更新/</id>
-    <published>2018-08-30T07:57:11.000Z</published>
-    <updated>2019-02-21T07:52:33.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;关于热更新&quot;&gt;&lt;a href=&quot;#关于热更新&quot; class=&quot;headerlink&quot; title=&quot;关于热更新&quot;&gt;&lt;/a&gt;关于热更新&lt;/h1&gt;&lt;p&gt;热更新App常用的更新方式。简单来说，就是在用户通过App
-        
-      
-    
-    </summary>
-    
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
-    
-    
-      <category term="cordova" scheme="http://yoursite.com/tags/cordova/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>cordova之相机拍照以及本地图片获取上传</title>
-    <link href="http://yoursite.com/2018/08/27/cordova_%E5%9B%BE%E7%89%87%E8%8E%B7%E5%8F%96%E4%B8%8A%E4%BC%A0/"/>
-    <id>http://yoursite.com/2018/08/27/cordova_图片获取上传/</id>
-    <published>2018-08-27T04:30:52.000Z</published>
-    <updated>2019-02-21T07:52:33.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span
-        
-      
-    
-    </summary>
-    
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
-    
-    
-      <category term="cordova" scheme="http://yoursite.com/tags/cordova/"/>
     
   </entry>
   

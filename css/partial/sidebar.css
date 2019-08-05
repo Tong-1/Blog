@@ -114,3 +114,7 @@
 .structure .toc {
     margin-left: 10px
 }
+.structure .toc .toc-number {
+    color: #ffac00;
+    font-weight: 900;
+}

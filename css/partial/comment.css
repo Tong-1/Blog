@@ -1,10 +1,10 @@
-.comment {
+#comment {
     background: #ffdd7a;
     padding: 20px;
     border-radius: 4px;
     margin: 20px 0;
 }
-.comment form input{
+#comment form input{
     width: calc(33.33% - 32px);
     margin-right: 10px;
     padding: 10px;
@@ -13,12 +13,12 @@
 select {
     vertical-align: middle;
 }
-.comment textarea {
+#comment textarea {
     width: calc(100% - 28px);
     margin: 8px 0;
     padding: 10px;
 }
-.comment button {
+#comment button {
     float: right;
     border: none;
     padding: 10px;
@@ -55,7 +55,7 @@ select {
     text-align: right;
 }
 @media (max-width: 800px) {
-    .comment form input {
+    #comment form input {
         width: calc(100% - 28px);
         margin: 6px 0;
     }

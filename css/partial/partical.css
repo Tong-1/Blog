@@ -86,3 +86,10 @@
         display: inline-block
     }
 }
+.footer {
+    transform: translate(calc(50vw - 150px), 0);
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    margin: 0 !important;
+}

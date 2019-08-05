@@ -73,7 +73,7 @@ html, body {
     transition: all 1s;
     overflow-x: hidden;
 }
-.title {
+.artititle {
     font-size: 24px;
     vertical-align: middle;
     margin: 30px 10px;
@@ -96,7 +96,7 @@ html, body {
 }
 @media (min-width: 600px ){
     html, body {
-        font-size: 14px;
+        font-size: 16px;
     }
     .maxwidth {
         width: 100vw;

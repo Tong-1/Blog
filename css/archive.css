@@ -38,7 +38,7 @@ article {
 }
 article .meta {
     text-align: right;
-    font-size: 14px;
+    font-size: 16px;
 }
 article .meta i {
     padding-left: 10px 
@@ -46,7 +46,7 @@ article .meta i {
 article .meta i:before {
     padding-right: 6px;
 }
-article > .title {
+article > .artititle {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
@@ -58,7 +58,7 @@ article > .title {
     display: block;
 }
 
-article > .title::after {
+article > .artititle::after {
     content:'';
     width:0;
     height:0;
@@ -70,7 +70,7 @@ article > .title::after {
     transition: .4s;
     margin: 0 30px;
 }
-article > .title::before {
+article > .artititle::before {
     content:'';
     width:0;
     height:0;
@@ -81,11 +81,11 @@ article > .title::before {
     right: 0;
     transition: .4s;
 }
-article > .title:hover::after{
+article > .artititle:hover::after{
     width:calc(100% + 14px);
     height:calc(100% + 14px);
 }
-article > .title:hover::before{
+article > .artititle:hover::before{
     width:calc(100% + 14px);
     height:calc(100% + 14px);
 }
@@ -99,7 +99,7 @@ article > .content {
 article > .content p,article > .content div,article > .content h1,article > .content strong,
 article > .content h2,article > .content h3,article > .content li,article > .content ul{
     display: inline;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 100;
     color: #444;
 }
