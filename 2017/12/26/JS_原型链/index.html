@@ -56,12 +56,12 @@
 <p>A：constructor 属性返回对创建此对象的数组函数的引用</p>
 <p>Q:<em>proto</em>的指向哪里</p>
 <p>A:<em>proto</em>的指向取决于对象创建时的实现方式</p>
-</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
+</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}" data-title="JS中的原型链是什么？"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
     setTimeout(()=>{
         if (Gitment) {
             let string = JSON.parse(document.getElementById('gitment_container').dataset.gitment)
             var gitment = new Gitment({
-                id: window.location.href,
+                id: document.getElementById('gitment_container').dataset.title,
                 owner: string.owner,
                 repo: string.repo,
                 oauth: {

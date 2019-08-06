@@ -26,12 +26,12 @@
 <p>2、filter怎么去掉时间的秒<br><figure class="highlight axapta"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">答：&#123;&#123;<span class="keyword">date</span> | <span class="keyword">date</span> : <span class="string">'yyyy-MM-dd hh:mm:ss EEEE'</span>&#125;&#125;</span><br><span class="line">参数用来指定所要的格式，y M d h m s E 分别表示 年 月 日 时 分 秒 星期，你可以自由组合它们</span><br></pre></td></tr></table></figure></p>
 <p>3、什么情况下使用filter</p>
 <p>答：常用的就是一个date的格式转换，表格中进行排序、还有大量的一些约定字段，使用自定义的filter。</p>
-</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
+</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}" data-title="angular之constant和filter"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
     setTimeout(()=>{
         if (Gitment) {
             let string = JSON.parse(document.getElementById('gitment_container').dataset.gitment)
             var gitment = new Gitment({
-                id: window.location.href,
+                id: document.getElementById('gitment_container').dataset.title,
                 owner: string.owner,
                 repo: string.repo,
                 oauth: {

@@ -14,12 +14,12 @@
 <p> git merge –no-ff  -m “注释” name<br>通常合并分支时，git一般使用”Fast forward”模式，在这种模式下，删除分支后，会丢掉分支信息，现在我们来使用带参数 –no-ff来禁用”Fast forward”模式。</p>
 <p>查看远程库的信息 git remote<br>查看远程库的详细信息  git remote –v</p>
 <p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
-</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
+</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}" data-title="git常用命令（备忘）"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
     setTimeout(()=>{
         if (Gitment) {
             let string = JSON.parse(document.getElementById('gitment_container').dataset.gitment)
             var gitment = new Gitment({
-                id: window.location.href,
+                id: document.getElementById('gitment_container').dataset.title,
                 owner: string.owner,
                 repo: string.repo,
                 oauth: {

@@ -15,12 +15,12 @@
 <p>卜蒜子 阅读量统计</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_container_site_pv"</span>&gt;</span>本站总访问量<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>次<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p>*hexo 主题制作官方文档： <a href="https://hexo.io/zh-cn/docs/permalinks" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/permalinks</a></p>
-</div><div class="copyright">转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以联系我</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
+</div><div class="copyright">转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以联系我</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}" data-title="hexo 主题制作"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
     setTimeout(()=>{
         if (Gitment) {
             let string = JSON.parse(document.getElementById('gitment_container').dataset.gitment)
             var gitment = new Gitment({
-                id: window.location.href,
+                id: document.getElementById('gitment_container').dataset.title,
                 owner: string.owner,
                 repo: string.repo,
                 oauth: {

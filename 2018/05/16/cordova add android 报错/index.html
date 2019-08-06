@@ -6,12 +6,12 @@
 <h2 id="方法三：卸载cordva重新安装（对我没有用）"><a href="#方法三：卸载cordva重新安装（对我没有用）" class="headerlink" title="方法三：卸载cordva重新安装（对我没有用）"></a>方法三：卸载cordva重新安装（对我没有用）</h2><p>运行命令：npm uninstall cordova -g<br>删除文件夹：C：\ Users \ your-name \ .cordova<br>重新安装cordova：npm install -g cordova<br>现在转到项目文件夹，然后再试一次：cordova platform add android<br>方法四：修改环境变量（解决）<br>在环境变量path内加入C:\Windows\System32</p>
 <h1 id="如果以上方法对你没有用，可以用cordova-d-platform-add-android调试看下提示信息"><a href="#如果以上方法对你没有用，可以用cordova-d-platform-add-android调试看下提示信息" class="headerlink" title="如果以上方法对你没有用，可以用cordova -d platform add android调试看下提示信息"></a>如果以上方法对你没有用，可以用cordova -d platform add android调试看下提示信息</h1><p>相关博文：Android SDK 环境配置/Cordova环境搭建打包apk各种踩坑报错系列</p>
 <p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
-</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
+</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}" data-title="Cordova add android 报错4种解决方法"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
     setTimeout(()=>{
         if (Gitment) {
             let string = JSON.parse(document.getElementById('gitment_container').dataset.gitment)
             var gitment = new Gitment({
-                id: window.location.href,
+                id: document.getElementById('gitment_container').dataset.title,
                 owner: string.owner,
                 repo: string.repo,
                 oauth: {
