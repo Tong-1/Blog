@@ -104,7 +104,7 @@
     setTimeout(()=>{
         if (this.Gitalk) {
             let string = JSON.parse(document.getElementById('gitalk-container').dataset.gitalk)
-            var Gitalk = new Gitalk({
+            var gitalk = new Gitalk({
                 clientID: string.client_id,
                 clientSecret: string.client_secret,
                 repo: string.repo,
@@ -113,8 +113,7 @@
                 id: document.getElementById('gitalk-container').dataset.date,
                 distractionFreeMode: string.distractionFreeMode
             })
-            Gitalk.render('gitalk-container')
-            console.log(Gitalk)
+            gitalk.render('gitalk-container')
         } else commentinit()
     },100)
 }
