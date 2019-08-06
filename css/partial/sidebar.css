@@ -3,6 +3,17 @@
     padding: 20px;
     transition: all 1s;
     box-shadow: #ffac00 0 0 0 10px, #ffac008f 0 0 0 20px;
+    animation: sidebarC 4s;
+}
+@keyframes sidebarC {
+    45% {
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        height: calc(100vh - 166px);
+    }
 }
 #sidebar .info {
     margin: 20px 0;
@@ -70,19 +81,7 @@
 #sidebar .category-list-item span::before {
     content: '(';
 }
-#sidebar .category-list-item a {
-    position: relative;
-}
-#sidebar .category-list-item a::after {
-    content: '.....................................................................';
-    position: absolute;
-    top: -8px;
-    width: calc(166px - 100%);
-    overflow: hidden;
-    left: calc(100% + 6px);
-    font-size: 24px;
-}
-#sidebar .tags a:hover::after, #sidebar .relat li:hover::after, #sidebar .category-list-item:hover::after {
+#sidebar.tags a:hover::after, #sidebar .relat li:hover::after, #sidebar .category-list li:hover::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -112,7 +111,10 @@
     color: #ffac00
 }
 .structure .toc {
-    margin-left: 10px
+    margin-left: 10px;
+}
+.structure .toc .toc-item {
+    position: relative;
 }
 .structure .toc .toc-number {
     color: #ffac00;

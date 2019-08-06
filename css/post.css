@@ -48,10 +48,13 @@
 .postDetail hr {
     border-style: dotted;
 }
+.postDetail img {
+    width: 100%;
+    height: auto;
+}
 .postDetail table {
     margin: 20px 0;
     width: 100%;
-    /* font-size: 16px; */
     table-layout: fixed;
     word-wrap: break-all;
     background-color: #ffffffcf;
@@ -95,7 +98,6 @@
     color: #eee;
     background: #383838;
     border-radius: 3px;
-    /* font-size: 16px; */
 }
 .postDetail pre {
     padding: 10px;
