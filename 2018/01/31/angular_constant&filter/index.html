@@ -29,17 +29,17 @@
 </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"><div id="comment"><div id="gitalk-container" data-gitalk="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;Tong-H&quot;,&quot;repo&quot;:&quot;Tong-H.github.io&quot;,&quot;admin&quot;:&quot;Tong-H&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;,&quot;distractionFreeMode&quot;:false}" data-date="2018-01-31T12:58:33.000Z"></div><script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script><script>function commentinit() {
     setTimeout(()=>{
         if (Gitalk) {
-            let string = JSON.parse(document.getElementById('Gitalk_container').dataset.Gitalk)
+            let string = JSON.parse(document.getElementById('gitalk-container').dataset.gitalk)
             var Gitalk = new Gitalk({
                 clientID: string.client_id,
                 clientSecret: string.client_secret,
                 repo: string.repo,
                 owner: string.owner,
                 admin: string.admin,
-                id: document.getElementById('Gitalk_container').dataset.date,
+                id: document.getElementById('gitalk-container').dataset.date,
                 distractionFreeMode: string.distractionFreeMode
             })
-            Gitalk.render('Gitalk_container')
+            Gitalk.render('gitalk-container')
         } else commentinit()
     },200)
 }
