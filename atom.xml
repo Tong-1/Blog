@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-05T11:32:47.357Z</updated>
+  <updated>2019-08-06T05:50:47.058Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>gitment 评论系统博客接入</title>
+    <link href="http://yoursite.com/2019/08/06/gitment/"/>
+    <id>http://yoursite.com/2019/08/06/gitment/</id>
+    <published>2019-08-06T04:50:05.000Z</published>
+    <updated>2019-08-06T05:50:47.058Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;配-置&quot;&gt;&lt;a href=&quot;#配-置&quot; class=&quot;headerlink&quot; title=&quot;配 置&quot;&gt;&lt;/a&gt;配 置&lt;/h2&gt;&lt;p&gt;1.去&lt;a href=&quot;https://github.com/settings/developers&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="TOOL" scheme="http://yoursite.com/categories/TOOL/"/>
+    
+    
+      <category term="gitment" scheme="http://yoursite.com/tags/gitment/"/>
+    
+  </entry>
+  
+  <entry>
     <title>hexo 主题制作</title>
     <link href="http://yoursite.com/2019/08/05/hexo_theme/"/>
     <id>http://yoursite.com/2019/08/05/hexo_theme/</id>
     <published>2019-08-05T09:42:48.000Z</published>
-    <updated>2019-08-05T11:32:47.357Z</updated>
+    <updated>2019-08-06T04:52:13.283Z</updated>
     
     <summary type="html">
     
@@ -47,7 +73,7 @@
     <link href="http://yoursite.com/2019/08/05/about_blog/"/>
     <id>http://yoursite.com/2019/08/05/about_blog/</id>
     <published>2019-08-05T09:13:51.000Z</published>
-    <updated>2019-08-05T10:15:46.139Z</updated>
+    <updated>2019-08-06T04:52:19.994Z</updated>
     
     <summary type="html">
     
@@ -521,32 +547,6 @@
     
     
       <category term="跨域" scheme="http://yoursite.com/tags/%E8%B7%A8%E5%9F%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue cli 3.0初体验</title>
-    <link href="http://yoursite.com/2018/09/20/vue3.0/"/>
-    <id>http://yoursite.com/2018/09/20/vue3.0/</id>
-    <published>2018-09-20T03:17:43.000Z</published>
-    <updated>2019-03-19T06:04:09.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;&lt;a href=&quot;https://medium.com/the-vue-point/plans-for-the-next-iteration-of-vue-js-777ffea6fabf&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;尤雨溪：Vue
-        
-      
-    
-    </summary>
-    
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
-    
-    
-      <category term="vue" scheme="http://yoursite.com/tags/vue/"/>
     
   </entry>
   
