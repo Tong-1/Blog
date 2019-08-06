@@ -58,13 +58,12 @@
 <p>参考文章</p>
 <p>MDN <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/getUserMedia" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/getUserMedia</a><br>&emsp;<a href="https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder" target="_blank" rel="noopener">https://developer.mozilla.org/en-US/docs/Web/API/MediaRecorder</a><br>&emsp;<a href="https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/enumerateDevices" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/API/MediaDevices/enumerateDevices</a></p>
 <p>W3C <a href="https://w3c.github.io/mediacapture-screen-share/" target="_blank" rel="noopener">https://w3c.github.io/mediacapture-screen-share/</a></p>
-</div><div class="copyright">转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以联系我</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}" data-title="前端使用html5、ffmpeg实现录屏摄像等功能"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
+</div><div class="copyright">转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以联系我</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
     setTimeout(()=>{
-        if (!Gitment) commentinit()
-        else {
+        if (Gitment) {
             let string = JSON.parse(document.getElementById('gitment_container').dataset.gitment)
             var gitment = new Gitment({
-                id: document.getElementById('gitment_container').dataset.title,
+                id: window.location.href,
                 owner: string.owner,
                 repo: string.repo,
                 oauth: {
@@ -73,7 +72,7 @@
                 },
             })
             gitment.render('gitment_container')
-        }
+        } else commentinit()
     },200)
 }
 commentinit()</script></div></div><link rel="stylesheet" href="/css/partial/footer.css"><div class="footer"><p><span>Copyright © 2017 - 2019  </span><a href="http://www.beian.miit.gov.cn/">蜀ICP备19024124号</a></p><p>Powered by <a href="https://hexo.io/zh-cn/" target="_blank">Hexo</a> Theme by <a href="https://github.com/Tong-H/hexo-theme-energy" target="_blank">ENERGY</a></p><p><i class="iconfont iconchakan"><span>本站总访问量</span><span id="busuanzi_container_site_pv">  <span id="busuanzi_value_site_pv"></span> </span></i><i class="iconfont iconabout"><span>本站访客数</span><span id="busuanzi_container_site_uv">  <span id="busuanzi_value_site_uv"></span> </span></i></p></div></div></div><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script>var _hmt = _hmt || [];(function(){var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?a4d08c5088ca0d4b18c14260c9ca89a1";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})()</script></body></html>

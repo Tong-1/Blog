@@ -7,13 +7,12 @@
 <p>&emsp;&emsp;关于 mysql，一直接触的都不多，只会一些简单的增删查改，这次接触了一些更难的吧，比如群组、多条件查询，还是要感谢旁边的后端同学</p>
 <p>&emsp;&emsp;关于正则，之前用正则机会一直不多，都是断断续续的，时不时有那么一个场景会用到就在你快要忘了的时候，所以我的小笔记关于正则记得很详细，公司大佬对正则很熟练，成功的让我看到了正则的魅力还有强大的地方，而这次写 blog 因为需要在本地筛选文件、过滤文章内容提取文章信息，所以其实用了蛮多正则的，正则确实是很强大的工具</p>
 <p>&emsp;&emsp;总的来说，涨了知识，也不算白折腾，但是服务器也买了、域名也买了，还是想要再弄点什么</p>
-</div><div class="copyright">转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以联系我</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}" data-title="博客折腾总结"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
+</div><div class="copyright">转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达，可以联系我</div><div id="comment"><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"><div id="gitment_container" data-gitment="{&quot;enable&quot;:true,&quot;id&quot;:&quot;&quot;,&quot;owner&quot;:&quot;tong-h&quot;,&quot;repo&quot;:&quot;tong-h.github.io&quot;,&quot;client_id&quot;:&quot;5658f62c9837c979f96f&quot;,&quot;client_secret&quot;:&quot;36813d127f4f0918cd30231a403e09d81015e014&quot;}"></div><script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script><script>function commentinit() {
     setTimeout(()=>{
-        if (!Gitment) commentinit()
-        else {
+        if (Gitment) {
             let string = JSON.parse(document.getElementById('gitment_container').dataset.gitment)
             var gitment = new Gitment({
-                id: document.getElementById('gitment_container').dataset.title,
+                id: window.location.href,
                 owner: string.owner,
                 repo: string.repo,
                 oauth: {
@@ -22,7 +21,7 @@
                 },
             })
             gitment.render('gitment_container')
-        }
+        } else commentinit()
     },200)
 }
 commentinit()</script></div></div><link rel="stylesheet" href="/css/partial/footer.css"><div class="footer"><p><span>Copyright © 2017 - 2019  </span><a href="http://www.beian.miit.gov.cn/">蜀ICP备19024124号</a></p><p>Powered by <a href="https://hexo.io/zh-cn/" target="_blank">Hexo</a> Theme by <a href="https://github.com/Tong-H/hexo-theme-energy" target="_blank">ENERGY</a></p><p><i class="iconfont iconchakan"><span>本站总访问量</span><span id="busuanzi_container_site_pv">  <span id="busuanzi_value_site_pv"></span> </span></i><i class="iconfont iconabout"><span>本站访客数</span><span id="busuanzi_container_site_uv">  <span id="busuanzi_value_site_uv"></span> </span></i></p></div></div></div><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script>var _hmt = _hmt || [];(function(){var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?a4d08c5088ca0d4b18c14260c9ca89a1";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})()</script></body></html>
