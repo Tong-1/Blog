@@ -63,6 +63,10 @@
   content: "\e655";
 }
 
+.iconmessage:before {
+  content: "\e655";
+}
+
 .iconweibiaoti--:before {
   content: "\e60f";
 }
@@ -79,7 +83,7 @@
   content: "\e62d";
 }
 
-.iconTool:before {
+.icontool:before {
   content: "\e64f";
 }
 
