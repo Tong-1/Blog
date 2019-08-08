@@ -5,9 +5,9 @@
   <subtitle>welcome</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://mser.xyz/"/>
   <updated>2019-08-06T08:21:44.620Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://mser.xyz/</id>
   
   <author>
     <name>没事儿</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>博客接入 github issue 评论</title>
-    <link href="http://yoursite.com/2019/08/06/git_comment/"/>
-    <id>http://yoursite.com/2019/08/06/git_comment/</id>
+    <link href="https://mser.xyz/2019/08/06/git_comment/"/>
+    <id>https://mser.xyz/2019/08/06/git_comment/</id>
     <published>2019-08-06T04:50:05.000Z</published>
     <updated>2019-08-06T08:21:44.620Z</updated>
     
@@ -35,17 +35,17 @@
     
     </summary>
     
-      <category term="TOOL" scheme="http://yoursite.com/categories/TOOL/"/>
+      <category term="TOOL" scheme="https://mser.xyz/categories/TOOL/"/>
     
     
-      <category term="gitment" scheme="http://yoursite.com/tags/gitment/"/>
+      <category term="gitment" scheme="https://mser.xyz/tags/gitment/"/>
     
   </entry>
   
   <entry>
     <title>hexo 主题制作</title>
-    <link href="http://yoursite.com/2019/08/05/hexo_theme/"/>
-    <id>http://yoursite.com/2019/08/05/hexo_theme/</id>
+    <link href="https://mser.xyz/2019/08/05/hexo_theme/"/>
+    <id>https://mser.xyz/2019/08/05/hexo_theme/</id>
     <published>2019-08-05T09:42:48.000Z</published>
     <updated>2019-08-08T06:01:52.910Z</updated>
     
@@ -61,17 +61,17 @@
     
     </summary>
     
-      <category term="TOOL" scheme="http://yoursite.com/categories/TOOL/"/>
+      <category term="TOOL" scheme="https://mser.xyz/categories/TOOL/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://mser.xyz/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>博客折腾总结</title>
-    <link href="http://yoursite.com/2019/08/05/about_blog/"/>
-    <id>http://yoursite.com/2019/08/05/about_blog/</id>
+    <link href="https://mser.xyz/2019/08/05/about_blog/"/>
+    <id>https://mser.xyz/2019/08/05/about_blog/</id>
     <published>2019-08-05T09:13:51.000Z</published>
     <updated>2019-08-06T07:22:11.334Z</updated>
     
@@ -87,17 +87,17 @@
     
     </summary>
     
-      <category term="RESTS" scheme="http://yoursite.com/categories/RESTS/"/>
+      <category term="RESTS" scheme="https://mser.xyz/categories/RESTS/"/>
     
     
-      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+      <category term="hexo" scheme="https://mser.xyz/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>域名解析</title>
-    <link href="http://yoursite.com/2019/08/05/domain/"/>
-    <id>http://yoursite.com/2019/08/05/domain/</id>
+    <link href="https://mser.xyz/2019/08/05/domain/"/>
+    <id>https://mser.xyz/2019/08/05/domain/</id>
     <published>2019-08-05T06:13:51.000Z</published>
     <updated>2019-08-05T09:18:34.734Z</updated>
     
@@ -113,17 +113,17 @@
     
     </summary>
     
-      <category term="SERVER" scheme="http://yoursite.com/categories/SERVER/"/>
+      <category term="SERVER" scheme="https://mser.xyz/categories/SERVER/"/>
     
     
-      <category term="domain" scheme="http://yoursite.com/tags/domain/"/>
+      <category term="domain" scheme="https://mser.xyz/tags/domain/"/>
     
   </entry>
   
   <entry>
     <title>npm &amp;&amp; yarn 差异以及常用命令</title>
-    <link href="http://yoursite.com/2019/07/01/npm&amp;&amp;yarn/"/>
-    <id>http://yoursite.com/2019/07/01/npm&amp;&amp;yarn/</id>
+    <link href="https://mser.xyz/2019/07/01/npm&amp;&amp;yarn/"/>
+    <id>https://mser.xyz/2019/07/01/npm&amp;&amp;yarn/</id>
     <published>2019-07-01T09:26:11.000Z</published>
     <updated>2019-08-05T06:54:53.816Z</updated>
     
@@ -140,17 +140,17 @@
     
     </summary>
     
-      <category term="TOOL" scheme="http://yoursite.com/categories/TOOL/"/>
+      <category term="TOOL" scheme="https://mser.xyz/categories/TOOL/"/>
     
     
-      <category term="yarn" scheme="http://yoursite.com/tags/yarn/"/>
+      <category term="yarn" scheme="https://mser.xyz/tags/yarn/"/>
     
   </entry>
   
   <entry>
     <title>理解浏览器缓存机制</title>
-    <link href="http://yoursite.com/2019/05/14/browser_cache/"/>
-    <id>http://yoursite.com/2019/05/14/browser_cache/</id>
+    <link href="https://mser.xyz/2019/05/14/browser_cache/"/>
+    <id>https://mser.xyz/2019/05/14/browser_cache/</id>
     <published>2019-05-14T03:44:11.000Z</published>
     <updated>2019-08-05T06:52:52.780Z</updated>
     
@@ -173,17 +173,17 @@
     
     </summary>
     
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
     
     
-      <category term="缓存" scheme="http://yoursite.com/tags/%E7%BC%93%E5%AD%98/"/>
+      <category term="缓存" scheme="https://mser.xyz/tags/%E7%BC%93%E5%AD%98/"/>
     
   </entry>
   
   <entry>
     <title>canvas 文字粒子特效</title>
-    <link href="http://yoursite.com/2019/04/23/canvas-fontparticle/"/>
-    <id>http://yoursite.com/2019/04/23/canvas-fontparticle/</id>
+    <link href="https://mser.xyz/2019/04/23/canvas-fontparticle/"/>
+    <id>https://mser.xyz/2019/04/23/canvas-fontparticle/</id>
     <published>2019-04-23T07:43:11.000Z</published>
     <updated>2019-08-04T07:03:30.000Z</updated>
     
@@ -199,17 +199,17 @@
     
     </summary>
     
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
     
     
-      <category term="canvas" scheme="http://yoursite.com/tags/canvas/"/>
+      <category term="canvas" scheme="https://mser.xyz/tags/canvas/"/>
     
   </entry>
   
   <entry>
     <title>Web Worker &amp;&amp; postMessage &amp;&amp; onMessage 使用教程</title>
-    <link href="http://yoursite.com/2019/04/21/webworker/"/>
-    <id>http://yoursite.com/2019/04/21/webworker/</id>
+    <link href="https://mser.xyz/2019/04/21/webworker/"/>
+    <id>https://mser.xyz/2019/04/21/webworker/</id>
     <published>2019-04-21T08:19:11.000Z</published>
     <updated>2019-04-23T07:43:41.523Z</updated>
     
@@ -230,8 +230,8 @@
   
   <entry>
     <title>typescript 学习之基础篇</title>
-    <link href="http://yoursite.com/2019/03/25/ts-1/"/>
-    <id>http://yoursite.com/2019/03/25/ts-1/</id>
+    <link href="https://mser.xyz/2019/03/25/ts-1/"/>
+    <id>https://mser.xyz/2019/03/25/ts-1/</id>
     <published>2019-03-25T03:40:14.000Z</published>
     <updated>2019-04-08T06:17:25.000Z</updated>
     
@@ -253,8 +253,8 @@
   
   <entry>
     <title>canvas性能优化篇</title>
-    <link href="http://yoursite.com/2019/03/18/canvas-3/"/>
-    <id>http://yoursite.com/2019/03/18/canvas-3/</id>
+    <link href="https://mser.xyz/2019/03/18/canvas-3/"/>
+    <id>https://mser.xyz/2019/03/18/canvas-3/</id>
     <published>2019-03-18T03:40:14.000Z</published>
     <updated>2019-08-04T06:58:41.000Z</updated>
     
@@ -271,17 +271,17 @@
     
     </summary>
     
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
     
     
-      <category term="canvas" scheme="http://yoursite.com/tags/canvas/"/>
+      <category term="canvas" scheme="https://mser.xyz/tags/canvas/"/>
     
   </entry>
   
   <entry>
     <title>canvas动画篇</title>
-    <link href="http://yoursite.com/2019/03/07/canvas-2/"/>
-    <id>http://yoursite.com/2019/03/07/canvas-2/</id>
+    <link href="https://mser.xyz/2019/03/07/canvas-2/"/>
+    <id>https://mser.xyz/2019/03/07/canvas-2/</id>
     <published>2019-03-07T06:50:05.000Z</published>
     <updated>2019-08-04T06:58:30.000Z</updated>
     
@@ -298,17 +298,17 @@
     
     </summary>
     
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
     
     
-      <category term="canvas" scheme="http://yoursite.com/tags/canvas/"/>
+      <category term="canvas" scheme="https://mser.xyz/tags/canvas/"/>
     
   </entry>
   
   <entry>
     <title>google 搜索语法</title>
-    <link href="http://yoursite.com/2019/03/01/googleSearch/"/>
-    <id>http://yoursite.com/2019/03/01/googleSearch/</id>
+    <link href="https://mser.xyz/2019/03/01/googleSearch/"/>
+    <id>https://mser.xyz/2019/03/01/googleSearch/</id>
     <published>2019-03-01T07:04:37.000Z</published>
     <updated>2019-08-05T06:54:53.768Z</updated>
     
@@ -326,17 +326,17 @@
     
     </summary>
     
-      <category term="TOOL" scheme="http://yoursite.com/categories/TOOL/"/>
+      <category term="TOOL" scheme="https://mser.xyz/categories/TOOL/"/>
     
     
-      <category term="search" scheme="http://yoursite.com/tags/search/"/>
+      <category term="search" scheme="https://mser.xyz/tags/search/"/>
     
   </entry>
   
   <entry>
     <title>cannvas的imagedata对象</title>
-    <link href="http://yoursite.com/2019/02/21/canvas-1/"/>
-    <id>http://yoursite.com/2019/02/21/canvas-1/</id>
+    <link href="https://mser.xyz/2019/02/21/canvas-1/"/>
+    <id>https://mser.xyz/2019/02/21/canvas-1/</id>
     <published>2019-02-21T07:43:04.000Z</published>
     <updated>2019-08-04T07:00:18.000Z</updated>
     
@@ -352,17 +352,17 @@
     
     </summary>
     
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
     
     
-      <category term="canvas" scheme="http://yoursite.com/tags/canvas/"/>
+      <category term="canvas" scheme="https://mser.xyz/tags/canvas/"/>
     
   </entry>
   
   <entry>
     <title>2018年终总结</title>
-    <link href="http://yoursite.com/2019/01/24/2018end/"/>
-    <id>http://yoursite.com/2019/01/24/2018end/</id>
+    <link href="https://mser.xyz/2019/01/24/2018end/"/>
+    <id>https://mser.xyz/2019/01/24/2018end/</id>
     <published>2019-01-24T01:55:16.000Z</published>
     <updated>2019-08-08T04:49:32.901Z</updated>
     
@@ -379,17 +379,17 @@
     
     </summary>
     
-      <category term="RESTS" scheme="http://yoursite.com/categories/RESTS/"/>
+      <category term="RESTS" scheme="https://mser.xyz/categories/RESTS/"/>
     
     
-      <category term="RESTS" scheme="http://yoursite.com/tags/RESTS/"/>
+      <category term="RESTS" scheme="https://mser.xyz/tags/RESTS/"/>
     
   </entry>
   
   <entry>
     <title>Electron踩坑指南不完全篇</title>
-    <link href="http://yoursite.com/2018/12/13/electron/"/>
-    <id>http://yoursite.com/2018/12/13/electron/</id>
+    <link href="https://mser.xyz/2018/12/13/electron/"/>
+    <id>https://mser.xyz/2018/12/13/electron/</id>
     <published>2018-12-13T09:57:46.000Z</published>
     <updated>2019-02-26T05:39:52.000Z</updated>
     
@@ -406,17 +406,17 @@
     
     </summary>
     
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
     
     
-      <category term="Electron" scheme="http://yoursite.com/tags/Electron/"/>
+      <category term="Electron" scheme="https://mser.xyz/tags/Electron/"/>
     
   </entry>
   
   <entry>
     <title>英语单词打卡记录</title>
-    <link href="http://yoursite.com/2018/11/16/english-clockIn/"/>
-    <id>http://yoursite.com/2018/11/16/english-clockIn/</id>
+    <link href="https://mser.xyz/2018/11/16/english-clockIn/"/>
+    <id>https://mser.xyz/2018/11/16/english-clockIn/</id>
     <published>2018-11-16T04:03:58.000Z</published>
     <updated>2019-08-05T08:38:03.140Z</updated>
     
@@ -432,17 +432,17 @@
     
     </summary>
     
-      <category term="RESTS" scheme="http://yoursite.com/categories/RESTS/"/>
+      <category term="RESTS" scheme="https://mser.xyz/categories/RESTS/"/>
     
     
-      <category term="死磕英语" scheme="http://yoursite.com/tags/%E6%AD%BB%E7%A3%95%E8%8B%B1%E8%AF%AD/"/>
+      <category term="死磕英语" scheme="https://mser.xyz/tags/%E6%AD%BB%E7%A3%95%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   
   <entry>
     <title>前端使用html5、ffmpeg实现录屏摄像等功能</title>
-    <link href="http://yoursite.com/2018/11/06/streamcapture/"/>
-    <id>http://yoursite.com/2018/11/06/streamcapture/</id>
+    <link href="https://mser.xyz/2018/11/06/streamcapture/"/>
+    <id>https://mser.xyz/2018/11/06/streamcapture/</id>
     <published>2018-11-06T09:05:15.000Z</published>
     <updated>2019-03-15T06:25:29.000Z</updated>
     
@@ -460,17 +460,17 @@
     
     </summary>
     
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
     
     
-      <category term="ffmpeg" scheme="http://yoursite.com/tags/ffmpeg/"/>
+      <category term="ffmpeg" scheme="https://mser.xyz/tags/ffmpeg/"/>
     
   </entry>
   
   <entry>
     <title>前端是否需要对密码进行加密传输 &amp;&amp; HTTPS</title>
-    <link href="http://yoursite.com/2018/10/16/https/"/>
-    <id>http://yoursite.com/2018/10/16/https/</id>
+    <link href="https://mser.xyz/2018/10/16/https/"/>
+    <id>https://mser.xyz/2018/10/16/https/</id>
     <published>2018-10-16T06:38:44.000Z</published>
     <updated>2019-02-21T07:52:33.000Z</updated>
     
@@ -486,17 +486,17 @@
     
     </summary>
     
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
     
     
-      <category term="http" scheme="http://yoursite.com/tags/http/"/>
+      <category term="http" scheme="https://mser.xyz/tags/http/"/>
     
   </entry>
   
   <entry>
     <title>mysql常用语句</title>
-    <link href="http://yoursite.com/2018/10/10/mysql/"/>
-    <id>http://yoursite.com/2018/10/10/mysql/</id>
+    <link href="https://mser.xyz/2018/10/10/mysql/"/>
+    <id>https://mser.xyz/2018/10/10/mysql/</id>
     <published>2018-10-10T09:36:05.000Z</published>
     <updated>2019-08-05T09:18:01.019Z</updated>
     
@@ -517,17 +517,17 @@
     
     </summary>
     
-      <category term="MYSQL" scheme="http://yoursite.com/categories/MYSQL/"/>
+      <category term="MYSQL" scheme="https://mser.xyz/categories/MYSQL/"/>
     
     
-      <category term="mysql" scheme="http://yoursite.com/tags/mysql/"/>
+      <category term="mysql" scheme="https://mser.xyz/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>nodejs之接收formdata表单</title>
-    <link href="http://yoursite.com/2018/10/09/node_fromdata/"/>
-    <id>http://yoursite.com/2018/10/09/node_fromdata/</id>
+    <link href="https://mser.xyz/2018/10/09/node_fromdata/"/>
+    <id>https://mser.xyz/2018/10/09/node_fromdata/</id>
     <published>2018-10-09T06:31:34.000Z</published>
     <updated>2019-02-21T07:52:33.000Z</updated>
     
@@ -544,10 +544,10 @@
     
     </summary>
     
-      <category term="WEB" scheme="http://yoursite.com/categories/WEB/"/>
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
     
     
-      <category term="nodejs" scheme="http://yoursite.com/tags/nodejs/"/>
+      <category term="nodejs" scheme="https://mser.xyz/tags/nodejs/"/>
     
   </entry>
   
