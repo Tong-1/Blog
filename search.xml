@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[js 拾遗：连续赋值 && for 循环顺序对性能的影响]]></title>
-    <url>%2F2019%2F08%2F09%2Fjs_1%2F</url>
+    <url>%2F2019%2F08%2F09%2Fjs_one%2F</url>
     <content type="text"><![CDATA[连续赋值在掘金看到一段很有意思的 js 代码 12345var a = &#123;n: 1&#125;var b = aa.x = a = &#123;n: 2&#125;a // ?b // ? 1、a，b指向 {n:1} 内存一 2、a.x 可以看出 内存一.x ，内存一的值被修改为是{n: 1, x: {…}}，内存一.x 值被指向 a3、a 重新赋值执向 {n:2} 内存二 4、若再修改内存二的属性 那么也同时修改 b.x 的值 12a // &#123;n: 2&#125;b // &#123;n: 1, x: &#123;…&#125;&#125; https://stackoverflow.com/questions/38008672/how-does-a-x-a-n-b-work-in-javascripthttps://juejin.im/pin/5d4930756fb9a07d8724214f for 循环顺序对性能的影响12345678910111213141516171819var t1 = new Date().getTime()for (let i = 0; i &lt; 100; i++) &#123; for (let j = 0; j &lt; 1000; j++) &#123; for (let k = 0; k &lt; 10000; k++) &#123; &#125; &#125;&#125;var t2 = new Date().getTime()console.log('first time', t2 - t1)for (let i = 0; i &lt; 10000; i++) &#123; for (let j = 0; j &lt; 1000; j++) &#123; for (let k = 0; k &lt; 100; k++) &#123; &#125; &#125;&#125;var t3 = new Date().getTime()console.log('two time', t3 - t2) 1: k 执行次数 100001000100 j 执行次数 1000*100 i 执行次数 100 2: k 执行次数 100100010000 j 执行次数 1000*1000 i 执行次数 10000 总的循环次数是一样的k 的执行次数不变，但是 j 和 i 执行次数变多，那么初始化次数也变多 https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/235]]></content>
       <categories>
         <category>WEB</category>
