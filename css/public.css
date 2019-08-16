@@ -5,6 +5,7 @@ html, body {
     color: #444;
     font-weight: 100;
     line-height: 30px;
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
 }
 .ellipse {
     position: relative;
@@ -111,7 +112,7 @@ html, body {
     }
     .header .maxwidth {
         padding: 0 8vw;
-        width: 84vw;
+        max-width: 84vw;
         min-width: calc(1000px - 16vw);
         display: flex;
         align-items: center;

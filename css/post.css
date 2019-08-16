@@ -1,6 +1,6 @@
 .post .info {
     text-align: center;
-    padding: 30px 0;
+    margin: 30px 0;
     color: #707070;
 }
 .post .info i {
@@ -21,12 +21,14 @@
     line-height: 40px;
     font-weight: 400;
 }
-.postDetail h1, .postDetail h2, .postDetail h3, .postDetail h4, .postDetail h5 {
-    margin: 20px 0;
-    padding: 4px 0;
+.postDetail h3, .postDetail h4, .postDetail h5 {
+    border-left: 10px solid;
+    margin: 40px 0;
 }
-.postDetail h2 {
+.postDetail h1, .postDetail h2 {
     border-bottom: 1px solid;
+    padding: 2px 0;
+    margin: 40px 0;
 }
 .postDetail img {
     background: #fff;
@@ -153,21 +155,33 @@
 .highlight .line {
     height: 20px;
 }
-.js .keyword {
+.line .keyword {
     color: #ffac00
 }
-.js .number {
+.line .number {
     color: #faff21
 }
-.js .string {
+.line .string {
     color: #70e193
 }
-.js .comment {
+.line .comment {
     color: #9a9a9a
 }
-.built_in {
+.line .built_in {
     color: #e68181
 }
-.js .title {
+.line .title {
     color: #ffac00
+}
+.line .selector-pseudo, .line .tag {
+    color: #ff9263
+}
+.line .attribute, .line .name {
+    color: #ffac00
+}
+.line .selector-tag {
+    color: #e170b8
+}
+.line .selector-id, .line .attr {
+    color: #66b3d2
 }

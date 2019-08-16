@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mser.xyz/"/>
-  <updated>2019-08-09T07:35:43.444Z</updated>
+  <updated>2019-08-16T12:33:06.536Z</updated>
   <id>https://mser.xyz/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>实现自定义滚动条 ScrollBar</title>
+    <link href="https://mser.xyz/2019/08/15/ScrollBar/"/>
+    <id>https://mser.xyz/2019/08/15/ScrollBar/</id>
+    <published>2019-08-15T03:09:06.000Z</published>
+    <updated>2019-08-16T12:33:06.536Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;写在前面&quot;&gt;&lt;a href=&quot;#写在前面&quot; class=&quot;headerlink&quot; title=&quot;写在前面&quot;&gt;&lt;/a&gt;写在前面&lt;/h2&gt;&lt;p&gt;原生的滚动条很强大，但是各个浏览器对于滚动条开放的 api 不同，google 是相当有好的，样式几乎都可以修改，But
+        
+      
+    
+    </summary>
+    
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
+    
+    
+      <category term="自定义滚动条" scheme="https://mser.xyz/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%E6%BB%9A%E5%8A%A8%E6%9D%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>js 拾遗：连续赋值 &amp;&amp; for 循环顺序对性能的影响</title>
@@ -44,11 +70,11 @@
   </entry>
   
   <entry>
-    <title>博客接入 github issue 评论</title>
+    <title>hexo 接入 github issue 评论</title>
     <link href="https://mser.xyz/2019/08/06/git_comment/"/>
     <id>https://mser.xyz/2019/08/06/git_comment/</id>
     <published>2019-08-06T04:50:05.000Z</published>
-    <updated>2019-08-06T08:21:44.620Z</updated>
+    <updated>2019-08-09T08:42:36.370Z</updated>
     
     <summary type="html">
     
@@ -283,7 +309,7 @@
     <link href="https://mser.xyz/2019/03/18/canvas-3/"/>
     <id>https://mser.xyz/2019/03/18/canvas-3/</id>
     <published>2019-03-18T03:40:14.000Z</published>
-    <updated>2019-08-04T06:58:41.000Z</updated>
+    <updated>2019-08-16T12:26:22.416Z</updated>
     
     <summary type="html">
     
@@ -517,37 +543,6 @@
     
     
       <category term="http" scheme="https://mser.xyz/tags/http/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mysql常用语句</title>
-    <link href="https://mser.xyz/2018/10/10/mysql/"/>
-    <id>https://mser.xyz/2018/10/10/mysql/</id>
-    <published>2018-10-10T09:36:05.000Z</published>
-    <updated>2019-08-05T09:18:01.019Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;sql语法特点：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;没有””双引号，字符串使用’’单引号包含；&lt;/li&gt;
-&lt;li&gt;没有逻辑相等，赋值和逻辑相等都是=；&lt;/li&gt;
-&lt;li&gt;类型不再是最严格的，任何数据都可以包含在’’单引号内；&lt;/li&gt;
-&lt;li&gt;没有布尔值的概念，但是在视图中可以输入
-        
-      
-    
-    </summary>
-    
-      <category term="MYSQL" scheme="https://mser.xyz/categories/MYSQL/"/>
-    
-    
-      <category term="mysql" scheme="https://mser.xyz/tags/mysql/"/>
     
   </entry>
   
