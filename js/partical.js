@@ -66,7 +66,7 @@ for (var i = 0; i < 609; i ++) {
 
 (function random() {
     // 指定时间重新生成文字
-    if(time === 0) backdrop('hello')
+    if(time === 0) backdrop('没事儿')
     maincontent.clearRect(0, 0, docsize[0], docsize[1])
     for (var i = 0; i < pointarr.length; i++) pointarr[i].animal(time)
     if (time === 190) menu.style.display = 'inline-block'

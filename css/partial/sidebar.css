@@ -15,16 +15,6 @@
         height: calc(100vh - 166px);
     }
 }
-#sidebar .info {
-    margin: 20px 0;
-}
-#sidebar .info img {
-    border-radius: 50%;
-}
-#sidebar .info img:hover {
-    border-radius: 50%;
-    animation: head .6s
-}
 @keyframes head {
     0% {
         transform: rotate(360deg)

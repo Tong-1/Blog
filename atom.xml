@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mser.xyz/"/>
-  <updated>2019-08-16T12:33:06.536Z</updated>
+  <updated>2020-02-19T01:37:11.000Z</updated>
   <id>https://mser.xyz/</id>
   
   <author>
@@ -15,6 +15,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2019年终总结</title>
+    <link href="https://mser.xyz/2020/02/18/2019/"/>
+    <id>https://mser.xyz/2020/02/18/2019/</id>
+    <published>2020-02-18T01:55:16.000Z</published>
+    <updated>2020-02-19T01:37:11.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;一年结束，又是一年，对去年的回顾和自我检讨&lt;/p&gt;
+&lt;p&gt;工作上，&lt;/p&gt;
+&lt;p&gt;前年学习了一些新的框架和新的东西和新的语言，但是没有很多深入，做的东西也像个
+        
+      
+    
+    </summary>
+    
+      <category term="RESTS" scheme="https://mser.xyz/categories/RESTS/"/>
+    
+    
+      <category term="RESTS" scheme="https://mser.xyz/tags/RESTS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>webpack-one</title>
+    <link href="https://mser.xyz/2019/08/28/webpack1/"/>
+    <id>https://mser.xyz/2019/08/28/webpack1/</id>
+    <published>2019-08-28T09:50:11.000Z</published>
+    <updated>2019-08-28T10:42:19.762Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;像 VUE、react 脚手架之类集成了 webpack、babel、typescript 之类框架的用起来虽然方便，但是有些时候需要写个小页面或者只是一个 js 文件，去搭一个 VUE 脚手架好像有点大材小用，但是又想用 typescript 或者 IE 不支持的一些
+        
+      
+    
+    </summary>
+    
+      <category term="webpack" scheme="https://mser.xyz/categories/webpack/"/>
+    
+    
+      <category term="WEB" scheme="https://mser.xyz/tags/WEB/"/>
+    
+  </entry>
   
   <entry>
     <title>实现自定义滚动条 ScrollBar</title>
@@ -246,7 +300,8 @@
       
         
         
-          &lt;p&gt;一个文字粒子效果,折腾了一些时间，纯粹觉得好玩 &lt;a href=&quot;https://tong-h.github.io/canvas-store/fontparticle/index.html&quot; target=&quot;_blank&quot;
+          &lt;p&gt;一个文字粒子效果,折腾了一些时间，纯粹觉得好玩 &lt;a href=&quot;https://tong-h.github.io/canvas-store/fontparticle/index.html&quot;&gt;点这里看效果&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;随机初始化部分粒子&quot;&gt;&lt;a
         
       
     
@@ -264,7 +319,7 @@
     <link href="https://mser.xyz/2019/04/21/webworker/"/>
     <id>https://mser.xyz/2019/04/21/webworker/</id>
     <published>2019-04-21T08:19:11.000Z</published>
-    <updated>2019-04-23T07:43:41.523Z</updated>
+    <updated>2020-09-14T07:45:09.053Z</updated>
     
     <summary type="html">
     
@@ -286,7 +341,7 @@
     <link href="https://mser.xyz/2019/03/25/ts-1/"/>
     <id>https://mser.xyz/2019/03/25/ts-1/</id>
     <published>2019-03-25T03:40:14.000Z</published>
-    <updated>2019-04-08T06:17:25.000Z</updated>
+    <updated>2019-08-29T09:33:42.207Z</updated>
     
     <summary type="html">
     
@@ -301,6 +356,10 @@
     
     </summary>
     
+      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
+    
+    
+      <category term="typescript" scheme="https://mser.xyz/tags/typescript/"/>
     
   </entry>
   
@@ -399,7 +458,7 @@
       
         
         
-          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;p&gt;ImageData 是canvas的图像数据，由&lt;strong&gt; ImageData()
+          &lt;h2 id=&quot;背景介绍&quot;&gt;&lt;a href=&quot;#背景介绍&quot; class=&quot;headerlink&quot; title=&quot;背景介绍&quot;&gt;&lt;/a&gt;背景介绍&lt;/h2&gt;&lt;p&gt;ImageData 是canvas的图像数据，由** ImageData()
         
       
     
@@ -467,32 +526,6 @@
   </entry>
   
   <entry>
-    <title>英语单词打卡记录</title>
-    <link href="https://mser.xyz/2018/11/16/english-clockIn/"/>
-    <id>https://mser.xyz/2018/11/16/english-clockIn/</id>
-    <published>2018-11-16T04:03:58.000Z</published>
-    <updated>2019-08-05T08:38:03.140Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;背单词接近3个月了，作为一个朝九晚六的上班族，一般背单词的时间是早上地铁有那么半个小时作为新单词时间然后晚上地铁半个小时是新单词为主 +
-        
-      
-    
-    </summary>
-    
-      <category term="RESTS" scheme="https://mser.xyz/categories/RESTS/"/>
-    
-    
-      <category term="死磕英语" scheme="https://mser.xyz/tags/%E6%AD%BB%E7%A3%95%E8%8B%B1%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
     <title>前端使用html5、ffmpeg实现录屏摄像等功能</title>
     <link href="https://mser.xyz/2018/11/06/streamcapture/"/>
     <id>https://mser.xyz/2018/11/06/streamcapture/</id>
@@ -517,32 +550,6 @@
     
     
       <category term="ffmpeg" scheme="https://mser.xyz/tags/ffmpeg/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>前端是否需要对密码进行加密传输 &amp;&amp; HTTPS</title>
-    <link href="https://mser.xyz/2018/10/16/https/"/>
-    <id>https://mser.xyz/2018/10/16/https/</id>
-    <published>2018-10-16T06:38:44.000Z</published>
-    <updated>2019-02-21T07:52:33.000Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;最近学习node，写demo登陆和注册功能的时候因为要考虑后台的加密和安全所以也想了下前端的，前端传输密码的时候是否应该加密之后再传输呢&lt;br&gt;看了一些网站的登陆，csdn、简书等是明文传输，但腾讯、百度这些一线大站是经过前端加密的，看了些大佬的文章，顺便自己搬个凳子记个笔
-        
-      
-    
-    </summary>
-    
-      <category term="WEB" scheme="https://mser.xyz/categories/WEB/"/>
-    
-    
-      <category term="http" scheme="https://mser.xyz/tags/http/"/>
     
   </entry>
   
