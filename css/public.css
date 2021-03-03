@@ -131,7 +131,7 @@ html, body {
     .rightside {
         padding: 30px;
         display: inline-block;
-        background: #ffffffa3;
+        background: rgb(255 255 255 / 84%);
         width: calc(100% - 410px);
         margin: 76px 0 0 330px;
     } 
