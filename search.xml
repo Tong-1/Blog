@@ -1,84 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2018年终总结</title>
-    <url>/2019/01/24/2018end/</url>
-    <content><![CDATA[<blockquote>
-<p>&#8195;&#8195;又是一年 End，感觉现在时间过得越来越快，下了个倒计时的app，设置了年终和一些重要日子的倒计时，每次打开app看到那一点点变化的数字就会觉得有点点心痛。之前在网上看过一个话题为什么随着年龄的增大会感觉时间过得越来越快，有两个说法：当你专注做某样事情的时候和你重复做某一样事情的时候。相信这两种感觉大部分人都深有体会，感觉现在时间比小时候过得快是因为小时候大脑储存的东西不多每一天都是新鲜未知的，大脑在不断的调用insert或者update接口存储或者更新，但是长大后每天都是重复着昨天的生活，每天都只是在调用search接口，然后当你每天重复着一样的事情时间就过得很快很快。感觉扯远了，但是感觉时间越来越不够用是真的，小时候对于过年是充满期待和兴奋的，但是现在对于年终会有种莫名的感伤，比如现在敲下这些字的时候就挺让人难受的，可能有人觉得有点矫情，但是大好的时光就那么一些，然后现在又失去一点…….</p>
-</blockquote>
-<blockquote>
-<p>&#8195;&#8195;今年开始写blog了，一直都习惯记笔记，即便开始写blog还是习惯用word记笔记，现在这篇word文档已经有160多页了。blog和笔记的不同在于笔记里大多是很零碎的知识点会经常用和翻看而放在blog里至少要像一篇文章，所以其实写的时候就相当于在整理笔记里面的知识点会发现很多不足的地方，所以写blog也是个不错习惯。最开始会在csdn、掘金、简书各大平台投放但是后来搭了一个blog系统就懒得复制粘贴了，只有简书一直坚持更新，主要因为简书点赞呀关注什么的回馈很快，这是个激励能制造一些动力，但是简书首页的那些标题党和心灵鸡汤真的。。。</p>
-</blockquote>
-<blockquote>
-<p>&#8195;&#8195;今年仍然很焦虑，和去年一样的焦虑烦躁，工作上几个后台，一个数据平台，一个小程序，一个安卓app，一个windows的桌面app，工作之余学习了express，mysql，简单的python，列出来好像还不少，但是对于这些框架语言都了解太少太浅了，这是挺致命的，今年技术上的学习状态或者学习方式不如去年，太浮躁了，只专注于表面能看到的效果而不去学习框架内部的知识和底层的原理，广而不深。坏习惯！！！</p>
-</blockquote>
-<blockquote>
-<p>&#8195;&#8195;今年10月份终于报了自考英语本科，开始每天刷单词开始爱上图书馆，学英语真的不是容易事，但是好在对英语有兴趣的且有必须学习的理由，这两者加在一起等于充足的动力，但是学习向来都不是一件快乐的事情，有兴趣只是没那么痛苦罢了<br>  报名时的明确目标：</p>
-</blockquote>
-<ul>
-<li>作为一个程序员能不依靠辅助工具顺畅的读懂英文文档</li>
-<li>作为一个美剧迷能摆脱字幕</li>
-<li>作为一个自考生能拿到证</li>
-</ul>
-<blockquote>
-<p>&#8195;&#8195;每一年都是这样，今年的自己回过头去看去年的自己总是万分嫌弃。把化妆减肥当作日常，格外怕冷一出公司大门分分钟想回去加班。提前进入中老年状态，泡枸杞红枣，每天烫脚，吃各种豆子，喝热水即使夏天，看各种热量表成分表，每天起早即使周末，夏天7点左右冬天八点左右就自然醒了然后起床，居然不赖床，这居然是我的作息</p>
-</blockquote>
-<blockquote>
-<h2 id="2019-："><a href="#2019-：" class="headerlink" title="2019 ：##"></a>2019 ：##</h2></blockquote>
-<ul>
-<li>控制饮食！！！减肥控制饮食大概是毕生的事业了，永远提防体重</li>
-<li>多咀嚼！！！吃东西慢点，再慢点</li>
-<li>喝水！！！没事就喝水吧</li>
-<li>去图书馆！！！不要待在家里，不要相信自己的自制力，没事就背上包包去图书馆吧</li>
-<li>刷单词！！！每天的单词一定要清完</li>
-<li>不要浮躁！！！静下来，静下来</li>
-</ul>
-<p>最后写年终总结的确是个挺好的习惯</p>
-]]></content>
-      <categories>
-        <category>RESTS</category>
-      </categories>
-      <tags>
-        <tag>RESTS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2019年终总结</title>
-    <url>/2020/02/18/2019/</url>
-    <content><![CDATA[<p>一年结束，又是一年，对去年的回顾和自我检讨</p>
-<p>工作上，前年学习了一些新的框架和新的东西和新的语言，但是没有很多深入，做的东西也像个 demo，今年感觉对基础的关注比较多，万变不离其宗，开始学习封装自己的组件和轮子，</p>
-<p>年中的时候开始用typescript ，刚开始用只觉得很烦，报错怎么这么多，js类型居然这么多，后来逼着自己用越用就越觉得。。。香，配合 vscode 真的能避免一些愚蠢bug，声明清楚的代码也会更便于维护，但是始终觉得有那么一点不对。</p>
-<p>最开始学习框架的时候学的是 Anglar ，那时候感觉框架很难，后来 VUE 很火，开始学习 VUE ，然后就抛弃了Anglar 爱上了 VUE，去年追着年尾用一个小项目学习了 React，比 Anglar 简单比 Vue 难，后面也写了两个小项目，感觉组件化概念更强些，自由度更高些，当然 Vue 对我来说依然很香很舒服</p>
-<hr>
-<p>2021。3.1 周一<br>这篇文章在2020年就只到这里，现在再看再想，觉着框架就是用的，对着官网api就能用，初始的感觉似乎就取决于文档的详细程度</p>
-]]></content>
-      <categories>
-        <category>RESTS</category>
-      </categories>
-      <tags>
-        <tag>RESTS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Cordova add android 报错4种解决方法</title>
-    <url>/2018/05/16/Cordova%20add%20android%20%E6%8A%A5%E9%94%99/</url>
-    <content><![CDATA[<h2 id="方法一：可能网络有问题，换一个源（对我没有用）"><a href="#方法一：可能网络有问题，换一个源（对我没有用）" class="headerlink" title="方法一：可能网络有问题，换一个源（对我没有用）"></a>方法一：可能网络有问题，换一个源（对我没有用）</h2><p>npm i nrm -g 安装nrm</p>
-<p>nrm ls 查看当前nrm内置的npm源</p>
-<p>nrm use cnpm 切换源</p>
-<h2 id="方法二：可能版本有问题（对我没有用）"><a href="#方法二：可能版本有问题（对我没有用）" class="headerlink" title="方法二：可能版本有问题（对我没有用）"></a>方法二：可能版本有问题（对我没有用）</h2><p>npm view cordova-android   查看可选版本</p>
-<p>cordova platform add <a href="mailto:&#97;&#x6e;&#x64;&#x72;&#x6f;&#x69;&#100;&#x40;&#55;&#46;&#48;&#46;&#x30;">&#97;&#x6e;&#x64;&#x72;&#x6f;&#x69;&#100;&#x40;&#55;&#46;&#48;&#46;&#x30;</a>  切换版本</p>
-<h2 id="方法三：卸载cordva重新安装（对我没有用）"><a href="#方法三：卸载cordva重新安装（对我没有用）" class="headerlink" title="方法三：卸载cordva重新安装（对我没有用）"></a>方法三：卸载cordva重新安装（对我没有用）</h2><p>运行命令：npm uninstall cordova -g<br>删除文件夹：C：\ Users \ your-name \ .cordova<br>重新安装cordova：npm install -g cordova<br>现在转到项目文件夹，然后再试一次：cordova platform add android<br>方法四：修改环境变量（解决）<br>在环境变量path内加入C:\Windows\System32</p>
-<h1 id="如果以上方法对你没有用，可以用cordova-d-platform-add-android调试看下提示信息"><a href="#如果以上方法对你没有用，可以用cordova-d-platform-add-android调试看下提示信息" class="headerlink" title="如果以上方法对你没有用，可以用cordova -d platform add android调试看下提示信息"></a>如果以上方法对你没有用，可以用cordova -d platform add android调试看下提示信息</h1><p>相关博文：Android SDK 环境配置/Cordova环境搭建打包apk各种踩坑报错系列</p>
-<p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
-]]></content>
-      <categories>
-        <category>WEB</category>
-      </categories>
-      <tags>
-        <tag>cordova</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>JSON是什么，如何处理转义？</title>
     <url>/2018/01/04/JSON/</url>
     <content><![CDATA[<h1 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h1><p>JSON一种数据交换格式。在JSON出现之前， 大家一直用XML来传递数据。因为XML是一种纯文本格式，所以它适合在网络上交换数据。XML本身不算复杂，但是， 加上DTD、XSD、XPath、XSLT等一大堆复杂的规范以后，即使你努力钻研几个月，也未必搞得清楚XML的规范。</p>
@@ -241,6 +163,25 @@ console.log(jso4);
       </tags>
   </entry>
   <entry>
+    <title>Cordova add android 报错4种解决方法</title>
+    <url>/2018/05/16/Cordova%20add%20android%20%E6%8A%A5%E9%94%99/</url>
+    <content><![CDATA[<h2 id="方法一：可能网络有问题，换一个源（对我没有用）"><a href="#方法一：可能网络有问题，换一个源（对我没有用）" class="headerlink" title="方法一：可能网络有问题，换一个源（对我没有用）"></a>方法一：可能网络有问题，换一个源（对我没有用）</h2><p>npm i nrm -g 安装nrm</p>
+<p>nrm ls 查看当前nrm内置的npm源</p>
+<p>nrm use cnpm 切换源</p>
+<h2 id="方法二：可能版本有问题（对我没有用）"><a href="#方法二：可能版本有问题（对我没有用）" class="headerlink" title="方法二：可能版本有问题（对我没有用）"></a>方法二：可能版本有问题（对我没有用）</h2><p>npm view cordova-android   查看可选版本</p>
+<p>cordova platform add <a href="mailto:&#x61;&#x6e;&#x64;&#114;&#x6f;&#x69;&#100;&#x40;&#x37;&#x2e;&#48;&#x2e;&#48;">&#x61;&#x6e;&#x64;&#114;&#x6f;&#x69;&#100;&#x40;&#x37;&#x2e;&#48;&#x2e;&#48;</a>  切换版本</p>
+<h2 id="方法三：卸载cordva重新安装（对我没有用）"><a href="#方法三：卸载cordva重新安装（对我没有用）" class="headerlink" title="方法三：卸载cordva重新安装（对我没有用）"></a>方法三：卸载cordva重新安装（对我没有用）</h2><p>运行命令：npm uninstall cordova -g<br>删除文件夹：C：\ Users \ your-name \ .cordova<br>重新安装cordova：npm install -g cordova<br>现在转到项目文件夹，然后再试一次：cordova platform add android<br>方法四：修改环境变量（解决）<br>在环境变量path内加入C:\Windows\System32</p>
+<h1 id="如果以上方法对你没有用，可以用cordova-d-platform-add-android调试看下提示信息"><a href="#如果以上方法对你没有用，可以用cordova-d-platform-add-android调试看下提示信息" class="headerlink" title="如果以上方法对你没有用，可以用cordova -d platform add android调试看下提示信息"></a>如果以上方法对你没有用，可以用cordova -d platform add android调试看下提示信息</h1><p>相关博文：Android SDK 环境配置/Cordova环境搭建打包apk各种踩坑报错系列</p>
+<p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
+]]></content>
+      <categories>
+        <category>WEB</category>
+      </categories>
+      <tags>
+        <tag>cordova</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Nginx的反向代理跨域</title>
     <url>/2017/12/01/Nginx_%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%E8%B7%A8%E5%9F%9F/</url>
     <content><![CDATA[<h1 id="什么是跨域？"><a href="#什么是跨域？" class="headerlink" title="什么是跨域？"></a>什么是跨域？</h1><p>跨域是指a页面想获取b页面资源，如果a、b页面的协议、域名、端口、子域名不同，或是a页面为ip地址， b页面为域名地址，所进行的访问行动都是跨域</p>
@@ -354,7 +295,7 @@ console.log(jso4);
 <p>A:因为全局模式安装,包可以供所有的程序使用。本地安装则不可以。 npm 默认会把包安装到当前目录下。这反映了 npm 不同的设计哲学。如 果把包安装到全局,可以提高程序的重复利用程度,避免同样的内容的多 份副本,但坏处是难以处理不同的版本依赖。如果把包安装到当前目录, 或者说本地,则不会有不同程序依赖不同版本的包的冲突问题,同时还减 轻了包作者的 API 兼容性压力,但缺陷则是同一个包可能会被安装许多次。</p>
 <p>Q:为什么进行了全局安装还要进行本地安装</p>
 <p>A:为什么进行了全局安装还要进行本地安装</p>
-<p> 1、在js实例代码中，默认下node.js会在NODE_PATH和目前js所在项目下的node_modules文件夹下去寻找模块，因此，如果只是全局安装，不能直接通过require()的方式去引用模块，需要手动解决包路径的配置问题，当然你也可以复制全局安装的node_modules文件夹到项目下，还有办法可以选择将环境变量的NODE_PATH设置为C:\Program Files\nodejs。 2.对于包的更新不好管理，可能你需要为每个包重新命名，如<a href="mailto:&#103;&#x75;&#x6c;&#112;&#x40;&#x33;&#x2e;&#56;&#x2e;&#49;">&#103;&#x75;&#x6c;&#112;&#x40;&#x33;&#x2e;&#56;&#x2e;&#49;</a>、gulp@3.9.1…，为了区别不同项目使用指定的包，保证模块之间的相互依赖，区别每个项目正常运行</p>
+<p> 1、在js实例代码中，默认下node.js会在NODE_PATH和目前js所在项目下的node_modules文件夹下去寻找模块，因此，如果只是全局安装，不能直接通过require()的方式去引用模块，需要手动解决包路径的配置问题，当然你也可以复制全局安装的node_modules文件夹到项目下，还有办法可以选择将环境变量的NODE_PATH设置为C:\Program Files\nodejs。 2.对于包的更新不好管理，可能你需要为每个包重新命名，如<a href="mailto:&#x67;&#x75;&#108;&#x70;&#x40;&#x33;&#x2e;&#x38;&#x2e;&#x31;">&#x67;&#x75;&#108;&#x70;&#x40;&#x33;&#x2e;&#x38;&#x2e;&#x31;</a>、gulp@3.9.1…，为了区别不同项目使用指定的包，保证模块之间的相互依赖，区别每个项目正常运行</p>
 <p>Q：如何在package.JSON的dependencies和devDependencies写入信息</p>
 <p>A:npm install –save babel-cli和npm install -dev babel-cli使用这两个命令安装后可自动写入文件</p>
 <p>npm install –save-dev babel-cli也可以在一起用</p>
@@ -481,6 +422,56 @@ console.log(jso4);
       </tags>
   </entry>
   <entry>
+    <title>angular之constant和filter</title>
+    <url>/2018/01/31/angular_constant&amp;filter/</url>
+    <content><![CDATA[<h1 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h1><p>angular是什么：AngularJS最初由Misko Hevery和Adam Abrons于2009年开发，后来成为了Google公司的项目。AngularJS弥补了HTML在构建应用方面的不足，其通过使用标识符（directives）结构，来扩展Web应用中的HTML词汇，使开发者可以使用HTML来声明动态内容，从而使得Web开发和测试工作变得更加容易。</p>
+<p>constant，可以算作angular的全局数据，想要使用的话，只需要在控制器注入即可。</p>
+<p>$filter，angular的过滤器，如果想要在控制器里面使用，也是注入，然后调用，而html中的数据过滤，直接键入过滤器名称和对应值即可。</p>
+<h1 id="知识剖析"><a href="#知识剖析" class="headerlink" title="知识剖析"></a>知识剖析</h1><p>每当搜索constant时候，总会连带出现value的说明。</p>
+<p>两者都可以作为全局变量使用，但是有两点不同：</p>
+<p>1.value不可以在config里注入，但是constant可以。</p>
+<p>2.value可以修改，但是constant不可以修改，一般直接用constant配置一些需要经常使用的数据。</p>
+<p>下面是简单的应用例子：</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">angular.module(<span class="string">&#x27;myApp&#x27;</span>, [])</span><br><span class="line">.constant(<span class="string">&#x27;apiKey&#x27;</span>, <span class="string">&#x27;123123123&#x27;</span>)</span><br><span class="line">.value(<span class="string">&#x27;FBid&#x27;</span>,<span class="string">&#x27;231231231&#x27;</span>)</span><br><span class="line">.controller(<span class="string">&#x27;myController&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">$scope,apiKey,FBid</span>)</span>&#123;</span><br><span class="line">$scope.a = apiKey;</span><br><span class="line">$scope.b = FBid;</span><br><span class="line">&#125;)</span><br><span class="line">.config(<span class="function"><span class="keyword">function</span>(<span class="params">apiKey</span>) </span>&#123;</span><br><span class="line"><span class="comment">//在这里apiKey将被赋值为123123123</span></span><br><span class="line"><span class="comment">//就像上面设置的那样</span></span><br><span class="line">&#125;)</span><br><span class="line">.config(<span class="function"><span class="keyword">function</span>(<span class="params">FBid</span>) </span>&#123;</span><br><span class="line"><span class="comment">//这将抛出一个错误，未知的provider: FBid</span></span><br><span class="line"><span class="comment">//因为在config函数内部无法访问这个值</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<p>filter是用来格式化数据用的</p>
+<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="xml">基本原型：</span><span class="template-variable">&#123;&#123;<span class="name">expression</span> | filter&#125;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="xml">多个filter连用版：</span><span class="template-variable">&#123;&#123;<span class="name">expression</span> | filter1 | filter2&#125;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="xml">传入参数版：</span><span class="template-variable">&#123;&#123;<span class="name">expression</span> | filter:1:2&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><p>如何使用angular中constant和$filter？</p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>4.1 AngularJS内建了一些常用的filter：</p>
+<p>1、格式化货币：</p>
+<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="template-variable">&#123;&#123; <span class="name">12</span> | currency&#125;&#125;</span><span class="xml">  //将12格式化为货币，默认单位符号为&#x27;$&#x27;,小数默认2位</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">12.45</span> | currency:&#x27;￥&#x27;&#125;&#125;</span><span class="xml"> //将12.45格式化为货币，使用自定义单位符号为&#x27;￥&#x27;,小数默认2位</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">12.45</span> | currency:&#x27;CHY￥&#x27;:1&#125;&#125;</span><span class="xml"> //将12.45格式化为货币，使用自定义单位符号为&#x27;CHY￥&#x27;,小数指定1位,会执行四舍五入操作</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">12.55</span> | currency:<span class="literal">undefined</span>:0&#125;&#125;</span><span class="xml"> //将12.55格式化为货币， 不改变单位符号， 小数部分将四舍五入</span></span><br></pre></td></tr></table></figure>
+<p>2、格式化日期：</p>
+<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1304375948024</span> | date:&#x27;medium&#x27;&#125;&#125;</span><span class="xml">//May 03, 2011 06:39:08 PM</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1304375948024</span> | date &#125;&#125;</span><span class="xml">//结果：May 3, 2011</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1304375948024</span> | date:&quot;MM/dd/yyyy @ h:mma&quot; &#125;&#125;</span><span class="xml">//结果：05/03/2011 @ 6:39AM</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1304375948024</span> | date:&quot;yyyy-MM-dd hh:mm:ss&quot; &#125;&#125;</span><span class="xml">//结果：2011-05-03 06:39:08</span></span><br></pre></td></tr></table></figure>
+<p>3、过滤数组：</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="variable">$scope</span>.arr = [&#123;<span class="string">&quot;age&quot;</span>: <span class="number">20</span>,<span class="string">&quot;id&quot;</span>: <span class="number">10</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;iphone&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">12</span>,<span class="string">&quot;id&quot;</span>: <span class="number">11</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;sunm xing&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">44</span>,<span class="string">&quot;id&quot;</span>: <span class="number">12</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;test abc&quot;</span>&#125; ]</span><br><span class="line"></span><br><span class="line">&#123;&#123;arr | filter:<span class="string">&#x27;s&#x27;</span>&#125;&#125;  <span class="regexp">//</span>查找含有有s的行<span class="regexp">//</span>上例结果：[&#123;<span class="string">&quot;age&quot;</span>:<span class="number">12</span>,<span class="string">&quot;id&quot;</span>:<span class="number">11</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;sunm xing&quot;</span>&#125;,&#123;<span class="string">&quot;age&quot;</span>:<span class="number">44</span>,<span class="string">&quot;id&quot;</span>:<span class="number">12</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;test abc&quot;</span>&#125;]</span><br><span class="line"></span><br><span class="line">&#123;&#123;arr | filter:&#123;<span class="string">&#x27;name&#x27;</span>:<span class="string">&#x27;ip&#x27;</span>&#125; &#125;&#125;<span class="regexp">//</span>查找name like ip的行<span class="regexp">//</span>上例结果:[&#123;<span class="string">&quot;age&quot;</span>:<span class="number">20</span>,<span class="string">&quot;id&quot;</span>:<span class="number">10</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;iphone&quot;</span>&#125;]</span><br></pre></td></tr></table></figure>
+<p>4、将对象格式化成标准的JSON格式：</p>
+<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="template-variable">&#123;&#123; &#123;<span class="name">name:&#x27;Jack&#x27;</span>, age: <span class="number">21</span>&#125; | json&#125;&#125;</span></span><br></pre></td></tr></table></figure>
+<p>5、字符串，对象截取：</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">&#123;&#123; <span class="string">&quot;i love tank&quot;</span> | limitTo:<span class="number">6</span> &#125;&#125;<span class="regexp">//</span>结果：i love</span><br><span class="line"></span><br><span class="line">&#123;&#123; <span class="string">&quot;i love tank&quot;</span> | limitTo:-<span class="number">4</span> &#125;&#125;<span class="regexp">//</span>结果：tank</span><br><span class="line"></span><br><span class="line">&#123;&#123; [&#123;<span class="string">&quot;age&quot;</span>: <span class="number">20</span>,<span class="string">&quot;id&quot;</span>: <span class="number">10</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;iphone&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">12</span>,<span class="string">&quot;id&quot;</span>: <span class="number">11</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;sunm xing&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">44</span>,<span class="string">&quot;id&quot;</span>: <span class="number">12</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;test abc&quot;</span>&#125; ] | limitTo:<span class="number">1</span> &#125;&#125;<span class="regexp">//</span>结果：[&#123;<span class="string">&quot;age&quot;</span>:<span class="number">20</span>,<span class="string">&quot;id&quot;</span>:<span class="number">10</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;iphone&quot;</span>&#125;]</span><br></pre></td></tr></table></figure>
+<p>6、大小写转换：</p>
+<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="xml">China has joined the </span><span class="template-variable">&#123;&#123; <span class="name">&quot;wto&quot;</span> | uppercase &#125;&#125;</span><span class="xml">.</span></span><br><span class="line"><span class="xml">We all need </span><span class="template-variable">&#123;&#123; <span class="name">&quot;MONEY&quot;</span> | lowercase &#125;&#125;</span><span class="xml">.</span></span><br></pre></td></tr></table></figure>
+<p>7、数值类：</p>
+<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1.234567</span> | number:1 &#125;&#125;</span><span class="xml">  //结果：1.2</span></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1234567</span> | number &#125;&#125;</span><span class="xml">    //结果：1,234,567</span></span><br></pre></td></tr></table></figure>
+<p>8、对象排序：</p>
+<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="variable">$scope</span>.arr = [&#123;<span class="string">&quot;age&quot;</span>: <span class="number">20</span>,<span class="string">&quot;id&quot;</span>: <span class="number">10</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;iphone&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">12</span>,<span class="string">&quot;id&quot;</span>: <span class="number">11</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;sunm xing&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">44</span>,<span class="string">&quot;id&quot;</span>: <span class="number">12</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;test abc&quot;</span>&#125; ]</span><br><span class="line">&#123;&#123;arr | orderBy:<span class="string">&#x27;id&#x27;</span>:true &#125;&#125;<span class="regexp">//</span>根id降序排</span><br><span class="line">&#123;&#123;arr | orderBy:<span class="string">&#x27;id&#x27;</span> &#125;&#125;<span class="regexp">//</span>根据id升序排</span><br></pre></td></tr></table></figure>
+<h2 id="自定义filter方法"><a href="#自定义filter方法" class="headerlink" title="自定义filter方法"></a>自定义filter方法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">我们来自定义选择省份和职位</span><br><span class="line"></span><br><span class="line">HTML代码：</span><br><span class="line">&#123;&#123;<span class="number">1</span> | provinceFilter&#125;&#125;</span><br><span class="line">&#123;&#123;<span class="number">6</span> | fMes:<span class="string">&#x27;positionList&#x27;</span>:<span class="string">&#x27;type&#x27;</span>&#125;&#125;</span><br><span class="line"></span><br><span class="line">app.js:</span><br><span class="line">angular.module(<span class="string">&#x27;myApp&#x27;</span>,[])</span><br><span class="line"><span class="comment">//数组</span></span><br><span class="line">.controller(<span class="string">&#x27;personCtrl&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">$scope</span>)</span>&#123;</span><br><span class="line">  $scope.arr=[</span><br><span class="line">    &#123;<span class="string">&quot;age&quot;</span>:<span class="number">20</span>,<span class="string">&quot;id&quot;</span>:<span class="number">10</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;iphone&quot;</span>&#125;,</span><br><span class="line">    &#123;<span class="string">&quot;age&quot;</span>:<span class="number">12</span>,<span class="string">&quot;id&quot;</span>:<span class="number">11</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;sunm xing&quot;</span>&#125;,</span><br><span class="line">    &#123;<span class="string">&quot;age&quot;</span>:<span class="number">44</span>,<span class="string">&quot;id&quot;</span>:<span class="number">12</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;test abc&quot;</span>&#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br><span class="line"><span class="comment">//自定义选择省份</span></span><br><span class="line">.filter(<span class="string">&#x27;provinceFilter&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">PROVINCE</span>)</span>&#123;<span class="comment">//省</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">id</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(id!=<span class="literal">undefined</span>&amp;&amp;id!=<span class="string">&#x27;&#x27;</span>)&#123;</span><br><span class="line">      <span class="keyword">var</span>  name;</span><br><span class="line">      angular.forEach(PROVINCE,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(data.ProID==id)&#123;</span><br><span class="line">              name=data.ProName;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">  <span class="keyword">return</span>  name;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//自定义选择职位</span></span><br><span class="line"></span><br><span class="line">.filter(<span class="string">&#x27;fMes&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">con</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">input,field,str</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(input&gt;=<span class="number">0</span>) &#123;<span class="comment">//input != undefined &amp;&amp;</span></span><br><span class="line">    <span class="keyword">var</span> name;</span><br><span class="line">    <span class="keyword">var</span> aMes=con[field];</span><br><span class="line">    angular.forEach(aMes,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(data[str]==input)&#123;</span><br><span class="line">          name=data.name;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> name;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;<span class="built_in">console</span>.log(<span class="string">&#x27;false&#x27;</span>);&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">constant.js</span><br><span class="line">angular.module(<span class="string">&quot;myApp&quot;</span>) .value(<span class="string">&#x27;val&#x27;</span>,&#123;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//公司编辑常量组</span></span><br><span class="line">.constant(<span class="string">&#x27;con&#x27;</span>,&#123;</span><br><span class="line"><span class="comment">//职业分类</span></span><br><span class="line">positionList:[</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">0</span>,<span class="attr">name</span>:<span class="string">&#x27;ui设计师&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">1</span>,<span class="attr">name</span>:<span class="string">&#x27;运维工程师&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">2</span>,<span class="attr">name</span>:<span class="string">&#x27;产品&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">3</span>,<span class="attr">name</span>:<span class="string">&#x27;Java工程师&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">4</span>,<span class="attr">name</span>:<span class="string">&#x27;IOS工程师&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">5</span>,<span class="attr">name</span>:<span class="string">&#x27;Android工程师&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">6</span>,<span class="attr">name</span>:<span class="string">&#x27;Web前端工程师&#x27;</span>&#125;</span><br><span class="line">]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>显示的结果是：Web前端工程师，改变type值，显示相应的职位。</p>
+<h1 id="拓展思考"><a href="#拓展思考" class="headerlink" title="拓展思考"></a>拓展思考</h1><p>AngularJS的内置过滤器有哪些？</p>
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p>参考一：angularJS constant和value<br>参考二：AngularJS的Filter用法详解</p>
+<h1 id="更多提问"><a href="#更多提问" class="headerlink" title="更多提问"></a>更多提问</h1><p>1、constant函数取值，和直接用常量名有什么区别</p>
+<p>答：大多数情况直接用常量名，但是在angular中，使用constant的字段约定与后台进行数据交互的时候很方便，结构更加清晰。constant()函数和直接使用常量名输出的效果是一样的，但函数可以动态的输出不同的常量，在使用上要灵活、方便。</p>
+<p>2、filter怎么去掉时间的秒</p>
+<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="xml">答：</span><span class="template-variable">&#123;&#123;<span class="name">date</span> | date : <span class="string">&#x27;yyyy-MM-dd hh:mm:ss EEEE&#x27;</span>&#125;&#125;</span></span><br><span class="line"><span class="xml">参数用来指定所要的格式，y M d h m s E 分别表示 年 月 日 时 分 秒 星期，你可以自由组合它们</span></span><br></pre></td></tr></table></figure>
+<p>3、什么情况下使用filter</p>
+<p>答：常用的就是一个date的格式转换，表格中进行排序、还有大量的一些约定字段，使用自定义的filter。</p>
+]]></content>
+      <categories>
+        <category>WEB</category>
+      </categories>
+      <tags>
+        <tag>angular</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>angularjs双向绑定后，发生了什么事情？view层和controller层是如何进行绑定的？</title>
     <url>/2017/12/19/angular_%E5%8F%8C%E5%90%91%E7%BB%91%E5%AE%9A/</url>
     <content><![CDATA[<h1 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h1><p>双向绑定，是从界面的操作能实时反映到数据，数据的变更也能</p>
@@ -528,56 +519,6 @@ console.log(jso4);
 <p><a href="http://www.cnblogs.com/bigdataZJ/p/AngularjsInAction2.html">http://www.cnblogs.com/bigdataZJ/p/AngularjsInAction2.html</a> view和controller的那些事儿</p>
 <p><a href="https://github.com/xufei/blog/issues/10">https://github.com/xufei/blog/issues/10</a>  Angular沉思录（一）数据绑定</p>
 <p><a href="http://www.angularjs.cn/A0a6%E7%90%86%E8%A7%A3$watch%EF%BC%8C$apply%E5%92%8C$digest">http://www.angularjs.cn/A0a6理解$watch，$apply和$digest</a> —理解数据绑定过程</p>
-]]></content>
-      <categories>
-        <category>WEB</category>
-      </categories>
-      <tags>
-        <tag>angular</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>angular之constant和filter</title>
-    <url>/2018/01/31/angular_constant&amp;filter/</url>
-    <content><![CDATA[<h1 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h1><p>angular是什么：AngularJS最初由Misko Hevery和Adam Abrons于2009年开发，后来成为了Google公司的项目。AngularJS弥补了HTML在构建应用方面的不足，其通过使用标识符（directives）结构，来扩展Web应用中的HTML词汇，使开发者可以使用HTML来声明动态内容，从而使得Web开发和测试工作变得更加容易。</p>
-<p>constant，可以算作angular的全局数据，想要使用的话，只需要在控制器注入即可。</p>
-<p>$filter，angular的过滤器，如果想要在控制器里面使用，也是注入，然后调用，而html中的数据过滤，直接键入过滤器名称和对应值即可。</p>
-<h1 id="知识剖析"><a href="#知识剖析" class="headerlink" title="知识剖析"></a>知识剖析</h1><p>每当搜索constant时候，总会连带出现value的说明。</p>
-<p>两者都可以作为全局变量使用，但是有两点不同：</p>
-<p>1.value不可以在config里注入，但是constant可以。</p>
-<p>2.value可以修改，但是constant不可以修改，一般直接用constant配置一些需要经常使用的数据。</p>
-<p>下面是简单的应用例子：</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">angular.module(<span class="string">&#x27;myApp&#x27;</span>, [])</span><br><span class="line">.constant(<span class="string">&#x27;apiKey&#x27;</span>, <span class="string">&#x27;123123123&#x27;</span>)</span><br><span class="line">.value(<span class="string">&#x27;FBid&#x27;</span>,<span class="string">&#x27;231231231&#x27;</span>)</span><br><span class="line">.controller(<span class="string">&#x27;myController&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">$scope,apiKey,FBid</span>)</span>&#123;</span><br><span class="line">$scope.a = apiKey;</span><br><span class="line">$scope.b = FBid;</span><br><span class="line">&#125;)</span><br><span class="line">.config(<span class="function"><span class="keyword">function</span>(<span class="params">apiKey</span>) </span>&#123;</span><br><span class="line"><span class="comment">//在这里apiKey将被赋值为123123123</span></span><br><span class="line"><span class="comment">//就像上面设置的那样</span></span><br><span class="line">&#125;)</span><br><span class="line">.config(<span class="function"><span class="keyword">function</span>(<span class="params">FBid</span>) </span>&#123;</span><br><span class="line"><span class="comment">//这将抛出一个错误，未知的provider: FBid</span></span><br><span class="line"><span class="comment">//因为在config函数内部无法访问这个值</span></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>filter是用来格式化数据用的</p>
-<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="xml">基本原型：</span><span class="template-variable">&#123;&#123;<span class="name">expression</span> | filter&#125;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="xml">多个filter连用版：</span><span class="template-variable">&#123;&#123;<span class="name">expression</span> | filter1 | filter2&#125;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="xml">传入参数版：</span><span class="template-variable">&#123;&#123;<span class="name">expression</span> | filter:1:2&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<h1 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h1><p>如何使用angular中constant和$filter？</p>
-<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>4.1 AngularJS内建了一些常用的filter：</p>
-<p>1、格式化货币：</p>
-<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="template-variable">&#123;&#123; <span class="name">12</span> | currency&#125;&#125;</span><span class="xml">  //将12格式化为货币，默认单位符号为&#x27;$&#x27;,小数默认2位</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">12.45</span> | currency:&#x27;￥&#x27;&#125;&#125;</span><span class="xml"> //将12.45格式化为货币，使用自定义单位符号为&#x27;￥&#x27;,小数默认2位</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">12.45</span> | currency:&#x27;CHY￥&#x27;:1&#125;&#125;</span><span class="xml"> //将12.45格式化为货币，使用自定义单位符号为&#x27;CHY￥&#x27;,小数指定1位,会执行四舍五入操作</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">12.55</span> | currency:<span class="literal">undefined</span>:0&#125;&#125;</span><span class="xml"> //将12.55格式化为货币， 不改变单位符号， 小数部分将四舍五入</span></span><br></pre></td></tr></table></figure>
-<p>2、格式化日期：</p>
-<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1304375948024</span> | date:&#x27;medium&#x27;&#125;&#125;</span><span class="xml">//May 03, 2011 06:39:08 PM</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1304375948024</span> | date &#125;&#125;</span><span class="xml">//结果：May 3, 2011</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1304375948024</span> | date:&quot;MM/dd/yyyy @ h:mma&quot; &#125;&#125;</span><span class="xml">//结果：05/03/2011 @ 6:39AM</span></span><br><span class="line"></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1304375948024</span> | date:&quot;yyyy-MM-dd hh:mm:ss&quot; &#125;&#125;</span><span class="xml">//结果：2011-05-03 06:39:08</span></span><br></pre></td></tr></table></figure>
-<p>3、过滤数组：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="variable">$scope</span>.arr = [&#123;<span class="string">&quot;age&quot;</span>: <span class="number">20</span>,<span class="string">&quot;id&quot;</span>: <span class="number">10</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;iphone&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">12</span>,<span class="string">&quot;id&quot;</span>: <span class="number">11</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;sunm xing&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">44</span>,<span class="string">&quot;id&quot;</span>: <span class="number">12</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;test abc&quot;</span>&#125; ]</span><br><span class="line"></span><br><span class="line">&#123;&#123;arr | filter:<span class="string">&#x27;s&#x27;</span>&#125;&#125;  <span class="regexp">//</span>查找含有有s的行<span class="regexp">//</span>上例结果：[&#123;<span class="string">&quot;age&quot;</span>:<span class="number">12</span>,<span class="string">&quot;id&quot;</span>:<span class="number">11</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;sunm xing&quot;</span>&#125;,&#123;<span class="string">&quot;age&quot;</span>:<span class="number">44</span>,<span class="string">&quot;id&quot;</span>:<span class="number">12</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;test abc&quot;</span>&#125;]</span><br><span class="line"></span><br><span class="line">&#123;&#123;arr | filter:&#123;<span class="string">&#x27;name&#x27;</span>:<span class="string">&#x27;ip&#x27;</span>&#125; &#125;&#125;<span class="regexp">//</span>查找name like ip的行<span class="regexp">//</span>上例结果:[&#123;<span class="string">&quot;age&quot;</span>:<span class="number">20</span>,<span class="string">&quot;id&quot;</span>:<span class="number">10</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;iphone&quot;</span>&#125;]</span><br></pre></td></tr></table></figure>
-<p>4、将对象格式化成标准的JSON格式：</p>
-<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="template-variable">&#123;&#123; &#123;<span class="name">name:&#x27;Jack&#x27;</span>, age: <span class="number">21</span>&#125; | json&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-<p>5、字符串，对象截取：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line">&#123;&#123; <span class="string">&quot;i love tank&quot;</span> | limitTo:<span class="number">6</span> &#125;&#125;<span class="regexp">//</span>结果：i love</span><br><span class="line"></span><br><span class="line">&#123;&#123; <span class="string">&quot;i love tank&quot;</span> | limitTo:-<span class="number">4</span> &#125;&#125;<span class="regexp">//</span>结果：tank</span><br><span class="line"></span><br><span class="line">&#123;&#123; [&#123;<span class="string">&quot;age&quot;</span>: <span class="number">20</span>,<span class="string">&quot;id&quot;</span>: <span class="number">10</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;iphone&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">12</span>,<span class="string">&quot;id&quot;</span>: <span class="number">11</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;sunm xing&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">44</span>,<span class="string">&quot;id&quot;</span>: <span class="number">12</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;test abc&quot;</span>&#125; ] | limitTo:<span class="number">1</span> &#125;&#125;<span class="regexp">//</span>结果：[&#123;<span class="string">&quot;age&quot;</span>:<span class="number">20</span>,<span class="string">&quot;id&quot;</span>:<span class="number">10</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;iphone&quot;</span>&#125;]</span><br></pre></td></tr></table></figure>
-<p>6、大小写转换：</p>
-<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="xml">China has joined the </span><span class="template-variable">&#123;&#123; <span class="name">&quot;wto&quot;</span> | uppercase &#125;&#125;</span><span class="xml">.</span></span><br><span class="line"><span class="xml">We all need </span><span class="template-variable">&#123;&#123; <span class="name">&quot;MONEY&quot;</span> | lowercase &#125;&#125;</span><span class="xml">.</span></span><br></pre></td></tr></table></figure>
-<p>7、数值类：</p>
-<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1.234567</span> | number:1 &#125;&#125;</span><span class="xml">  //结果：1.2</span></span><br><span class="line"><span class="template-variable">&#123;&#123; <span class="name">1234567</span> | number &#125;&#125;</span><span class="xml">    //结果：1,234,567</span></span><br></pre></td></tr></table></figure>
-<p>8、对象排序：</p>
-<figure class="highlight awk"><table><tr><td class="code"><pre><span class="line"><span class="variable">$scope</span>.arr = [&#123;<span class="string">&quot;age&quot;</span>: <span class="number">20</span>,<span class="string">&quot;id&quot;</span>: <span class="number">10</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;iphone&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">12</span>,<span class="string">&quot;id&quot;</span>: <span class="number">11</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;sunm xing&quot;</span>&#125;, &#123;<span class="string">&quot;age&quot;</span>: <span class="number">44</span>,<span class="string">&quot;id&quot;</span>: <span class="number">12</span>,<span class="string">&quot;name&quot;</span>: <span class="string">&quot;test abc&quot;</span>&#125; ]</span><br><span class="line">&#123;&#123;arr | orderBy:<span class="string">&#x27;id&#x27;</span>:true &#125;&#125;<span class="regexp">//</span>根id降序排</span><br><span class="line">&#123;&#123;arr | orderBy:<span class="string">&#x27;id&#x27;</span> &#125;&#125;<span class="regexp">//</span>根据id升序排</span><br></pre></td></tr></table></figure>
-<h2 id="自定义filter方法"><a href="#自定义filter方法" class="headerlink" title="自定义filter方法"></a>自定义filter方法</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line">我们来自定义选择省份和职位</span><br><span class="line"></span><br><span class="line">HTML代码：</span><br><span class="line">&#123;&#123;<span class="number">1</span> | provinceFilter&#125;&#125;</span><br><span class="line">&#123;&#123;<span class="number">6</span> | fMes:<span class="string">&#x27;positionList&#x27;</span>:<span class="string">&#x27;type&#x27;</span>&#125;&#125;</span><br><span class="line"></span><br><span class="line">app.js:</span><br><span class="line">angular.module(<span class="string">&#x27;myApp&#x27;</span>,[])</span><br><span class="line"><span class="comment">//数组</span></span><br><span class="line">.controller(<span class="string">&#x27;personCtrl&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">$scope</span>)</span>&#123;</span><br><span class="line">  $scope.arr=[</span><br><span class="line">    &#123;<span class="string">&quot;age&quot;</span>:<span class="number">20</span>,<span class="string">&quot;id&quot;</span>:<span class="number">10</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;iphone&quot;</span>&#125;,</span><br><span class="line">    &#123;<span class="string">&quot;age&quot;</span>:<span class="number">12</span>,<span class="string">&quot;id&quot;</span>:<span class="number">11</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;sunm xing&quot;</span>&#125;,</span><br><span class="line">    &#123;<span class="string">&quot;age&quot;</span>:<span class="number">44</span>,<span class="string">&quot;id&quot;</span>:<span class="number">12</span>,<span class="string">&quot;name&quot;</span>:<span class="string">&quot;test abc&quot;</span>&#125;</span><br><span class="line">    ]</span><br><span class="line">  &#125;</span><br><span class="line">)</span><br><span class="line"><span class="comment">//自定义选择省份</span></span><br><span class="line">.filter(<span class="string">&#x27;provinceFilter&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">PROVINCE</span>)</span>&#123;<span class="comment">//省</span></span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">id</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(id!=<span class="literal">undefined</span>&amp;&amp;id!=<span class="string">&#x27;&#x27;</span>)&#123;</span><br><span class="line">      <span class="keyword">var</span>  name;</span><br><span class="line">      angular.forEach(PROVINCE,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(data.ProID==id)&#123;</span><br><span class="line">              name=data.ProName;</span><br><span class="line">          &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">  <span class="keyword">return</span>  name;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="comment">//自定义选择职位</span></span><br><span class="line"></span><br><span class="line">.filter(<span class="string">&#x27;fMes&#x27;</span>,<span class="function"><span class="keyword">function</span>(<span class="params">con</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">input,field,str</span>)</span>&#123;</span><br><span class="line">  <span class="keyword">if</span>(input&gt;=<span class="number">0</span>) &#123;<span class="comment">//input != undefined &amp;&amp;</span></span><br><span class="line">    <span class="keyword">var</span> name;</span><br><span class="line">    <span class="keyword">var</span> aMes=con[field];</span><br><span class="line">    angular.forEach(aMes,<span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">      <span class="keyword">if</span>(data[str]==input)&#123;</span><br><span class="line">          name=data.name;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">    <span class="keyword">return</span> name;</span><br><span class="line">    &#125;<span class="keyword">else</span>&#123;<span class="built_in">console</span>.log(<span class="string">&#x27;false&#x27;</span>);&#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">constant.js</span><br><span class="line">angular.module(<span class="string">&quot;myApp&quot;</span>) .value(<span class="string">&#x27;val&#x27;</span>,&#123;</span><br><span class="line">&#125;)</span><br><span class="line"><span class="comment">//公司编辑常量组</span></span><br><span class="line">.constant(<span class="string">&#x27;con&#x27;</span>,&#123;</span><br><span class="line"><span class="comment">//职业分类</span></span><br><span class="line">positionList:[</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">0</span>,<span class="attr">name</span>:<span class="string">&#x27;ui设计师&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">1</span>,<span class="attr">name</span>:<span class="string">&#x27;运维工程师&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">2</span>,<span class="attr">name</span>:<span class="string">&#x27;产品&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">3</span>,<span class="attr">name</span>:<span class="string">&#x27;Java工程师&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">4</span>,<span class="attr">name</span>:<span class="string">&#x27;IOS工程师&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">5</span>,<span class="attr">name</span>:<span class="string">&#x27;Android工程师&#x27;</span>&#125;,</span><br><span class="line">  &#123;<span class="attr">type</span>:<span class="number">6</span>,<span class="attr">name</span>:<span class="string">&#x27;Web前端工程师&#x27;</span>&#125;</span><br><span class="line">]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-<p>显示的结果是：Web前端工程师，改变type值，显示相应的职位。</p>
-<h1 id="拓展思考"><a href="#拓展思考" class="headerlink" title="拓展思考"></a>拓展思考</h1><p>AngularJS的内置过滤器有哪些？</p>
-<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p>参考一：angularJS constant和value<br>参考二：AngularJS的Filter用法详解</p>
-<h1 id="更多提问"><a href="#更多提问" class="headerlink" title="更多提问"></a>更多提问</h1><p>1、constant函数取值，和直接用常量名有什么区别</p>
-<p>答：大多数情况直接用常量名，但是在angular中，使用constant的字段约定与后台进行数据交互的时候很方便，结构更加清晰。constant()函数和直接使用常量名输出的效果是一样的，但函数可以动态的输出不同的常量，在使用上要灵活、方便。</p>
-<p>2、filter怎么去掉时间的秒</p>
-<figure class="highlight handlebars"><table><tr><td class="code"><pre><span class="line"><span class="xml">答：</span><span class="template-variable">&#123;&#123;<span class="name">date</span> | date : <span class="string">&#x27;yyyy-MM-dd hh:mm:ss EEEE&#x27;</span>&#125;&#125;</span></span><br><span class="line"><span class="xml">参数用来指定所要的格式，y M d h m s E 分别表示 年 月 日 时 分 秒 星期，你可以自由组合它们</span></span><br></pre></td></tr></table></figure>
-<p>3、什么情况下使用filter</p>
-<p>答：常用的就是一个date的格式转换，表格中进行排序、还有大量的一些约定字段，使用自定义的filter。</p>
 ]]></content>
       <categories>
         <category>WEB</category>
@@ -842,6 +783,77 @@ console.log(jso4);
       </tags>
   </entry>
   <entry>
+    <title>canvas绘制dom计算分页自定义打印页面解决原生样式兼容等问题</title>
+    <url>/2021/03/15/canvasprint/</url>
+    <content><![CDATA[<p>原生打印香吗？当然香啊，window.print() 页头页尾页码统统有，还能用 @media print 设置打印样式，没什么问题，棒棒的舒舒服服的；但是（没有但是也没这篇文章了🙃🙃🙃）分享分享一些我踩到的坑，以及我的解决方案</p>
+<h2 id="在打印页面加粗的字体的显示"><a href="#在打印页面加粗的字体的显示" class="headerlink" title="在打印页面加粗的字体的显示"></a>在打印页面加粗的字体的显示</h2><p>现在字体大部分都用苹方，微软雅黑之类的，好看又百搭，但是偶尔也会有UI要求或者其他原因引起的特殊需求需要其他字体，就会惊喜的发现明明设置了 css，页面显示出来的也是font-weight: bold 的效果，但是在打印下却还是和 font-weight: normal 一样。</p>
+<p>我用的是宋体，如果你和我一样 <strong>1.字体是动态 2.需要加粗 3.这个字体没有加粗的版本 4.还需要打印</strong><br>可以试试我的替代方案:</p>
+<h3 id="1-更换字体"><a href="#1-更换字体" class="headerlink" title="1. 更换字体"></a>1. 更换字体</h3><p>在 @media print 为需要加粗的文字更换其他字体，缺点就是因为不是配套的字体可能会不协调，而且文字如果是动态的，那么加载一个字体包可能会影响用户体验</p>
+<h3 id="2-canvas-绘制-dom"><a href="#2-canvas-绘制-dom" class="headerlink" title="2. canvas 绘制 dom"></a>2. canvas 绘制 dom</h3><p>虽然我后来也用了这个但是是因为另外的问题，所以如果仅仅因为字体加粗的话…嗯 …. 🤐🤐，看第三个👇👇👇</p>
+<h3 id="3-使用多个字体重叠达到加粗效果"><a href="#3-使用多个字体重叠达到加粗效果" class="headerlink" title="3. 使用多个字体重叠达到加粗效果"></a>3. 使用多个字体重叠达到加粗效果</h3><p>这是我当时用的办法，用 before + after + attr() 重叠达到加粗效果</p>
+<pre><code>    <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.strong</span> &#123;</span><br><span class="line">	<span class="attribute">font-weight</span>: normal;</span><br><span class="line">	<span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.strong</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="built_in">attr</span>(data-text);</span><br><span class="line">	<span class="attribute">z-index</span>: -<span class="number">1</span>;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">display</span>: inline-block;</span><br><span class="line">	<span class="attribute">left</span>: -<span class="number">0.8px</span>;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.strong</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">	<span class="attribute">content</span>: <span class="built_in">attr</span>(data-text);</span><br><span class="line">	<span class="attribute">z-index</span>: -<span class="number">1</span>;</span><br><span class="line">	<span class="attribute">line-height</span>: <span class="number">100%</span>;</span><br><span class="line">	<span class="attribute">position</span>: absolute;</span><br><span class="line">	<span class="attribute">display</span>: inline-block;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">top</span>: -<span class="number">0.4px</span>;</span><br><span class="line">	<span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></code></pre>
+<h2 id="页头页脚自定义"><a href="#页头页脚自定义" class="headerlink" title="页头页脚自定义"></a>页头页脚自定义</h2><p>原生打印含有页头页脚，可以自定义 margin, size，但无法自定义页头页脚内容，页头页脚含有日期，url，页码，网站 title，但我…只需要页码<br><a href="https://developers.google.com/web/tools/chrome-devtools/css/print-preview">在 f12 查看打印样式</a>：ctrl + shift + p 展开命令菜单输入 show rendering，在 emulate css media type 选择 print</p>
+<h3 id="1-在-page-里设置-margin"><a href="#1-在-page-里设置-margin" class="headerlink" title="1. 在 @page 里设置 margin"></a>1. 在 @page 里设置 margin</h3><p>不要页头 margin-top：0；不要页脚 margin-bottom：0, 如果不要页脚 url 是没了同样的页码也没了；什么都不需要 margin: 0，也可以在打印高级设置里隐藏页头页脚；</p>
+<p>不管是margin-top：0，margin: 0，页头页脚是没了且页面的边距也没了，可以用元素 padding 或 margin 撑开但是如果是多页在分页的地方有可能会出现没有边距的情况</p>
+<h3 id="2-修改-url"><a href="#2-修改-url" class="headerlink" title="2. 修改 url"></a>2. 修改 url</h3><p>使用 history API 修改 url, <a href="https://developer.mozilla.org/zh-CN/docs/Web/API/History/pushState">MDN History.pushState()</a></p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">history.pushState(&#123;&#125;, <span class="string">&quot;&quot;</span>, <span class="string">&quot;/&quot;</span>);</span><br><span class="line"><span class="built_in">window</span>.print()</span><br><span class="line">history.back()</span><br></pre></td></tr></table></figure>
+
+<p>最后只剩下网站域名，但对我来说好像不是很行</p>
+<h3 id="3-尝试使用-counter-increment、counter-加上页码"><a href="#3-尝试使用-counter-increment、counter-加上页码" class="headerlink" title="3. 尝试使用 counter-increment、counter() 加上页码"></a>3. 尝试使用 counter-increment、counter() 加上页码</h3><p>全部隐藏后尝试使用 counter-increment 和 CSS计数器 counter() 加上页码, <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/counter-increment">MDN counter-increment</a> <a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/counter-increment">MDN CSS counter</a></p>
+<p>body 里重置 page，固定 #pageNum 在页面重复渲染，counter-increment 增加 page 值，couter() 显示 page</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">	<span class="attribute">counter-reset</span>: page</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#pageNum</span> &#123;</span><br><span class="line">	<span class="attribute">position</span>: fixed;</span><br><span class="line">	<span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">	<span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> print &#123;</span><br><span class="line">	<span class="keyword">@page</span> &#123;</span><br><span class="line">		<span class="attribute">size</span>: auto;</span><br><span class="line">		<span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="selector-id">#pageNum</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">		<span class="attribute">counter-increment</span>: page;</span><br><span class="line">		<span class="attribute">content</span>: <span class="string">&quot;Page &quot;</span><span class="built_in">counter</span>(page);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>在 Google 不生效始终显示 0，Firefox 只在第一页显示总页面数….. 😶😶😶😶</p>
+<h3 id="4-最终方案：使用-canvas-绘制-dom-计算分页最后生成图片打印，解决所有原生问题"><a href="#4-最终方案：使用-canvas-绘制-dom-计算分页最后生成图片打印，解决所有原生问题" class="headerlink" title="4. 最终方案：使用 canvas 绘制 dom 计算分页最后生成图片打印，解决所有原生问题"></a>4. 最终方案：使用 canvas 绘制 dom 计算分页最后生成图片打印，解决所有原生问题</h3><p>如果你不太了解 canvas，底部👇👇👇可以查看以往相关文章</p>
+<p>1.dom 变 svg, 再变 image src</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> scale = <span class="number">3</span></span><br><span class="line"><span class="keyword">var</span> el = <span class="built_in">document</span>.querySelector(<span class="string">&quot;content&quot;</span>), svg, img = <span class="keyword">new</span> Image(),</span><br><span class="line">	cav = <span class="built_in">document</span>.createElement(<span class="string">&quot;canvas&quot;</span>), ctx, imagedata,</span><br><span class="line">	pages = <span class="number">0</span>, margintop = <span class="number">100</span> * scale, marginleft = <span class="number">0</span> * scale, height = <span class="number">1122</span> * scale, pageheight;</span><br><span class="line">pageheight = height - margintop * <span class="number">2</span></span><br><span class="line">ctx = cav.getContext(<span class="string">&quot;2d&quot;</span>)</span><br><span class="line">img.setAttribute(<span class="string">&#x27;crossOrigin&#x27;</span>, <span class="string">&#x27;&#x27;</span>)</span><br><span class="line">img.className = <span class="string">&quot;printpage&quot;</span></span><br><span class="line">svg = <span class="string">`data:image/svg+xml;charset=utf-8,&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;<span class="subst">$&#123;el.clientWidth&#125;</span>&quot; height=&quot;<span class="subst">$&#123;el.clientHeight&#125;</span>&quot;&gt;</span></span><br><span class="line"><span class="string">		&lt;foreignObject x=&quot;0&quot; y=&quot;0&quot; width=&quot;100%&quot; height=&quot;100%&quot;&gt;</span></span><br><span class="line"><span class="string">			&lt;style&gt;<span class="subst">$&#123;style&#125;</span>&lt;/style&gt;</span></span><br><span class="line"><span class="string">			<span class="subst">$&#123;<span class="keyword">new</span> XMLSerializer().serializeToString(el)&#125;</span></span></span><br><span class="line"><span class="string">		&lt;/foreignObject&gt;</span></span><br><span class="line"><span class="string">	&lt;/svg&gt;`</span>;</span><br><span class="line">img.src = svg.replace(<span class="regexp">/\n/g</span>, <span class="string">&#x27;&#x27;</span>).replace(<span class="regexp">/\t/g</span>, <span class="string">&#x27;&#x27;</span>).replace(<span class="regexp">/#/g</span>, <span class="string">&#x27;%23&#x27;</span>)</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>canvas 是根据像素绘制，所以 canvas 绘制的时候使用同样的和 dom 一样的尺寸正常在电脑看没问题但是打印就会变得模糊，而 svg 是矢量图，所以应该放大 image 再绘制 canvas，但是同样的如果绘制尺寸太大会非常影响性能所以根据情况调整，我是设置放大三倍左右;</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">cav.height = img.height * scale</span><br><span class="line">cav.width = img.width * scale</span><br><span class="line">ctx.fillStyle = <span class="string">&#x27;#fff&#x27;</span></span><br><span class="line">ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, cav.width, cav.height)</span><br><span class="line">ctx.drawImage(img, <span class="number">0</span>, <span class="number">0</span>, img.width * scale, img.height * scale)</span><br><span class="line">img.src = cav.toDataURL()</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>按照打印页面高度计算总页数，这个总页数不一定是最后的总页数，扣除上边距后开始绘制图片，图片绘制完成后再绘制页脚，页脚的位置也应该是计算总长度后取中间位置</li>
+<li>循环页数绘制图片，由于是图片所以分页的地方需要尤其注意，避免在文字中间被分开；循环 imagedata 扫描像素点，对比背景</li>
+<li>如果一行文字因为分页从中间被截掉那么被截的上半部分应该要留到下一页再绘制，同时要记下这上部分的高度<br>ps: 因为我的页面是纯文字白色背景，所以如果你的页面有图片或者其他色块，那么可能需要注意如果是被截的是图片或者其他的和文字颜色相同的色块，通常可能是不需要去避免这个截断，那么或许可以在 dom 的时候做一些准备比如记下位置什么的</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">pages = <span class="built_in">Math</span>.ceil(img.height / pageh)</span><br><span class="line">cav.height = pages * height</span><br><span class="line">cav.width = img.width</span><br><span class="line">ctx.fillStyle = <span class="string">&#x27;#fff&#x27;</span></span><br><span class="line">ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, cav.width, cav.height)</span><br><span class="line"><span class="keyword">var</span> point = <span class="number">0</span>, tw = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> p = <span class="number">0</span>; p &lt; pages; p++) &#123;</span><br><span class="line">	ctx.drawImage(</span><br><span class="line">		img,</span><br><span class="line">		<span class="number">0</span>, point, img.width, pageh,</span><br><span class="line">		marginl, margint + p * height, img.width, pageh</span><br><span class="line">	)</span><br><span class="line">	<span class="keyword">var</span> iscut = <span class="literal">true</span>, rows = <span class="number">0</span></span><br><span class="line">	<span class="keyword">while</span> (iscut &amp;&amp; rows &lt; <span class="number">120</span>) &#123;</span><br><span class="line">		imagedata = ctx.getImageData(marginl, (p + <span class="number">1</span>) * height - margint - (rows + <span class="number">1</span>), img.width, <span class="number">1</span>)</span><br><span class="line">		iscut = <span class="literal">false</span></span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; imagedata.data.length; i += <span class="number">2</span> * <span class="number">4</span>) &#123;</span><br><span class="line">			<span class="keyword">if</span> (imagedata.data[i] === <span class="number">0</span>) &#123;</span><br><span class="line">				rows++</span><br><span class="line">				iscut = <span class="literal">true</span></span><br><span class="line">				rows === <span class="number">120</span> &amp;&amp; <span class="built_in">console</span>.log(<span class="string">&quot;陷入循环&quot;</span> + p)</span><br><span class="line">				<span class="keyword">break</span></span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	point += (pageh - rows)</span><br><span class="line">	ctx.fillRect(marginl, (p + <span class="number">1</span>) * height - margint - rows, img.width, rows)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="7">
+<li>由于我们的高度是从就算好了，那么现在由于被截掉的文字的原因，剩余的需要绘制的高度也发生了变化，所以在画完当前总页数的最后一页后如果还有图片还未绘制完成应该加一，再绘制一夜，canvas 尺寸也要进行同步更新</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (pages === p + <span class="number">1</span> &amp;&amp; point &lt; img.height) &#123;</span><br><span class="line">	pages += <span class="number">1</span></span><br><span class="line">	<span class="keyword">var</span> oldcav = ctx.getImageData(<span class="number">0</span>, <span class="number">0</span>, cav.width, cav.height)</span><br><span class="line">	cav.height = pages * height</span><br><span class="line">	ctx.fillStyle = <span class="string">&#x27;#fff&#x27;</span></span><br><span class="line">	ctx.fillRect(<span class="number">0</span>, <span class="number">0</span>, cav.width, cav.height)</span><br><span class="line">	ctx.putImageData(oldcav, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="8">
+<li>ok，现在图片绘制完成，页数也算完了，就可以绘制页码了</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">ctx.fillStyle = <span class="string">&#x27;#000&#x27;</span></span><br><span class="line">ctx.font = <span class="string">&quot;normal normal &quot;</span> + scale * <span class="number">14</span> + <span class="string">&quot;px SimSun, Avenir, Helvetica Neue, Helvetica, Arial, sans-serif&quot;</span></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> p = <span class="number">0</span>; p &lt; pages; p++) &#123;</span><br><span class="line">	tw = ctx.measureText(<span class="string">&quot;第&quot;</span> + (p + <span class="number">1</span>) + <span class="string">&quot;页 共&quot;</span> + pages + <span class="string">&quot;页&quot;</span>)</span><br><span class="line">	ctx.fillText(<span class="string">&quot;第&quot;</span> + (p + <span class="number">1</span>) + <span class="string">&quot;页 共&quot;</span> + pages + <span class="string">&quot;页&quot;</span>, (cav.width - tw.width) / <span class="number">2</span>, (p + <span class="number">1</span>) * height - (margint / <span class="number">2</span>))</span><br><span class="line">&#125;</span><br><span class="line">img.src = cav.toDataURL()</span><br></pre></td></tr></table></figure>
+
+<ol start="9">
+<li>页码绘制完成后将 image 调成原始尺寸进行打印，放入body进行打印</li>
+</ol>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">img.width = img.width / scale</span><br><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">&quot;.printpage&quot;</span>) &amp;&amp; <span class="built_in">document</span>.querySelector(<span class="string">&quot;.printpage&quot;</span>).remove()</span><br><span class="line"><span class="built_in">document</span>.querySelector(<span class="string">&quot;body&quot;</span>).insertBefore(img, el)</span><br><span class="line"><span class="built_in">window</span>.print()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="10">
+<li>css 样式部分可以做一些简单隐藏显示处理，在打印时隐藏正常页面内容，显示绘制完成的image</li>
+</ol>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.content</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.printpage</span> &#123;</span><br><span class="line">	<span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">@media</span> print &#123;</span><br><span class="line">	<span class="keyword">@page</span> &#123;</span><br><span class="line">		<span class="attribute">size</span>: auto;</span><br><span class="line">		<span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="selector-class">.printpage</span> &#123;</span><br><span class="line">		<span class="attribute">display</span>: block;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="selector-class">.content</span> &#123;</span><br><span class="line">		<span class="attribute">display</span>: none;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><p>实际上我之前还有一个问题是 input 或 textarea 在打印下不显示输入的内容，因为，后来手动赋值解决，但是在写博客我发现我没办法复现那个问题了，尝试了 js 赋值、插入 dom、手动输入各种操作并没有出现我预期的 bug，everything is fine….，所以🤐🤐🤐</p>
+<h2 id="相关文章"><a href="#相关文章" class="headerlink" title="相关文章"></a>相关文章</h2><p><a href="https://mser.xyz/tags/canvas/">canvas 相关</a><br><a href="https://mser.xyz/2019/02/21/canvas-1/">cannvas的imagedata对象</a></p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters#displaying_a_counter">MDN: Displaying a counter</a></p>
+<p><a href="https://www.geeksforgeeks.org/how-to-remove-url-from-printing-the-page/">How to hide an element when printing a web page using CSS?</a></p>
+<p><a href="https://stackoverflow.com/questions/58227220/how-to-change-the-url-from-the-printing-page">stackoverflow: How to change the URL from the printing page?</a></p>
+]]></content>
+      <categories>
+        <category>WEB</category>
+      </categories>
+      <tags>
+        <tag>canvas</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>cordova之相机拍照以及本地图片获取上传</title>
     <url>/2018/08/27/cordova_%E5%9B%BE%E7%89%87%E8%8E%B7%E5%8F%96%E4%B8%8A%E4%BC%A0/</url>
     <content><![CDATA[<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line">图片获取</span><br><span class="line">此插件定义了一个全局navigator.camera对象，该对象提供用于拍摄照片和从系统图像库中选择图像的API</span><br><span class="line">支持平台：<span class="keyword">Android、BlackBerry、Browser、Firefox、FireOS、iOS、Windows、WP8、Ubuntu</span></span><br><span class="line"><span class="keyword">cordova </span>plugin <span class="keyword">add </span>cordova-plugin-camera</span><br><span class="line"></span><br><span class="line">图片上传</span><br><span class="line">这个插件定义了全局FileTransfer，FileUploadOptions构造函数，用于传输文件</span><br><span class="line">看你上传的方式如果你使用<span class="keyword">bs64就可以不用这个插件</span></span><br><span class="line"><span class="keyword">支持平台：Amazon </span>Fire OS、<span class="keyword">Android、BlackBerry </span><span class="number">10</span>、<span class="keyword">Browser、Firefox </span>OS**、iOS、Windows Phone <span class="number">7</span> <span class="keyword">and </span><span class="number">8</span>*、Windows</span><br><span class="line">cordova plugin <span class="keyword">add </span>cordova-plugin-file-transfer</span><br></pre></td></tr></table></figure>
@@ -925,19 +937,6 @@ console.log(jso4);
       </tags>
   </entry>
   <entry>
-    <title>域名解析</title>
-    <url>/2019/08/05/domain/</url>
-    <content><![CDATA[<h2 id="二级域名设置"><a href="#二级域名设置" class="headerlink" title="二级域名设置"></a>二级域名设置</h2><p>阿里云的域名解析设置页面 —&gt; 点击添加记录 —&gt; 出现弹框<br>    *@：直接解析主域名 aliyun.com<br>    **：泛解析，匹配其他所有域名 *.aliyun.com<br>    *mail：将域名解析为mail.aliyun.com，通常用于解析邮箱服务器<br>    *二级域名：如：abc.aliyun.com，填写abc<br>    *手机网站：如：m.aliyun.com，填写m<br>    *显性URL/隐形URL：转发的地址必须完成备案且备案接入商为阿里云</p>
-<p>TTL：为缓存时间，数值越小，修改记录各地生效时间越快，默认为10分钟</p>
-]]></content>
-      <categories>
-        <category>SERVER</category>
-      </categories>
-      <tags>
-        <tag>domain</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>cordova之HybirdApp热更新</title>
     <url>/2018/08/30/cordova_%E7%83%AD%E6%9B%B4%E6%96%B0/</url>
     <content><![CDATA[<h1 id="关于热更新"><a href="#关于热更新" class="headerlink" title="关于热更新"></a>关于热更新</h1><p>热更新App常用的更新方式。简单来说，就是在用户通过App Store下载App之后，打开App时遇到的即时更新</p>
@@ -998,6 +997,19 @@ console.log(jso4);
       </categories>
       <tags>
         <tag>cordova</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>域名解析</title>
+    <url>/2019/08/05/domain/</url>
+    <content><![CDATA[<h2 id="二级域名设置"><a href="#二级域名设置" class="headerlink" title="二级域名设置"></a>二级域名设置</h2><p>阿里云的域名解析设置页面 —&gt; 点击添加记录 —&gt; 出现弹框<br>    *@：直接解析主域名 aliyun.com<br>    **：泛解析，匹配其他所有域名 *.aliyun.com<br>    *mail：将域名解析为mail.aliyun.com，通常用于解析邮箱服务器<br>    *二级域名：如：abc.aliyun.com，填写abc<br>    *手机网站：如：m.aliyun.com，填写m<br>    *显性URL/隐形URL：转发的地址必须完成备案且备案接入商为阿里云</p>
+<p>TTL：为缓存时间，数值越小，修改记录各地生效时间越快，默认为10分钟</p>
+]]></content>
+      <categories>
+        <category>SERVER</category>
+      </categories>
+      <tags>
+        <tag>domain</tag>
       </tags>
   </entry>
   <entry>
@@ -1399,6 +1411,46 @@ console.log(jso4);
       </tags>
   </entry>
   <entry>
+    <title>mpvue小程序以及微信直播踩坑总结</title>
+    <url>/2018/08/07/mpvue/</url>
+    <content><![CDATA[<p>前段时间刚写完一个mpvue的小程序，现在得闲必须赶紧记录和总结一下，不然很多东西又要忘了</p>
+<p>我是比较熟悉vue的语法，但是也犹豫过是用原生还是用mpvue，因为那时候原生小程序已经相当成熟而mpvue才刚出来（踩坑和填坑的前人还很少）</p>
+<p>所以我学习了几天原生的框架和语法，果断选择了mpvue，真的是没有对比就没有伤害，对比原生体验不要太好</p>
+<p>mpvue是一个使用 Vue.js 开发小程序的前端框架，他是将我们写的vue文件重新编译成wxml等文件，最后的底层实现还是用的小程序语法，所以原生小程序语法也是比较重要的，而且像很多下拉刷新，到底部请求下一页什么的等等很多地方也是要用到小程序api的，所以建议大家在入坑之前还是了解一些小程序语法比较好</p>
+<p>附上<a href="http://mpvue.com/#_1">官方文档</a></p>
+<h1 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h1><p>使用官方的5分钟上手，生成一个基本框架，后来开发也没有手动修改过他的配置</p>
+<p>用到了4个插件</p>
+<h2 id="mpvue-weui-ui库，相当方便轻量好使"><a href="#mpvue-weui-ui库，相当方便轻量好使" class="headerlink" title="mpvue-weui    ui库，相当方便轻量好使"></a>mpvue-weui    ui库，相当方便轻量好使</h2><p>官网地址：<a href="http://kuangpf.com/mpvue-weui/#/">http://kuangpf.com/mpvue-weui/#/</a></p>
+<h2 id="mpvue-toast-一个基于mpvue的简单弹窗组件"><a href="#mpvue-toast-一个基于mpvue的简单弹窗组件" class="headerlink" title="mpvue-toast  一个基于mpvue的简单弹窗组件"></a>mpvue-toast  一个基于mpvue的简单弹窗组件</h2><p>因为mpvue目前还不支持全局的组件，所以没有办法像vue组件引入一次就能在所有页面使用，但是mpvue团队已经在考虑新增全局组件功能了</p>
+<p>github地址：<a href="https://github.com/linrui1994/mpvue-toast">https://github.com/linrui1994/mpvue-toast</a> </p>
+<h2 id="sass-不多介绍"><a href="#sass-不多介绍" class="headerlink" title="sass  不多介绍"></a>sass  不多介绍</h2><p>全局安装：npm install sass-loader node-sass –save-dev </p>
+<p>在style节点加上lang=”scss”，这样就可以愉快地使用sass进行开发了</p>
+<h2 id="mpvue-router-patch-在mpvue-中使用-vue-router-兼容的路由写法"><a href="#mpvue-router-patch-在mpvue-中使用-vue-router-兼容的路由写法" class="headerlink" title="mpvue-router-patch   在mpvue 中使用 vue-router 兼容的路由写法"></a>mpvue-router-patch   在mpvue 中使用 vue-router 兼容的路由写法</h2><p>当知道mpvue不支持vue-router的时候我还是非常难受，还好mpvue团队后面发布了这个插件，非常简单好用</p>
+<p>github地址：<a href="https://github.com/F-loat/mpvue-router-patch">https://github.com/F-loat/mpvue-router-patch</a></p>
+<p>接下来的3个插件我没有用过但是和mpvue-router-patch一样是mpvue团队发布的，感觉应该也不差，也推荐给大家如果需要可以花时间了解一下</p>
+<h2 id="mpvue-echarts-适用于-Mpvue-的-ECharts-组件"><a href="#mpvue-echarts-适用于-Mpvue-的-ECharts-组件" class="headerlink" title="mpvue-echarts    适用于 Mpvue 的 ECharts 组件"></a>mpvue-echarts    适用于 Mpvue 的 ECharts 组件</h2><p>github地址：<a href="https://github.com/F-loat/mpvue-echarts">https://github.com/F-loat/mpvue-echarts</a></p>
+<h2 id="微信小程序富文本解析组件-适用于-Mpvue-的微信小程序富文本解析自定义组件"><a href="#微信小程序富文本解析组件-适用于-Mpvue-的微信小程序富文本解析自定义组件" class="headerlink" title="微信小程序富文本解析组件  适用于 Mpvue 的微信小程序富文本解析自定义组件"></a>微信小程序富文本解析组件  适用于 Mpvue 的微信小程序富文本解析自定义组件</h2><p>github地址：<a href="https://github.com/F-loat/mpvue-wxParse">https://github.com/F-loat/mpvue-wxParse</a></p>
+<h2 id="mpvue-entry自动生成各页面的入口文件-集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新"><a href="#mpvue-entry自动生成各页面的入口文件-集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新" class="headerlink" title="mpvue-entry自动生成各页面的入口文件  集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新"></a>mpvue-entry自动生成各页面的入口文件  集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新</h2><p>github地址：<a href="https://github.com/F-loat/mpvue-entry">https://github.com/F-loat/mpvue-entry</a></p>
+<h2 id="关于ajax请求封装，拿走不谢"><a href="#关于ajax请求封装，拿走不谢" class="headerlink" title="关于ajax请求封装，拿走不谢"></a>关于ajax请求封装，拿走不谢</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> urlPath = <span class="string">&#x27;&#x27;</span> <span class="comment">// 项目的域名</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">post</span>(<span class="params">url, data</span>) </span>&#123;</span><br><span class="line">  wx.showLoading(&#123;</span><br><span class="line">    title: <span class="string">&#x27;努力加载中&#x27;</span>,</span><br><span class="line">  &#125;)</span><br><span class="line"><span class="comment">// 由于微信不会保存后端用于登陆验证的cookie，这里需要自己从登陆返回的数据里取到cookie，然后本地缓存，请求时在header里带上cookie</span></span><br><span class="line">  <span class="keyword">let</span> header = &#123;&#125; </span><br><span class="line">  url === <span class="string">&#x27;user/loginworker&#x27;</span> <span class="comment">// 通过传进来的url判断是否是登陆页</span></span><br><span class="line">    ? header = &#123;&#125; </span><br><span class="line">    : header = &#123;</span><br><span class="line">      <span class="string">&#x27;content-type&#x27;</span>: <span class="string">&#x27;application/x-www-form-urlencoded&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;cookie&#x27;</span>: wx.getStorageSync(<span class="string">&quot;sessionid&quot;</span>)</span><br><span class="line">    &#125; </span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    wx.request(&#123;</span><br><span class="line">      url: urlPath + url,</span><br><span class="line">      data: data,</span><br><span class="line">      method: <span class="string">&#x27;get&#x27;</span>,</span><br><span class="line">      header: header, success(res) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(res)</span><br><span class="line">        <span class="keyword">if</span> (res.statusCode === <span class="number">200</span>) &#123;</span><br><span class="line">          <span class="keyword">if</span> (res.data === <span class="number">9999</span>) &#123; <span class="comment">// 后端返回9999表示cookie失效</span></span><br><span class="line">            wx.showModal(&#123;</span><br><span class="line">              content: <span class="string">&#x27;登陆超时请重新登陆&#x27;</span>,</span><br><span class="line">              showCancel: <span class="literal">false</span>,</span><br><span class="line">              success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</span><br><span class="line">                <span class="keyword">if</span> (res.confirm) &#123;</span><br><span class="line">                  wx.navigateTo(&#123;</span><br><span class="line">                    url: <span class="string">&#x27;../../pages/login/main&#x27;</span>,</span><br><span class="line">                  &#125;)</span><br><span class="line">                &#125;</span><br><span class="line">              &#125;</span><br><span class="line">            &#125;)</span><br><span class="line">          &#125; <span class="keyword">else</span> <span class="keyword">if</span> (res.data.code &amp;&amp; res.data.code !== <span class="number">200</span>) &#123; <span class="comment">// 若返回coode码且不等于200表示传入参数有问题</span></span><br><span class="line">            res.message = res.data.message, reject(res)</span><br><span class="line">          &#125; <span class="keyword">else</span> resolve(res)</span><br><span class="line">            <span class="comment">// 存储cookie</span></span><br><span class="line">          res.data.message === <span class="string">&#x27;登录成功。&#x27;</span> ? wx.setStorageSync(<span class="string">&quot;sessionid&quot;</span>, res.header[<span class="string">&quot;Set-Cookie&quot;</span>]) : <span class="string">&quot;&quot;</span></span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">          res.message = <span class="string">&#x27;服务器错误请求失败&#x27;</span></span><br><span class="line">          reject(res)</span><br><span class="line">        &#125;</span><br><span class="line">        wx.hideLoading()</span><br><span class="line">      &#125;, fail(err) &#123;</span><br><span class="line">        err.message = <span class="string">&#x27;请求超时请稍后再试&#x27;</span></span><br><span class="line">        reject (err)</span><br><span class="line">        wx.hideLoading()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="生命周期钩子"><a href="#生命周期钩子" class="headerlink" title="生命周期钩子"></a>生命周期钩子</h2><p>created是vue的生命周期在mpvue里所有页面的created函数会在项目加载的时候被一起调用，可用性不大，可以使用onShow()代替，但是onShow()只有在隐藏又显示后才会显示,也就是第一次加载不会执行</p>
+<p> created() {<br>    console.log(‘created’)<br>  },<br>  mounted() {<br>    console.log(‘mounted’)<br>  },<br>  onLoad() {<br>    console.log(‘onLoad’)<br>  },<br>  onShow() {<br>    console.log(‘onShow’)<br>  },<br>  onUnload() {<br>    console.log(‘onUnload’)<br>  },<br>  onHide() {<br>    console.log(‘onHide’)<br>  },</p>
+<h2 id="页面跳转后并没有销毁页面实例"><a href="#页面跳转后并没有销毁页面实例" class="headerlink" title="页面跳转后并没有销毁页面实例"></a>页面跳转后并没有销毁页面实例</h2><p>比如一个搜索页面，页面第一次进来所有的数据都是空的，但你搜索一次之后，input框就有值了，这个时候再跳转到其他页面或者返回之后再进入这个页面那个值依然存在，页面跳转后并没有销毁页面实例，而是将其推入页面栈中，所以会保存之前的旧的数据，目前为止看到的比较统一的解决办法就是：在onShow()或者onLoad()手动清空</p>
+<h2 id="关于微信直播"><a href="#关于微信直播" class="headerlink" title="关于微信直播"></a>关于微信直播</h2><p>这个小程序需要引入监控相当于是直播功能，这个组件也是有点坑</p>
+<p>Live-player组件本身只能播放，如果想要在组件上加功能，像什么全屏静音播放暂停之类的功能需要使用wx.createLivePlayerContext()方法，而且由于live-player层级是最高的，如果你需要在组件上加功能比如点一下全屏再点下退出全屏或者加css样式，你必须写在 cover-view cover-image上面，直接加在live-player上是没用的</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;live-player id=<span class="string">&#x27;liveInfo&#x27;</span> src=<span class="string">&quot;&quot;</span> mode=<span class="string">&quot;live&quot;</span> autoplay=<span class="string">&#x27;false&#x27;</span> @bindstatechange=<span class="string">&quot;statechange&quot;</span> binderror=<span class="string">&quot;error&quot;</span>&gt;</span><br><span class="line">    &lt;cover-image @click=<span class="string">&quot;requestFullScreen&quot;</span>&gt;&lt;/cover-image&gt;</span><br><span class="line">&lt;/live-player&gt;</span><br></pre></td></tr></table></figure>
+
+<p>你以为这样就完了嘛，不，如果你有一个直播列表，比如一个屏幕同时有一个以上的live-player组件那么你全屏的时候就会发现其余的组件因为层级的原因全部覆盖在你全屏的那个组件之上</p>
+<p>解决办法：全屏是v-if隐藏其余的组件，退出时再显示</p>
+<p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
+]]></content>
+      <categories>
+        <category>WEB</category>
+      </categories>
+      <tags>
+        <tag>mpvue</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>js 拾遗：连续赋值 &amp;&amp; for 循环顺序对性能的影响</title>
     <url>/2019/08/09/js_one/</url>
     <content><![CDATA[<h2 id="连续赋值"><a href="#连续赋值" class="headerlink" title="连续赋值"></a>连续赋值</h2><p>在掘金看到一段很有意思的 js 代码</p>
@@ -1506,46 +1558,6 @@ console.log(jso4);
       </tags>
   </entry>
   <entry>
-    <title>mpvue小程序以及微信直播踩坑总结</title>
-    <url>/2018/08/07/mpvue/</url>
-    <content><![CDATA[<p>前段时间刚写完一个mpvue的小程序，现在得闲必须赶紧记录和总结一下，不然很多东西又要忘了</p>
-<p>我是比较熟悉vue的语法，但是也犹豫过是用原生还是用mpvue，因为那时候原生小程序已经相当成熟而mpvue才刚出来（踩坑和填坑的前人还很少）</p>
-<p>所以我学习了几天原生的框架和语法，果断选择了mpvue，真的是没有对比就没有伤害，对比原生体验不要太好</p>
-<p>mpvue是一个使用 Vue.js 开发小程序的前端框架，他是将我们写的vue文件重新编译成wxml等文件，最后的底层实现还是用的小程序语法，所以原生小程序语法也是比较重要的，而且像很多下拉刷新，到底部请求下一页什么的等等很多地方也是要用到小程序api的，所以建议大家在入坑之前还是了解一些小程序语法比较好</p>
-<p>附上<a href="http://mpvue.com/#_1">官方文档</a></p>
-<h1 id="项目配置"><a href="#项目配置" class="headerlink" title="项目配置"></a>项目配置</h1><p>使用官方的5分钟上手，生成一个基本框架，后来开发也没有手动修改过他的配置</p>
-<p>用到了4个插件</p>
-<h2 id="mpvue-weui-ui库，相当方便轻量好使"><a href="#mpvue-weui-ui库，相当方便轻量好使" class="headerlink" title="mpvue-weui    ui库，相当方便轻量好使"></a>mpvue-weui    ui库，相当方便轻量好使</h2><p>官网地址：<a href="http://kuangpf.com/mpvue-weui/#/">http://kuangpf.com/mpvue-weui/#/</a></p>
-<h2 id="mpvue-toast-一个基于mpvue的简单弹窗组件"><a href="#mpvue-toast-一个基于mpvue的简单弹窗组件" class="headerlink" title="mpvue-toast  一个基于mpvue的简单弹窗组件"></a>mpvue-toast  一个基于mpvue的简单弹窗组件</h2><p>因为mpvue目前还不支持全局的组件，所以没有办法像vue组件引入一次就能在所有页面使用，但是mpvue团队已经在考虑新增全局组件功能了</p>
-<p>github地址：<a href="https://github.com/linrui1994/mpvue-toast">https://github.com/linrui1994/mpvue-toast</a> </p>
-<h2 id="sass-不多介绍"><a href="#sass-不多介绍" class="headerlink" title="sass  不多介绍"></a>sass  不多介绍</h2><p>全局安装：npm install sass-loader node-sass –save-dev </p>
-<p>在style节点加上lang=”scss”，这样就可以愉快地使用sass进行开发了</p>
-<h2 id="mpvue-router-patch-在mpvue-中使用-vue-router-兼容的路由写法"><a href="#mpvue-router-patch-在mpvue-中使用-vue-router-兼容的路由写法" class="headerlink" title="mpvue-router-patch   在mpvue 中使用 vue-router 兼容的路由写法"></a>mpvue-router-patch   在mpvue 中使用 vue-router 兼容的路由写法</h2><p>当知道mpvue不支持vue-router的时候我还是非常难受，还好mpvue团队后面发布了这个插件，非常简单好用</p>
-<p>github地址：<a href="https://github.com/F-loat/mpvue-router-patch">https://github.com/F-loat/mpvue-router-patch</a></p>
-<p>接下来的3个插件我没有用过但是和mpvue-router-patch一样是mpvue团队发布的，感觉应该也不差，也推荐给大家如果需要可以花时间了解一下</p>
-<h2 id="mpvue-echarts-适用于-Mpvue-的-ECharts-组件"><a href="#mpvue-echarts-适用于-Mpvue-的-ECharts-组件" class="headerlink" title="mpvue-echarts    适用于 Mpvue 的 ECharts 组件"></a>mpvue-echarts    适用于 Mpvue 的 ECharts 组件</h2><p>github地址：<a href="https://github.com/F-loat/mpvue-echarts">https://github.com/F-loat/mpvue-echarts</a></p>
-<h2 id="微信小程序富文本解析组件-适用于-Mpvue-的微信小程序富文本解析自定义组件"><a href="#微信小程序富文本解析组件-适用于-Mpvue-的微信小程序富文本解析自定义组件" class="headerlink" title="微信小程序富文本解析组件  适用于 Mpvue 的微信小程序富文本解析自定义组件"></a>微信小程序富文本解析组件  适用于 Mpvue 的微信小程序富文本解析自定义组件</h2><p>github地址：<a href="https://github.com/F-loat/mpvue-wxParse">https://github.com/F-loat/mpvue-wxParse</a></p>
-<h2 id="mpvue-entry自动生成各页面的入口文件-集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新"><a href="#mpvue-entry自动生成各页面的入口文件-集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新" class="headerlink" title="mpvue-entry自动生成各页面的入口文件  集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新"></a>mpvue-entry自动生成各页面的入口文件  集中式页面配置，自动生成各页面的入口文件，优化目录结构，支持新增页面热更新</h2><p>github地址：<a href="https://github.com/F-loat/mpvue-entry">https://github.com/F-loat/mpvue-entry</a></p>
-<h2 id="关于ajax请求封装，拿走不谢"><a href="#关于ajax请求封装，拿走不谢" class="headerlink" title="关于ajax请求封装，拿走不谢"></a>关于ajax请求封装，拿走不谢</h2><figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">let</span> urlPath = <span class="string">&#x27;&#x27;</span> <span class="comment">// 项目的域名</span></span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">post</span>(<span class="params">url, data</span>) </span>&#123;</span><br><span class="line">  wx.showLoading(&#123;</span><br><span class="line">    title: <span class="string">&#x27;努力加载中&#x27;</span>,</span><br><span class="line">  &#125;)</span><br><span class="line"><span class="comment">// 由于微信不会保存后端用于登陆验证的cookie，这里需要自己从登陆返回的数据里取到cookie，然后本地缓存，请求时在header里带上cookie</span></span><br><span class="line">  <span class="keyword">let</span> header = &#123;&#125; </span><br><span class="line">  url === <span class="string">&#x27;user/loginworker&#x27;</span> <span class="comment">// 通过传进来的url判断是否是登陆页</span></span><br><span class="line">    ? header = &#123;&#125; </span><br><span class="line">    : header = &#123;</span><br><span class="line">      <span class="string">&#x27;content-type&#x27;</span>: <span class="string">&#x27;application/x-www-form-urlencoded&#x27;</span>,</span><br><span class="line">      <span class="string">&#x27;cookie&#x27;</span>: wx.getStorageSync(<span class="string">&quot;sessionid&quot;</span>)</span><br><span class="line">    &#125; </span><br><span class="line">  <span class="keyword">return</span> <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve, reject</span>) =&gt;</span> &#123;</span><br><span class="line">    wx.request(&#123;</span><br><span class="line">      url: urlPath + url,</span><br><span class="line">      data: data,</span><br><span class="line">      method: <span class="string">&#x27;get&#x27;</span>,</span><br><span class="line">      header: header, success(res) &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(res)</span><br><span class="line">        <span class="keyword">if</span> (res.statusCode === <span class="number">200</span>) &#123;</span><br><span class="line">          <span class="keyword">if</span> (res.data === <span class="number">9999</span>) &#123; <span class="comment">// 后端返回9999表示cookie失效</span></span><br><span class="line">            wx.showModal(&#123;</span><br><span class="line">              content: <span class="string">&#x27;登陆超时请重新登陆&#x27;</span>,</span><br><span class="line">              showCancel: <span class="literal">false</span>,</span><br><span class="line">              success: <span class="function"><span class="keyword">function</span> (<span class="params">res</span>) </span>&#123;</span><br><span class="line">                <span class="keyword">if</span> (res.confirm) &#123;</span><br><span class="line">                  wx.navigateTo(&#123;</span><br><span class="line">                    url: <span class="string">&#x27;../../pages/login/main&#x27;</span>,</span><br><span class="line">                  &#125;)</span><br><span class="line">                &#125;</span><br><span class="line">              &#125;</span><br><span class="line">            &#125;)</span><br><span class="line">          &#125; <span class="keyword">else</span> <span class="keyword">if</span> (res.data.code &amp;&amp; res.data.code !== <span class="number">200</span>) &#123; <span class="comment">// 若返回coode码且不等于200表示传入参数有问题</span></span><br><span class="line">            res.message = res.data.message, reject(res)</span><br><span class="line">          &#125; <span class="keyword">else</span> resolve(res)</span><br><span class="line">            <span class="comment">// 存储cookie</span></span><br><span class="line">          res.data.message === <span class="string">&#x27;登录成功。&#x27;</span> ? wx.setStorageSync(<span class="string">&quot;sessionid&quot;</span>, res.header[<span class="string">&quot;Set-Cookie&quot;</span>]) : <span class="string">&quot;&quot;</span></span><br><span class="line">        &#125;<span class="keyword">else</span> &#123;</span><br><span class="line">          res.message = <span class="string">&#x27;服务器错误请求失败&#x27;</span></span><br><span class="line">          reject(res)</span><br><span class="line">        &#125;</span><br><span class="line">        wx.hideLoading()</span><br><span class="line">      &#125;, fail(err) &#123;</span><br><span class="line">        err.message = <span class="string">&#x27;请求超时请稍后再试&#x27;</span></span><br><span class="line">        reject (err)</span><br><span class="line">        wx.hideLoading()</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="生命周期钩子"><a href="#生命周期钩子" class="headerlink" title="生命周期钩子"></a>生命周期钩子</h2><p>created是vue的生命周期在mpvue里所有页面的created函数会在项目加载的时候被一起调用，可用性不大，可以使用onShow()代替，但是onShow()只有在隐藏又显示后才会显示,也就是第一次加载不会执行</p>
-<p> created() {<br>    console.log(‘created’)<br>  },<br>  mounted() {<br>    console.log(‘mounted’)<br>  },<br>  onLoad() {<br>    console.log(‘onLoad’)<br>  },<br>  onShow() {<br>    console.log(‘onShow’)<br>  },<br>  onUnload() {<br>    console.log(‘onUnload’)<br>  },<br>  onHide() {<br>    console.log(‘onHide’)<br>  },</p>
-<h2 id="页面跳转后并没有销毁页面实例"><a href="#页面跳转后并没有销毁页面实例" class="headerlink" title="页面跳转后并没有销毁页面实例"></a>页面跳转后并没有销毁页面实例</h2><p>比如一个搜索页面，页面第一次进来所有的数据都是空的，但你搜索一次之后，input框就有值了，这个时候再跳转到其他页面或者返回之后再进入这个页面那个值依然存在，页面跳转后并没有销毁页面实例，而是将其推入页面栈中，所以会保存之前的旧的数据，目前为止看到的比较统一的解决办法就是：在onShow()或者onLoad()手动清空</p>
-<h2 id="关于微信直播"><a href="#关于微信直播" class="headerlink" title="关于微信直播"></a>关于微信直播</h2><p>这个小程序需要引入监控相当于是直播功能，这个组件也是有点坑</p>
-<p>Live-player组件本身只能播放，如果想要在组件上加功能，像什么全屏静音播放暂停之类的功能需要使用wx.createLivePlayerContext()方法，而且由于live-player层级是最高的，如果你需要在组件上加功能比如点一下全屏再点下退出全屏或者加css样式，你必须写在 cover-view cover-image上面，直接加在live-player上是没用的</p>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line">&lt;live-player id=<span class="string">&#x27;liveInfo&#x27;</span> src=<span class="string">&quot;&quot;</span> mode=<span class="string">&quot;live&quot;</span> autoplay=<span class="string">&#x27;false&#x27;</span> @bindstatechange=<span class="string">&quot;statechange&quot;</span> binderror=<span class="string">&quot;error&quot;</span>&gt;</span><br><span class="line">    &lt;cover-image @click=<span class="string">&quot;requestFullScreen&quot;</span>&gt;&lt;/cover-image&gt;</span><br><span class="line">&lt;/live-player&gt;</span><br></pre></td></tr></table></figure>
-
-<p>你以为这样就完了嘛，不，如果你有一个直播列表，比如一个屏幕同时有一个以上的live-player组件那么你全屏的时候就会发现其余的组件因为层级的原因全部覆盖在你全屏的那个组件之上</p>
-<p>解决办法：全屏是v-if隐藏其余的组件，退出时再显示</p>
-<p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
-]]></content>
-      <categories>
-        <category>WEB</category>
-      </categories>
-      <tags>
-        <tag>mpvue</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>mysql常用语句</title>
     <url>/2018/10/10/mysql/</url>
     <content><![CDATA[<p>sql语法特点：</p>
@@ -1627,28 +1639,6 @@ console.log(jso4);
       </tags>
   </entry>
   <entry>
-    <title>npm &amp;&amp; yarn 差异以及常用命令</title>
-    <url>/2019/07/01/npm&amp;&amp;yarn/</url>
-    <content><![CDATA[<p>yarn 从去年vue-cli更新以来一直用，但一直都没认真了解过</p>
-<h2 id="yarn-背景介绍"><a href="#yarn-背景介绍" class="headerlink" title="yarn 背景介绍"></a>yarn 背景介绍</h2><p>安装方法 <a href="https://yarn.bootcss.com/docs/install">三种安装方式</a><br>Yarn 是一个包管理器，代码通过包（package） 或者模块（module）的方式来共享， 一个包里包含所有需要共享的代码，以及描述包信息的文件，称为 package.json 。</p>
-<h2 id="yarn-npm-差异"><a href="#yarn-npm-差异" class="headerlink" title="yarn npm 差异"></a>yarn npm 差异</h2><ul>
-<li>同步安装：npm 是按照队列执行每个 package，Yarn 是同步执行所有任务</li>
-<li>离线模式：Yarn可以从缓存中获取以前安装过的安装包，而npm每次都从网络下载</li>
-<li>安装版本统一：yarn.lock 文件记录了所有安装模块的版本号，这样使我们每次拉取同一个项目依赖时使用都是一样的版本号，而 npm 需要执行 npm shrinkwrap 才会生成一个锁定文件 npm-shrinkwrap.json</li>
-<li>npm 输出内容多长，安装慢就算了还老是失败，相较而言 yarn 真的快多了</li>
-</ul>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>更多命令 <a href="https://yarn.bootcss.com/docs/cli/">官网 CLI 命令</a></p>
-<p><strong>npm 命令</strong>|<strong>yarn 命令</strong>|<strong>命令介绍</strong><br>:—-:|:—-:|:—:|:—:<br>npm install xxx  <br>  npm i xxx | yarn | 安装但不写入package.json<br>npm install –save xxx  <br>  npm i -s xxx | yarn add xxx | 安装xxx模块，并且记录到package.json字段对应的dependency<br>npm install –save-dev xxx  <br>  npm i -D xxx | yarn add xxx –dev | 安装xxx模块，并且记录到package.jso字段对应的dev-dependency是开发环境必须依赖的模块<br>npm install –global xxx  <br>  npm i -g xxx | yarn global add xxx | 全局安装xxx模块，如果模块里package.json有bin配置，会自动链接，作为cli命令<br>npm uninstall react –save | yarn remove taco | 安装并记录package.json中的dependency字段<br>npm update –save | yarn upgrade | 更新并记录package.json中的dependency字段</p>
-<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://yarn.bootcss.com/">官网命令</a><br><a href="https://zhuanlan.zhihu.com/p/27449990">知乎文章：npm和yarn的区别，我们该如何选择？</a></p>
-]]></content>
-      <categories>
-        <category>TOOL</category>
-      </categories>
-      <tags>
-        <tag>yarn</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>nodejs之接收formdata表单</title>
     <url>/2018/10/09/node_fromdata/</url>
     <content><![CDATA[<p>最近在学习express，写一个vue+express+mysql的小demo，需要上传一张封面图和一些其他的表单字段….</p>
@@ -1715,6 +1705,28 @@ console.log(jso4);
       </categories>
       <tags>
         <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>npm &amp;&amp; yarn 差异以及常用命令</title>
+    <url>/2019/07/01/npm&amp;&amp;yarn/</url>
+    <content><![CDATA[<p>yarn 从去年vue-cli更新以来一直用，但一直都没认真了解过</p>
+<h2 id="yarn-背景介绍"><a href="#yarn-背景介绍" class="headerlink" title="yarn 背景介绍"></a>yarn 背景介绍</h2><p>安装方法 <a href="https://yarn.bootcss.com/docs/install">三种安装方式</a><br>Yarn 是一个包管理器，代码通过包（package） 或者模块（module）的方式来共享， 一个包里包含所有需要共享的代码，以及描述包信息的文件，称为 package.json 。</p>
+<h2 id="yarn-npm-差异"><a href="#yarn-npm-差异" class="headerlink" title="yarn npm 差异"></a>yarn npm 差异</h2><ul>
+<li>同步安装：npm 是按照队列执行每个 package，Yarn 是同步执行所有任务</li>
+<li>离线模式：Yarn可以从缓存中获取以前安装过的安装包，而npm每次都从网络下载</li>
+<li>安装版本统一：yarn.lock 文件记录了所有安装模块的版本号，这样使我们每次拉取同一个项目依赖时使用都是一样的版本号，而 npm 需要执行 npm shrinkwrap 才会生成一个锁定文件 npm-shrinkwrap.json</li>
+<li>npm 输出内容多长，安装慢就算了还老是失败，相较而言 yarn 真的快多了</li>
+</ul>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>更多命令 <a href="https://yarn.bootcss.com/docs/cli/">官网 CLI 命令</a></p>
+<p><strong>npm 命令</strong>|<strong>yarn 命令</strong>|<strong>命令介绍</strong><br>:—-:|:—-:|:—:|:—:<br>npm install xxx  <br>  npm i xxx | yarn | 安装但不写入package.json<br>npm install –save xxx  <br>  npm i -s xxx | yarn add xxx | 安装xxx模块，并且记录到package.json字段对应的dependency<br>npm install –save-dev xxx  <br>  npm i -D xxx | yarn add xxx –dev | 安装xxx模块，并且记录到package.jso字段对应的dev-dependency是开发环境必须依赖的模块<br>npm install –global xxx  <br>  npm i -g xxx | yarn global add xxx | 全局安装xxx模块，如果模块里package.json有bin配置，会自动链接，作为cli命令<br>npm uninstall react –save | yarn remove taco | 安装并记录package.json中的dependency字段<br>npm update –save | yarn upgrade | 更新并记录package.json中的dependency字段</p>
+<h2 id="参考文章"><a href="#参考文章" class="headerlink" title="参考文章"></a>参考文章</h2><p><a href="https://yarn.bootcss.com/">官网命令</a><br><a href="https://zhuanlan.zhihu.com/p/27449990">知乎文章：npm和yarn的区别，我们该如何选择？</a></p>
+]]></content>
+      <categories>
+        <category>TOOL</category>
+      </categories>
+      <tags>
+        <tag>yarn</tag>
       </tags>
   </entry>
   <entry>
@@ -2140,6 +2152,26 @@ console.log(jso4);
       </tags>
   </entry>
   <entry>
+    <title>UI和平面设计的区别</title>
+    <url>/2018/06/24/%E5%B9%B3%E9%9D%A2&amp;&amp;ui/</url>
+    <content><![CDATA[<p>前段时间自告奋勇的给新项目做UI设计，项目包括一个网站一个app还有一个后台，后台没有设计套用以前的模板主要是将就前端也就是我还有我的小伙伴们,总的花费时间共一周左右</p>
+<p>作为曾经的一只平面设计狗，这是我UI处女作  哈哈哈哈！！！</p>
+<p>在没做前端之前一直觉得平面和UI都是根据客户的需求设计画图嘛也都是平面图也没什么太大的区别，而且UI还不用像平面设计海报那样做一些复杂抓人眼球的效果，毕竟现在的页面为了追求速度用户体验什么的都是扁平化趋于简洁</p>
+<p>这次呢是深切感受到了UI和平面的区别</p>
+<p>在学习css开始我就知道UI画的图都是需要前端实现的，设计的时候，除了好的创意，还应该考虑到技术上的可行性，就像这次设计页面的时候是自动把自己代入了前端这个角色所以在设计时更多的考虑到css样式布局js的特效数据渲染什么的还有组件模块的复用问题等等，设计方面远不如平面设计那么自由洒脱</p>
+<p>大部分平面设计的作品都是以印刷的平面形式表现，这需要设计师去了解各种材料之间的区别以及不同材料所做出来的成品效果的差别，但在设计方面却是比较自由的，在符合主题的情况下怎么好看怎么漂亮怎么抓人眼球怎么来，很多时候平面设计师一个人对接一个客户就能完成一个作品，而ui除了产品客户以外还得对接前端后端需要遵守一系列的项目流程，而最后的成功也是团队协作达成的效果，这也是很大的一个不同点</p>
+<p>UI设计的时候除了考虑前端的实现还有最重要的是用户体验和交互，毕竟网页是会”动”起来的，不管是网站还是其他什么软件都是需要用户去操作，这需要去琢磨研究用户的行为，所以好的ui设计不只是画面的美观还要让用户操作起来感觉舒适简单自由</p>
+<p>所以总的来讲呢，平面注重视觉创意，UI却是更注重用户交互，两者在视觉传达方面是共通的，但是在难点侧重点方面却是不一样的</p>
+<p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
+]]></content>
+      <categories>
+        <category>RESTS</category>
+      </categories>
+      <tags>
+        <tag>rests</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>webpack-one</title>
     <url>/2019/08/28/webpack1/</url>
     <content><![CDATA[<p>像 VUE、react 脚手架之类集成了 webpack、babel、typescript 之类框架的用起来虽然方便，但是有些时候需要写个小页面或者只是一个 js 文件，去搭一个 VUE 脚手架好像有点大材小用，但是又想用 typescript 或者 IE 不支持的一些 es6 的语法，而且文件还是需要压缩和编译<br>前段时间翻阅了 webpack、babel 等官网，搭了一个小型的 webpack 的环境，用于编译和压缩一些小型的项目<br>主要集成了<br>*webpack<br>*babel<br>*typescript</p>
@@ -2201,26 +2233,6 @@ console.log(jso4);
 ]]></content>
   </entry>
   <entry>
-    <title>UI和平面设计的区别</title>
-    <url>/2018/06/24/%E5%B9%B3%E9%9D%A2&amp;&amp;ui/</url>
-    <content><![CDATA[<p>前段时间自告奋勇的给新项目做UI设计，项目包括一个网站一个app还有一个后台，后台没有设计套用以前的模板主要是将就前端也就是我还有我的小伙伴们,总的花费时间共一周左右</p>
-<p>作为曾经的一只平面设计狗，这是我UI处女作  哈哈哈哈！！！</p>
-<p>在没做前端之前一直觉得平面和UI都是根据客户的需求设计画图嘛也都是平面图也没什么太大的区别，而且UI还不用像平面设计海报那样做一些复杂抓人眼球的效果，毕竟现在的页面为了追求速度用户体验什么的都是扁平化趋于简洁</p>
-<p>这次呢是深切感受到了UI和平面的区别</p>
-<p>在学习css开始我就知道UI画的图都是需要前端实现的，设计的时候，除了好的创意，还应该考虑到技术上的可行性，就像这次设计页面的时候是自动把自己代入了前端这个角色所以在设计时更多的考虑到css样式布局js的特效数据渲染什么的还有组件模块的复用问题等等，设计方面远不如平面设计那么自由洒脱</p>
-<p>大部分平面设计的作品都是以印刷的平面形式表现，这需要设计师去了解各种材料之间的区别以及不同材料所做出来的成品效果的差别，但在设计方面却是比较自由的，在符合主题的情况下怎么好看怎么漂亮怎么抓人眼球怎么来，很多时候平面设计师一个人对接一个客户就能完成一个作品，而ui除了产品客户以外还得对接前端后端需要遵守一系列的项目流程，而最后的成功也是团队协作达成的效果，这也是很大的一个不同点</p>
-<p>UI设计的时候除了考虑前端的实现还有最重要的是用户体验和交互，毕竟网页是会”动”起来的，不管是网站还是其他什么软件都是需要用户去操作，这需要去琢磨研究用户的行为，所以好的ui设计不只是画面的美观还要让用户操作起来感觉舒适简单自由</p>
-<p>所以总的来讲呢，平面注重视觉创意，UI却是更注重用户交互，两者在视觉传达方面是共通的，但是在难点侧重点方面却是不一样的</p>
-<p>欢迎留言交流  (´▽`ʃ♡ƪ)</p>
-]]></content>
-      <categories>
-        <category>RESTS</category>
-      </categories>
-      <tags>
-        <tag>rests</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>阿里云服务器</title>
     <url>/2018/05/13/%E9%98%BF%E9%87%8C%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
     <content><![CDATA[<p>新手入门弄了一个阿里云服务器自己学习使用</p>
@@ -2254,28 +2266,6 @@ console.log(jso4);
       </categories>
       <tags>
         <tag>server</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>2020.md</title>
-    <url>/2021/03/01/2020/</url>
-    <content><![CDATA[<p>2020因为新冠疫情，这年的时间总觉得过得尤其快，在家工作了两个月体验了work from home，但是自我感觉工作效率不是特别高。</p>
-<p>技术上，感觉其实今年在上面花的心思比较少但是也有很明显的感觉，不管是看代码还是接触新的东西理解得都比以前快了，自我分析一个可能是又过了一年对工作又驾轻就熟了一点，还有一个大概是用原生js比以前多了。今年有四分之一的时间都在改或者添加功能为后台系统，基本用es5的语法和其他原生语法，这个后台是用的jsp + jq + layui，大部分时候都是后端的在做，还有一个是在项目里没有再用过UI框架用自己封装了一些插件自己用，并且也逐步的进行优化。今年接触的新的东西一个是vue3.0，还有一个是因为要对官网做搜索引擎优化，官网原本是用的react + ts，因为要动态渲染页面所以选择服务端渲染的方式，接触和使用了next框架, 一开始想的是用node + react + redux 在解析和渲染完成发送给客户端其实踩了挺多的坑完成了百分之80，但是还是没成功最后才踩着deadline用了next，那个时候也发现自己有点绕牛角尖，最后应该写个总结的。</p>
-<p>学习上，其实大部分时间都用在这上面了，入门了日语也踩着线过了考试；能在google上用英文搜索问题、浏览英文网站、看英文文档，不怂了不觉得排斥也不觉得自己在逼自己，变成一种很自然的行为；速度在变快，生词明显变少；一半时间或者百分之60更多一点不需要看第二遍就能理解；看bbc的新闻，每篇始终还是都有那么几个不认识；从中翻英里，发现语法还是有点糟糕，做题还是很多地方不知道错在哪里然后会重复犯错；从英翻中，发现语文水平有点糟糕，组织出来的句子一半时候结构是混乱的。总体有提高但是没有到达令人满意的程度，有陷进舒适区，薄弱处依然在。</p>
-<p>生活上，坚持了一段时间的健身；差一点点get游泳技能，好吧不止一点点或者永远差一点；依然很焦虑，很悲观，对自己不满，对现状不满，坏习惯依然存在，这个斗争90%的时候我都是输。比去年糟糕在各种方面。</p>
-<p>因为很久没有写博客，去年没有写年终，或者说没有写完，希望今年2021</p>
-<ol>
-<li>坚持写博客，去回顾、加深记忆、整理思路</li>
-<li>需要大量的练习，英翻中和中翻英，还有一直薄弱的语法</li>
-<li>日语单词需要继续坚持，从中找到乐趣不要强调在坚持，既然入门了就不要丢</li>
-<li>生活的态度要放平，要持续调整自己的心态和身体</li>
-</ol>
-]]></content>
-      <categories>
-        <category>RESTS</category>
-      </categories>
-      <tags>
-        <tag>RESTS</tag>
       </tags>
   </entry>
 </search>
